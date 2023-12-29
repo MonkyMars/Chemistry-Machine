@@ -38,7 +38,7 @@ st.write("#")
 
 Question1 = st.text_input("Which molecule do you want to know? **").lower()
 Question2 = st.selectbox(
-    'What do you want to know about this molecule or atom?',('','Weight','Molecular formula'))
+    'What do you want to know about this molecule or atom?',('','Weight','Molecular formula' **))
 
 if Question1 == "" and Question2 == "Weight" or "Molecular formula":
     answer = ""
@@ -97,7 +97,8 @@ st.write("#")
 if Question2 == "Weight" or "Molecular formula":
     st.write("Your answer is",answer)
 
-st.write("[My socials](Www.Instagram.Com/harrythelazycat)") 
+st.write("Thank you for using my app! I hope to achieve more in the future and make greater content.") 
+
 
 
 
