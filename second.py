@@ -102,7 +102,7 @@ st.write("Thank you for using my app! I hope to achieve more in the future and m
 st.write("##")
 st.subheader("Feedback")
 st.write("#")
-st.input("What's your feedback?")
+st.text_input("What's your feedback?")
 
 
 
