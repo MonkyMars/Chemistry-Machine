@@ -97,7 +97,6 @@ st.write("#")
 if Question2 == "Weight" or "Molecular formula":
     st.write("Your answer is",answer)
 
-with open('data.txt','a') as file: 
-    file.write(Question1, Question2)
+
 
 
