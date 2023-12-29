@@ -99,9 +99,7 @@ st.write("#")
 if Question2 == "Weight" or "Molecular formula":
     st.write("Your answer is",answer)
 
-if Question1 and Question2:
-    db.insert({
-        'Q1': Question1,
-        'Q2': Question2
-    })
+with open('data.txt','a') as file: 
+    file.write(Question1, Question 2)
+
 
