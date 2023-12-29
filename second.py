@@ -1,6 +1,4 @@
 import streamlit as st
-from tinydb import TinyDB, Query
-db = TinyDB('Data_project1.json')
 
 #moleculen
 Water_moleculen = "H2", "0"
