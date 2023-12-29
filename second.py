@@ -97,6 +97,8 @@ st.write("#")
 if Question2 == "Weight" or "Molecular formula":
     st.write("Your answer is",answer)
 
+st.write("[My socials](Www.Instagram.Com/harrythelazycat)") 
+
 
 
 
