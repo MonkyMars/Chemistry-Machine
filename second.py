@@ -95,7 +95,7 @@ st.write("** Required field")
 st.write("#")
 
 if Question2 == "Weight" or "Molecular formula":
-    st.write("Your answer is",answer)
+    st.write("_Your answer is_",answer)
 
 st.write("Thank you for using my app! I hope to achieve more in the future and make greater content.") 
 
