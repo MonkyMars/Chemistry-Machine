@@ -12,7 +12,7 @@ with (st.sidebar):
 
 #assets
 img_pc = Image.open("images/0b487ab8c375898c979cd77ce2c72daceb127a24cd8e1a926a895d40.jpg")
-
+#
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
     Ammoniak_moleculen = "N", "H3"
@@ -125,10 +125,7 @@ if selected == "Chemistry Machine":
     Feedback = st.text_input("What's your feedback?")
     if Feedback:
         st.success("Thank you for your feedback!")
-#
-if Feedback == "fuck":
-    st.warning("woah")
-#
+        
 if selected == "Home":
     st.title("Home")
     st.subheader("Welcome to my wonderful website, I hope you enjoy!")
