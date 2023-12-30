@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
+from PIL import Image
 
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
@@ -7,6 +8,10 @@ with (st.sidebar):
     selected = option_menu(
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
+
+
+#assets
+img_pc = Image.open("images/Pc_1.png")
 
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
@@ -126,13 +131,28 @@ if Feedback == "fuck":
 #
 if selected == "Home":
     st.title("Home")
-    st.write("Welcome to my wonderful website, I hope you enjoy!")
+    st.subheader("Welcome to my wonderful website, I hope you enjoy!")
+    st.write("#")
+    st.write("This is where I store all my projects")
+    st.write("I hope you enjoy what I made, dont be scared to leave some feedback behind")
+    st.write("#")
+    Question0 = st.text_input("What's your name?")
+
+
 
 if selected == "About me":
-    st.title("About me")
-    st.write("Hello, I am a 14 year old, still, python learning student."
+    with st.container():
+        left_column, right_column = st.columns(2)
+        with left_column:
+            st.title("About me")
+            st.write("Hello, I am a 14 year old, python learning student."" "
              "This is the first python project I've ever made.")
-    st.write("Thank you for using my app! I hope to achieve more in the future and make greater content.")
+            st.write("I'm a big fan of computers and their hardware, I am a proud owner of a beautiful system myself")
+        with right_column:
+            st.image(img_pc)
+            st.write("specs [here](https://nl.pcpartpicker.com/list/4RYJN6)")
+        
+
 
 if selected == "Projects":
     st.title("My projects")
@@ -148,5 +168,8 @@ if selected == "Projects":
     st.subheader("This website")
     st.write("I made this website originally to make my Chemistry Machine more portable and accessible,"
              "but after a while it seemed like Im gonna use it for all my projects")
-
-    
+    st.write("#")
+    st.subheader("Future")
+    st.write("My plans for the future are")
+    st.write("* make a Dutch version of this site and my projects")
+    st.write("* create more projects which can either help people or to learn to understand python better")
