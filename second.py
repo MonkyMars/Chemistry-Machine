@@ -11,7 +11,7 @@ with (st.sidebar):
 
 
 #assets
-img_pc = Image.open("images/Pc_1.png")
+img_pc = Image.open("images/0b487ab8c375898c979cd77ce2c72daceb127a24cd8e1a926a895d40.jpg")
 
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
