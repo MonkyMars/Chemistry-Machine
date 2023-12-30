@@ -101,7 +101,6 @@ st.write("---")
 st.write("Thank you for using my app! I hope to achieve more in the future and make greater content.") 
 st.write("##")
 st.subheader("Feedback")
-st.write("#")
 Feedback = st.text_input("What's your feedback?")
 if Feedback:
     st.success("Thank you for your feedback!")
