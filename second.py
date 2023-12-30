@@ -40,6 +40,10 @@ Question1 = st.text_input("Which molecule do you want to know? **").lower()
 Question2 = st.selectbox(
     'What do you want to know about this molecule or atom? **',('','Weight','Molecular formula'))
 
+while len(Question1) == (0) :
+    st.warning("Please enter something")
+
+
 if Question1 == "" and Question2 == "Weight" or "Molecular formula":
     answer = ""
 
