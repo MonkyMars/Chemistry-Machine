@@ -111,8 +111,8 @@ if Feedback == "fuck":
  
 st.write("#")
 st.subheader("About me")
-st.write("Hello, I am a 14 year old, still, python learning student."), ("This is the first python project I've ever made."),
-("I make this project in my freetime and it's still in the making.")
+st.write("Hello, I am a 14 year old, still, python learning student. This is the first python project I've ever made.")
+
 
 
 
