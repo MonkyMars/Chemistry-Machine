@@ -1,50 +1,74 @@
 import streamlit as st
+from streamlit_option_menu import option_menu
 
-#moleculen
-Water_moleculen = "H2", "0"
-Ammoniak_moleculen = "N", "H3"
-Koolstofdioxide_moleculen = "C", "O2"
-Alcohol_moleculen = "C2", "H6", "O"
-Methaan_moleculen = "C", "H4"
-Zwavelzuur_moleculen = "H2", "S", "O4"
-Zwaveldioxide_moleculen = "S", "O2"
-#alleengewicht
-H_gewicht = 1.008
-O_gewicht = 16.00
-N_gewicht = 14.01
-C_gewicht = 12.01
-S_gewicht = 32.06
-B_gewicht = 10.81
-F_gewicht = 19.00
-P_gewicht = 30.97
-I_gewicht = 126.9
-Cl_gewicht = 35.45
+st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
-#samengewicht
-Water_gewicht = H_gewicht*2 + O_gewicht
-Ammoniak_gewicht = N_gewicht + H_gewicht*3
-Koolstofdioxide_gewicht = C_gewicht + O_gewicht*2
-Alcohol_gewicht = C_gewicht*2 + H_gewicht*6 +O_gewicht
-Methaan_gewicht = C_gewicht + H_gewicht*4
-Zwavelzuur_gewicht = H_gewicht*2 + S_gewicht + O_gewicht*4
-Zwaveldioxide_gewicht = S_gewicht + O_gewicht*2
+with (st.sidebar):
+    selected = option_menu(
+        menu_title=None,
+        options=["Home", "Chemistry Machine", "Projects", "About me"])
+
+if selected == "Chemistry Machine":
+    Water_moleculen = "H2", "0"
+    Ammoniak_moleculen = "N", "H3"
+    Koolstofdioxide_moleculen = "C", "O2"
+    Alcohol_moleculen = "C2", "H6", "O"
+    Methaan_moleculen = "C", "H4"
+    Zwavelzuur_moleculen = "H2", "S", "O4"
+    Zwaveldioxide_moleculen = "S", "O2"
+    #alleengewicht
+    H_gewicht = 1.008
+    O_gewicht = 16.00
+    N_gewicht = 14.01
+    C_gewicht = 12.01
+    S_gewicht = 32.06
+    B_gewicht = 10.81
+    F_gewicht = 19.00
+    P_gewicht = 30.97
+    I_gewicht = 126.9
+    Cl_gewicht = 35.45
+    #samengewicht
+    Water_gewicht = H_gewicht * 2 + O_gewicht
+    Ammoniak_gewicht = N_gewicht + H_gewicht * 3
+    Koolstofdioxide_gewicht = C_gewicht + O_gewicht * 2
+    Alcohol_gewicht = C_gewicht * 2 + H_gewicht * 6 + O_gewicht
+    Methaan_gewicht = C_gewicht + H_gewicht * 4
+    Zwavelzuur_gewicht = H_gewicht * 2 + S_gewicht + O_gewicht * 4
+    Zwaveldioxide_gewicht = S_gewicht + O_gewicht * 2
 
 # website deel 1
-st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
-st.markdown('# My super cool chemistry machine!')
 
-st.write("This is a project I made myself using python and streamlit")
-st.write("#")
+if selected == "Chemistry Machine":
+    st.markdown('# My super cool chemistry machine!')
+    st.write("This is a project I made myself using python and streamlit")
+    st.write("#")
+    Question1 = st.text_input("Which molecule do you want to know? **").lower()
+    Question2 = st.selectbox('What do you want to know about this molecule or atom?',
+                             ('', 'Weight', 'Molecular formula'))
 
-Question1 = st.text_input("Which molecule do you want to know? **").lower()
-Question2 = st.selectbox(
-    'What do you want to know about this molecule or atom? **',('','Weight','Molecular formula'))
+if selected == "Projects":
+    Question1 = ""
+    Question2 = ""
+    Feedback = ""
+
+if selected == "About me":
+    Question1 = ""
+    Question2 = ""
+    Feedback = ""
+
+if selected == "Home":
+    Question1 = ""
+    Question2 = ""
+    Feedback = ""
 
 
-if Question1 == "" and Question2 == "Weight" or "Molecular formula":
+if Question1:
     answer = ""
 
-#moleculen
+if Question1 == "" and Question2 == "":
+    answer = ""
+
+# moleculen
 if Question1 == "water" and Question2 == "Molecular formula":
     answer = Water_moleculen
 
@@ -67,53 +91,62 @@ if Question1 == "sulphuric dioxide" and Question2 == "Molecular formula":
     answer = Zwaveldioxide_moleculen
 
 #gewichten
-if Question1 == "water" and Question2 == "Weight":
-    answer = Water_gewicht
+if selected == "Chemistry Machine":
+    if Question1 == "water" and Question2 == "Weight":
+        answer = Water_gewicht
+    if Question1 == "ammonia" and Question2 == "Weight":
+        answer = Ammoniak_gewicht
+    if Question1 == "carbon dioxide" and Question2 == "Weight":
+        answer = Koolstofdioxide_gewicht
+    if Question1 == "alcohol" and Question2 == "Weight":
+        answer = Alcohol_gewicht
+    if Question1 == "methane" and Question2 == "Weight":
+        answer = Methaan_gewicht
+    if Question1 == "sulphuric acid" and Question2 == "Weight":
+        answer = Zwavelzuur_gewicht
+    if Question1 == "sulphuric dioxide" and Question2 == "Weight":
+        answer = Zwaveldioxide_gewicht
 
-if Question1 == "ammonia" and Question2 == "Weight":
-    answer = Ammoniak_gewicht
+# website deel 2
 
-if Question1 == "carbon dioxide" and Question2 == "Weight":
-    answer = Koolstofdioxide_gewicht
-
-if Question1 == "alcohol" and Question2 == "Weight":
-   answer = Alcohol_gewicht
-
-if Question1 == "methane" and Question2 == "Weight":
-    answer = Methaan_gewicht
-
-if Question1 == "sulphuric acid" and Question2 == "Weight":
-    answer = Zwavelzuur_gewicht
-
-if Question1 == "sulphuric dioxide" and Question2 == "Weight":
-   answer = Zwaveldioxide_gewicht
-
-if Question1 == "" and Question2 == "":
-    answer = ""
-
-#website deel 2
-st.write("** Required field")
-st.write("#")
-
-if Question2 == "Weight" or "Molecular formula":
-    st.write("_Your answer is_",answer)
-    
-st.write("---")
-st.write("Thank you for using my app! I hope to achieve more in the future and make greater content.") 
-st.write("##")
-st.subheader("Feedback")
-Feedback = st.text_input("What's your feedback?")
-if Feedback:
-    st.success("Thank you for your feedback!")
-
+if selected == "Chemistry Machine":
+    st.write("** Required field")
+    st.write("#")
+    if Question2 == "Weight" or "Molecular formula":
+        st.write("_Your answer is_", answer)
+    st.write("---")
+    st.write("##")
+    st.subheader("Feedback")
+    Feedback = st.text_input("What's your feedback?")
+    if Feedback:
+        st.success("Thank you for your feedback!")
+#
 if Feedback == "fuck":
-   st.warning("woah")
- 
-st.write("#")
-st.subheader("About me")
-st.write("Hello, I am a 14 year old, still, python learning student. This is the first python project I've ever made.")
+    st.warning("woah")
+#
+if selected == "Home":
+    st.title("Home")
+    st.write("Welcome to my wonderful website, I hope you enjoy!")
 
+if selected == "About me":
+    st.title("About me")
+    st.write("Hello, I am a 14 year old, still, python learning student."
+             "This is the first python project I've ever made.")
+    st.write("Thank you for using my app! I hope to achieve more in the future and make greater content.")
 
+if selected == "Projects":
+    st.title("My projects")
+    st.write("Welcome to my Projects!"" "
+              "I've only made two projects as of January first 2024."" "
+              "But I have a lot more planned for in the future")
+    st.write("---")
+    st.write("#")
+    st.subheader("Chemistry Machine")
+    st.write("This is a project I made to discover and learn Python, Thus the entire project is written in python.")
+    st.write("Check my Chemistry Machine [here](https://chemistry-machine.streamlit.app/#my-super-cool-chemistry-machine)")
+    st.write("#")
+    st.subheader("This website")
+    st.write("I made this website originally to make my Chemistry Machine more portable and accessible,"
+             "but after a while it seemed like Im gonna use it for all my projects")
 
-
-
+    
