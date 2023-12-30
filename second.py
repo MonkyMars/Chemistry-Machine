@@ -108,8 +108,7 @@ if Feedback:
 
 if Feedback == "fuck":
    st.warning("woah")
-   st.success = hidden 
-
+ 
 st.write("#")
 st.subheader("About me")
 st.write("Hello, I am a 14 year old, still, python learning student. This is the first python project I've ever made.")
