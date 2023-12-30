@@ -106,6 +106,8 @@ Feedback = st.text_input("What's your feedback?")
 if Feedback:
     st.success("Thank you for your feedback!")
 
+if Feedback == "fuck":
+   st.warning("woah")
 
 
 
