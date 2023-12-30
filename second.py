@@ -103,7 +103,7 @@ st.write("##")
 st.subheader("Feedback")
 Feedback = st.text_input("What's your feedback?")
 if Feedback:
-    st.success("Thank you for your feedback!", index="press enter to continue")
+    st.success("Thank you for your feedback!")
 
 
 
