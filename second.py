@@ -8,10 +8,7 @@ with (st.sidebar):
     selected = option_menu(
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
-
-
-#assets
-img_pc = Image.open("images/0b487ab8c375898c979cd77ce2c72daceb127a24cd8e1a926a895d40.jpg")
+
 #
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
@@ -145,8 +142,7 @@ if selected == "About me":
             st.write("Hello, I am a 14 year old, python learning student."" "
              "This is the first python project I've ever made.")
             st.write("I'm a big fan of computers and their hardware, I am a proud owner of a beautiful system myself")
-        with right_column:
-            st.image(img_pc)
+        with right_column:
             st.write("specs [here](https://nl.pcpartpicker.com/list/4RYJN6)")
         
 
