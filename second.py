@@ -1,5 +1,6 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
+from streamlit_option_menu import option_menu
+
 
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
@@ -7,7 +8,8 @@ with (st.sidebar):
     selected = option_menu(
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
-
+
+
 #
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
@@ -123,15 +125,16 @@ if selected == "Chemistry Machine":
         st.success("Thank you for your feedback!")
         
 if selected == "Home":
+ if Question0 = "":
+        Quesstion0 = ""
     st.title("Home")
-    st.subheader("Welcome to my wonderful website, I hope you enjoy!")
+    st.subheader("Welcome to my wonderful website, I hope you enjoy (Question0)!")
     st.write("#")
     st.write("This is where I store all my projects")
     st.write("I hope you enjoy what I made, dont be scared to leave some feedback behind")
     st.write("#")
     Question0 = st.text_input("What's your name?")
-
-
+   
 
 if selected == "About me":
     with st.container():
@@ -141,7 +144,8 @@ if selected == "About me":
             st.write("Hello, I am a 14 year old, python learning student."" "
              "This is the first python project I've ever made.")
             st.write("I'm a big fan of computers and their hardware, I am a proud owner of a beautiful system myself")
-        with right_column:
+        with right_column:
+
             st.write("specs [here](https://nl.pcpartpicker.com/list/4RYJN6)")
         
 
