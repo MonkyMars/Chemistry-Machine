@@ -125,7 +125,7 @@ if selected == "Chemistry Machine":
         st.success("Thank you for your feedback!")
         
 if selected == "Home":
- Question0 = ""
+    Question0 = ""
     st.title("Home")
     st.subheader("Welcome to my wonderful website, I hope you enjoy (Question0)!")
     st.write("#")
