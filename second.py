@@ -124,13 +124,13 @@ if selected == "Chemistry Machine":
         st.success("Thank you for your feedback!")
 
 if selected == "Home":
-    st.title("Home")
-    st.subheader("Welcome to my wonderful website, I hope you enjoy!")
-    st.write("#")
-    st.write("This is where I store all my projects")
-    st.write("I hope you enjoy what I made, dont be scared to leave some feedback behind")
-    st.write("#")
-    Question0 = st.text_input("What's your name?")
+    with st.container():
+         st.title("Home")
+         st.subheader("Welcome to my wonderful website, I hope you enjoy!")st.write("#")
+         st.write("This is where I store all my projects")
+         st.write("I hope you enjoy what I made, dont be scared to leave some feedback behind")
+         st.write("#")
+         st.text_input("What's your name?")
    
 
 if selected == "About me":
