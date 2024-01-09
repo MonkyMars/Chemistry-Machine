@@ -123,7 +123,8 @@ if selected == "Chemistry Machine":
     Feedback = st.text_input("What's your feedback?")
     if Feedback:
         st.success("Thank you for your feedback!")
-        
+
+Question0 = ""
 if selected == "Home":
     st.title("Home")
     st.subheader("Welcome to my wonderful website, I hope you enjoy"), (Question0)
