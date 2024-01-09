@@ -9,7 +9,7 @@ with (st.sidebar):
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 
-Question = ""
+Question0 = ""
 #
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
