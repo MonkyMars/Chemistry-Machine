@@ -161,7 +161,7 @@ if selected == "Projects":
     st.write("#")
     st.subheader("This website")
     st.write("I made this website originally to make my Chemistry Machine more portable and accessible,"
-             "but after a while it seemed like Im gonna use it for all my projects")
+             " but after a while it seemed like Im gonna use it for all my projects")
     st.write("#")
     st.subheader("Future")
     st.write("My plans for the future are")
