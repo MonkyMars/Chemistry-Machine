@@ -45,7 +45,7 @@ if selected == "Chemistry Machine":
     st.write("This is a project I made myself using python and streamlit")
     st.write("#")
     Question1 = st.text_input("Which molecule do you want to know? **").lower()
-    Question2 = st.selectbox('What do you want to know about this molecule or atom?',
+    Question2 = st.selectbox('What do you want to know about this molecule or atom? **',
                              ('', 'Weight', 'Molecular formula'))
 
 if selected == "Projects":
