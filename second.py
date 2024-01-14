@@ -51,7 +51,7 @@ if selected == "Chemistry Machine":
 if selected == "Projects":
     Question1 = ""
     Question2 = ""
-    Feedback = ""
+    
 
 if selected == "About me":
     Question1 = ""
