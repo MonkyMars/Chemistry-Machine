@@ -136,6 +136,8 @@ if selected == "Home":
          st.write("All the projects I've made so far are made fully in python")
          st.write("#")
          Name = st.text_input("What's your name?")
+         if Name:
+            Name = "N/A"
    
 
 if selected == "About me":
@@ -171,9 +173,6 @@ if selected == "Projects":
     st.write("My plans for the future are")
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
-
-if Name:
-    Name = "N/A"
 
 with open('data.txt','a') as file: 
     print(Name, Question1, Question2, Feedback,file=file)
