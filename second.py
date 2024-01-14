@@ -77,7 +77,7 @@ if Question1 == "water" and Question2 == "Molecular formula":
 if Question1 == "ammonia" and Question2 == "Molecular formula":
     answer = Ammoniak_moleculen
 
-if Question1 == "carbon dioxide" and Question2 == "Molecular formula":
+if Question1 == "carbondioxide" and Question2 == "Molecular formula":
     answer = Koolstofdioxide_moleculen
 
 if Question1 == "alcohol" and Question2 == "Molecular formula":
@@ -86,10 +86,10 @@ if Question1 == "alcohol" and Question2 == "Molecular formula":
 if Question1 == "methane" and Question2 == "Molecular formula":
     answer = Methaan_moleculen
 
-if Question1 == "sulphuric acid" and Question2 == "Molecular formula":
+if Question1 == "sulphuricacid" and Question2 == "Molecular formula":
     answer = Zwavelzuur_moleculen
 
-if Question1 == "sulphuric dioxide" and Question2 == "Molecular formula":
+if Question1 == "sulphuricdioxide" and Question2 == "Molecular formula":
     answer = Zwaveldioxide_moleculen
 
 #gewichten
@@ -98,16 +98,19 @@ if selected == "Chemistry Machine":
         answer = Water_gewicht
     if Question1 == "ammonia" and Question2 == "Weight":
         answer = Ammoniak_gewicht
-    if Question1 == "carbon dioxide" and Question2 == "Weight":
+    if Question1 == "carbondioxide" and Question2 == "Weight":
         answer = Koolstofdioxide_gewicht
     if Question1 == "alcohol" and Question2 == "Weight":
         answer = Alcohol_gewicht
     if Question1 == "methane" and Question2 == "Weight":
         answer = Methaan_gewicht
-    if Question1 == "sulphuric acid" and Question2 == "Weight":
+    if Question1 == "sulphuricacid" and Question2 == "Weight":
         answer = Zwavelzuur_gewicht
-    if Question1 == "sulphuric dioxide" and Question2 == "Weight":
+    if Question1 == "sulphuricdioxide" and Question2 == "Weight":
         answer = Zwaveldioxide_gewicht
+for i in Question1:
+    if i == " ":
+        continue
 
 # website deel 2
 
