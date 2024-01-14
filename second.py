@@ -119,8 +119,8 @@ if selected == "Chemistry Machine":
     for i in Question1:
     if i == " ":
         continue
-     if Question2 == "Weight" or "Molecular formula":
     st.write("_Your answer is_", answer)
+        
     st.write("---")
     st.write("##")
     st.subheader("Feedback")
