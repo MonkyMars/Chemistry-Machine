@@ -180,7 +180,7 @@ if selected == "Projects":
     st.write("* create more projects which can either help people or to learn to understand python better")
 
 with open('data.txt','a') as file: 
-    print(hello,file=file)
+    print('hello',file=file)
 with open("data.txt") as f:
     print(f.read())
               
