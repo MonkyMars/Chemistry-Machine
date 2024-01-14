@@ -172,7 +172,7 @@ if selected == "Projects":
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
 
-if name: "":
+if name == "":
     name = "N/A"
 
 with open('data.txt','w') as file: 
