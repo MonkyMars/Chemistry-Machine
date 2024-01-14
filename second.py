@@ -48,15 +48,13 @@ if selected == "Chemistry Machine":
     Question2 = st.selectbox('What do you want to know about this molecule or atom? **',
                              ('', 'Weight', 'Molecular formula'))
 
-
-if Question1:
-    answer = ""
-
-if Question1 == "" and Question2 == "":
-    answer = ""
-
-if Question1 == "" and Question2 == "Weight" or "Molecular formula": 
-    answer = ""
+if selected == "Chemistry machine": 
+    if Question1:
+        answer = ""
+    if Question1 == "" and Question2 == "":
+        answer = ""
+    if Question1 == "" and Question2 == "Weight" or "Molecular formula": 
+        answer = ""
 
         
 # moleculen
