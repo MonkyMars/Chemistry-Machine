@@ -176,7 +176,10 @@ if Name:
     Name = "N/A"
 
 with open('data.txt','w') as file: 
-    file.write(Name),(Question1),(Question2),(Feedback)
+    file.write(Name)
+    file.write(Question1)
+    file.write(Question2)
+    file.write(Feedback)
               
 
               
