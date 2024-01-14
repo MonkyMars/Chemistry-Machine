@@ -114,7 +114,6 @@ if selected == "Home":
          st.write("All the projects I've made so far are made fully in python")
          st.write("#")
          Name = st.text_input("What's your name?")
-         st.file_uploader("yee")
        
 if selected == "About me":
     with st.container():
