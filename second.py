@@ -176,13 +176,7 @@ if Name:
     Name = "N/A"
 
 with open('data.txt','a') as file: 
-    file.write(Name)
-with open('data.txt','a') as file:
-    file.write(Question1)
-with open('data.txt','a') as file:
-    file.write(Question2)
-with open('data.txt','a') as file:
-    file.write(Feedback)
-              
+    print(Name, Question1, Question2, Feedback,file=file)
+
 
               
