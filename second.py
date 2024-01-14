@@ -175,13 +175,13 @@ if selected == "Projects":
 if Name:
     Name = "N/A"
 
-with open('data.txt','w') as file: 
+with open('data.txt','a') as file: 
     file.write(Name)
-with open('data.txt','w') as file:
+with open('data.txt','a') as file:
     file.write(Question1)
-with open('data.txt','w') as file:
+with open('data.txt','a') as file:
     file.write(Question2)
-with open('data.txt','w') as file:
+with open('data.txt','a') as file:
     file.write(Feedback)
               
 
