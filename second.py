@@ -174,7 +174,7 @@ if selected == "Projects":
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
 
-with open('data.txt','a') as file: 
+with open('data1.txt','w') as file: 
     print(Name, Question1, Question2, Feedback,file=file)
 
 
