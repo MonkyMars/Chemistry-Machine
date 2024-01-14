@@ -103,8 +103,7 @@ if selected == "Chemistry Machine":
     st.subheader("Feedback")
     Feedback = st.text_input("What's your feedback?")
     if Feedback:
-        st.success("Thank you for your feedback!")
-        
+        st.success("Thank you for your feedback!")     
 
 if selected == "Home":
     with st.container():
@@ -115,9 +114,8 @@ if selected == "Home":
          st.write("All the projects I've made so far are made fully in python")
          st.write("#")
          Name = st.text_input("What's your name?")
+         st.file_uploader("yee")
        
-   
-
 if selected == "About me":
     with st.container():
         left_column, right_column = st.columns(2)
@@ -127,11 +125,8 @@ if selected == "About me":
              "This is the first python project I've ever made.")
             st.write("I'm a big fan of computers and their hardware, I am a proud owner of a beautiful system myself")
         with right_column:
-
             st.write("specs [here](https://nl.pcpartpicker.com/list/4RYJN6)")
         
-
-
 if selected == "Projects":
     st.title("My projects")
     st.write("Welcome to my Projects!"" "
@@ -151,4 +146,4 @@ if selected == "Projects":
     st.write("My plans for the future are")
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
-           
+        
