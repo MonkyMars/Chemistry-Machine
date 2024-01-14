@@ -70,10 +70,6 @@ if Question1:
 if Question1 == "" and Question2 == "":
     answer = ""
 
-
-for i in Question1:
-    if i == " ":
-        continue
         
 # moleculen
 if Question1 == "water" and Question2 == "Molecular formula":
@@ -119,8 +115,12 @@ if selected == "Chemistry Machine":
 if selected == "Chemistry Machine":
     st.write("** Required field")
     st.write("#")
-    if Question2 == "Weight" or "Molecular formula":
-        st.write("_Your answer is_", answer)
+
+    for i in Question1:
+    if i == " ":
+        continue
+     if Question2 == "Weight" or "Molecular formula":
+    st.write("_Your answer is_", answer)
     st.write("---")
     st.write("##")
     st.subheader("Feedback")
