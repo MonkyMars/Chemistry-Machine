@@ -116,6 +116,7 @@ if selected == "Chemistry Machine":
 # website deel 2
 
 if selected == "Chemistry Machine":
+    Name = "N/A"
     st.write("** Required field")
     st.write("#")
     if Question2 == "Weight" or "Molecular formula":
@@ -138,9 +139,12 @@ if selected == "Home":
          Name = st.text_input("What's your name?")
          if Name:
             Name = "N/A"
+         Feedback = "N/A"
    
 
 if selected == "About me":
+    Name = "N/A"
+    Feedback = "N/A"
     with st.container():
         left_column, right_column = st.columns(2)
         with left_column:
@@ -155,6 +159,8 @@ if selected == "About me":
 
 
 if selected == "Projects":
+    Name = "N/A"
+    Feedback = "N/A"
     st.title("My projects")
     st.write("Welcome to my Projects!"" "
               "I've only made two projects as of January first 2024."" "
@@ -177,5 +183,6 @@ if selected == "Projects":
 with open('data1.txt','w') as file: 
     print(Name, Question1, Question2, Feedback,file=file)
 
-
+Name = "N/A"
+Feedback = "N/A"
               
