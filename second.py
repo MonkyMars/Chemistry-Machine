@@ -119,7 +119,7 @@ if selected == "Chemistry Machine":
     st.write("** Required field")
     st.write("#")
     if Question2 == "Weight" or "Molecular formula":
-        st.write("_Your answer is_", answer, end="")
+        st.write("_Your answer is_", answer)
     st.write("---")
     st.write("##")
     st.subheader("Feedback")
