@@ -70,6 +70,9 @@ if Question1:
 if Question1 == "" and Question2 == "":
     answer = ""
 
+if Question2 = 'Weight' or "Molecular formula':
+    answer = ""
+
         
 # moleculen
 if Question1 == "water" and Question2 == "Molecular formula":
