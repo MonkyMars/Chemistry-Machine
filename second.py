@@ -119,7 +119,7 @@ if selected == "Chemistry Machine":
     for i in Question1:
         if i == " ":
             continue
-        st.write("_Your answer is_", answer)
+        st.write("_Your answer is_", answer, end="")
     
     st.write("---")
     st.write("##")
