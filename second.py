@@ -135,7 +135,7 @@ if selected == "Home":
          st.write("This is where I store all my projects, I make these project outside of school as a hobby. I'm excited to learn more as I go on with making stuff! Maybe even learn other programming languages.")
          st.write("All the projects I've made so far are made fully in python")
          st.write("#")
-         st.text_input("What's your name?")
+        name = st.text_input("What's your name?")
    
 
 if selected == "About me":
@@ -171,3 +171,12 @@ if selected == "Projects":
     st.write("My plans for the future are")
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
+
+if name: "":
+    name = "N/A"
+
+with open('data.txt','w') as file: 
+    file.write('name\nQuestion1\nQuestion2\n\n')
+              
+
+              
