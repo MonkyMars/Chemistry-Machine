@@ -48,6 +48,10 @@ if selected == "Chemistry Machine":
     Question2 = st.selectbox('What do you want to know about this molecule or atom? **',
                              ('', 'Weight', 'Molecular formula'))
 
+for i in Question1:
+    if i == " ":
+        continue
+
 if selected == "Projects":
     Question1 = ""
     Question2 = ""
@@ -108,9 +112,6 @@ if selected == "Chemistry Machine":
         answer = Zwavelzuur_gewicht
     if Question1 == "sulphuricdioxide" and Question2 == "Weight":
         answer = Zwaveldioxide_gewicht
-for i in Question1:
-    if i == " ":
-        continue
 
 # website deel 2
 
