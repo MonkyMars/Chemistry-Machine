@@ -183,6 +183,4 @@ if selected == "Projects":
 with open('data.txt','a') as file: 
     print(Name, Question1, Question2, Feedback,file=file)
 
-Name = "N/A"
-Feedback = "N/A"
               
