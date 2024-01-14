@@ -177,8 +177,11 @@ if Name:
 
 with open('data.txt','w') as file: 
     file.write(Name)
+with open('data.txt','w') as file:
     file.write(Question1)
+with open('data.txt','w') as file:
     file.write(Question2)
+with open('data.txt','w') as file:
     file.write(Feedback)
               
 
