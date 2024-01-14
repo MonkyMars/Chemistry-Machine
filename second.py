@@ -70,7 +70,7 @@ if Question1:
 if Question1 == "" and Question2 == "":
     answer = ""
 
-if Question1 = "" and Question2 = 'Weight' or "Molecular formula': 
+if Question1 = "" and Question2 = "Weight" or "Molecular formula": 
     answer = ""
 
         
