@@ -139,7 +139,6 @@ if selected == "Home":
          st.write("#")
          Name = st.text_input("What's your name?")
          if Name:
-            Name = "N/A"
          Feedback = ""
    
 
