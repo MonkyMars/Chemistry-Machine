@@ -116,7 +116,6 @@ if selected == "Chemistry Machine":
 # website deel 2
 
 if selected == "Chemistry Machine":
-    Name = "f"
     st.write("** Required field")
     st.write("#")
     if Question2 == "Weight" or "Molecular formula":
@@ -138,12 +137,10 @@ if selected == "Home":
          st.write("All the projects I've made so far are made fully in python")
          st.write("#")
          Name = st.text_input("What's your name?")
-         Feedback = "N/a"
+       
    
 
 if selected == "About me":
-    Name = "f"
-    Feedback = "f"
     with st.container():
         left_column, right_column = st.columns(2)
         with left_column:
@@ -158,8 +155,6 @@ if selected == "About me":
 
 
 if selected == "Projects":
-    Name = "f"
-    Feedback = "f"
     st.title("My projects")
     st.write("Welcome to my Projects!"" "
               "I've only made two projects as of January first 2024."" "
