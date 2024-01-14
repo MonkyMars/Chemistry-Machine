@@ -173,7 +173,4 @@ if selected == "Projects":
     st.write("My plans for the future are")
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
-
-with open('data.txt','a') as file: 
-    file.write("hrllo")
-              
+           
