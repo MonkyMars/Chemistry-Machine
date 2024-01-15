@@ -10,6 +10,14 @@ with (st.sidebar):
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 #
+conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+existing_data = conn.read(worksheet="Vendors", usecols=list(range(4)), ttl=5)
+existing_data = existing_data.dropna(how="all")
+
+if selected == "Home":
+    st.dataframe(existing_data)
+
+#
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
     Ammoniak_moleculen = "N", "H3"
