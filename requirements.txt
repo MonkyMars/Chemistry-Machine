@@ -77,4 +77,4 @@ validators==0.22.0
 watchdog==3.0.0
 yarg==0.1.9
 zipp==3.17.0
-
+gspread==4.0.1
