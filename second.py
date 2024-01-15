@@ -146,7 +146,7 @@ if selected == "Projects":
     st.write("* create more projects which can either help people or to learn to understand python better")
 
 
-db = TinyDB('data.json')
+db = TinyDB('data1.json')
 if selected == "Chemistry Machine":
     if Question1 and Question2 and Feedback:
         db.insert({ 
