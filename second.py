@@ -154,7 +154,11 @@ if selected == "Chemistry Machine":
             'Q2:': Question2,
             'Feedback:': Feedback
         })
-
+if selected == "Home":
+    if Name:
+        db.insert({
+            'Name:': Name
+        })
 
 
 
