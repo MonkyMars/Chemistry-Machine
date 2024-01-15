@@ -148,7 +148,7 @@ if selected == "Projects":
 
 db = TinyDB('data.json')
 if selected == "Chemistry Machine":
-    if Name and Question1 and Question2 and Feedback:
+    if Question1 and Question2 and Feedback:
         db.insert({ 
             'Q1:': Question1,
             'Q2:': Question2,
