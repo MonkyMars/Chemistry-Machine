@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 import pandas as pd 
-from streamlit_gsheets import GSheetsconnection
+from streamlit_gsheets import GSheetsConnection
 
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
