@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-from tinydb import TinyDB
+import pandas as pd 
+from streamlit_gsheets import GSheetsconnection
 
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
@@ -145,13 +146,6 @@ if selected == "Projects":
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
 
-
-db = TinyDB('data.json')
-if selected == "Home":
-    if Name:
-        db.insert({
-            'Name': Name
-        })
 
 
 
