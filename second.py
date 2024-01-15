@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-
+from tinydb import TinyDB
 
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
@@ -8,7 +8,6 @@ with (st.sidebar):
     selected = option_menu(
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
-
 #
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
@@ -145,4 +144,19 @@ if selected == "Projects":
     st.write("My plans for the future are")
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
-        
+
+
+db = TinyDB('data.json')
+if Name and Question1 and Question2 and Feedback:
+    db.insert({
+        'name:' name, 
+        'Q1:': Question1,
+        'Q2:': Question2,
+        'Feedback:': Feedback
+    })
+
+
+
+
+
+
