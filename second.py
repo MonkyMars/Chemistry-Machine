@@ -48,8 +48,8 @@ if selected == "Chemistry Machine":
                              ('', 'Weight', 'Molecular formula'))
 
 if selected == "Chemistry Machine": 
-    if Question1:
-        answer = ""
+    if Question1 == "secret_login" and Question2 == "yes":
+        st.success("succesfully logged in")       
     if Question1 == "" and Question2 == "":
         answer = ""
     if Question1 == "" and Question2 == "Weight" or "Molecular formula": 
@@ -148,7 +148,6 @@ if selected == "Projects":
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
     
-
 
 
 
