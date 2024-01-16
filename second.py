@@ -151,9 +151,11 @@ if selected == "Projects":
 if selected == "Calculator":
     st.title("Calculator")
     if st.button("1"):
-        a1 = "1"
+        n1 = "1"
     if st.button("2"):
-        a2 = "2"
+        n2 = "2"
+    answer = n2 * n1
+    st.write(answer)
 
 
 
