@@ -150,7 +150,7 @@ if selected == "Calculator":
     st.title("Calculator")
     st.write("#")
     st.write("Welcome to my selfmade calculator made in python")
-    1 = st.button("1")
+    st.button("1")
 
 
 
