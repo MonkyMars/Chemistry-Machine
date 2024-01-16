@@ -146,6 +146,11 @@ if selected == "Projects":
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
 
+if selected == "Calculator":
+    st.title("Calculator")
+    st.write("#")
+    st.write("Welcome to my selfmade calculator made in python")
+    1 = st.button("1")
 
 
 
