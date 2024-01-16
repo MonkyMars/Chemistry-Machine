@@ -48,7 +48,7 @@ if selected == "Chemistry Machine":
                              ('', 'Weight', 'Molecular formula'))
 
 if selected == "Chemistry Machine": 
-    if Question1 == "secret_login" and Question2 == "Weight":
+    if Question1 == "secret_login":
         st.success("succesfully logged in")
         st.write("Welcome dev")
     if Question1 == "" and Question2 == "":
