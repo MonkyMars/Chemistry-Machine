@@ -154,6 +154,9 @@ if selected == "Calculator":
     st.write("#")
     st.write("Welcome to my selfmade calculator made in python")
     st.button("1")
+    st.button("2")
+    st.button("3")
+    
 
 
 
