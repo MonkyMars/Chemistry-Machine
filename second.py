@@ -124,6 +124,7 @@ if selected == "About me":
              "This is the first python project I've ever made.")
             st.write("I'm a big fan of computers and their hardware, I am a proud owner of a beautiful system myself")
         with right_column:
+            st.write("#")
             st.image("Pc_1.png")
             st.write("specs [here](https://nl.pcpartpicker.com/list/4RYJN6)")
         
