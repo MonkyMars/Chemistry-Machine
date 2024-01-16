@@ -1,7 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 import pandas as pd 
-from streamlit_gsheets import GSheetsConnection
 
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
@@ -10,12 +9,6 @@ with (st.sidebar):
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 #
-conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-existing_data = conn.read(worksheet="Vendors", usecols=list(range(4)), ttl=5)
-existing_data = existing_data.dropna(how="all")
-
-if selected == "Home":
-    st.dataframe(existing_data)
 
 #
 if selected == "Chemistry Machine":
