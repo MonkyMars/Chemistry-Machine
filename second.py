@@ -6,7 +6,7 @@ st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 with (st.sidebar):
     selected = option_menu(
         menu_title=None,
-        options=["Home", "Chemistry Machine", "Projects", "About me"])
+        options=["Home", "Chemistry Machine", "Calculator", "Projects", "About me"])
 #
 
 #
