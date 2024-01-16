@@ -154,10 +154,11 @@ if selected == "Calculator":
         n1 = "1"
     if st.button("2"):
         n2 = "2"
-    if st.button("2") and st.button("1"):
-        sanswer = n2 * n1
-    st.write(answer)
-
+    if st.button("3"):
+        n3 = "3"
+    if st.button("4"): 
+        n4 = "4"
+    
 
 
 
