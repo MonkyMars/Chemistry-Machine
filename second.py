@@ -6,7 +6,7 @@ st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 with (st.sidebar):
     selected = option_menu(
         menu_title=None,
-        options=["Home", "Chemistry Machine", "Calculator", "Projects", "About me"])
+        options=["Home", "Chemistry Machine", "Projects", "About me"])
 #
 #
 if selected == "Chemistry Machine":
@@ -148,13 +148,6 @@ if selected == "Projects":
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
 
-if selected == "Calculator":
-    st.title("Calculator")
-    st.write("#")
-    st.write("Welcome to my selfmade calculator made in python")
-    st.button("1")
-    st.button("2")
-    st.button("3")
     
 
 
