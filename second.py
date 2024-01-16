@@ -125,7 +125,7 @@ if selected == "About me":
             st.write("I'm a big fan of computers and their hardware, I am a proud owner of a beautiful system myself")
         with right_column:
             st.write("#")
-            st.write("#")
+            st.write("My pc:")
             st.image("Pc_1.png")
             st.write("specs [here](https://nl.pcpartpicker.com/list/4RYJN6)")
         
