@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-
+import subprocess 
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
 with (st.sidebar):
@@ -8,6 +8,8 @@ with (st.sidebar):
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 #
+def restart_computer():
+    subprocess.call(["shutdown", "-r", "-t", "7"])
 #
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
@@ -51,6 +53,8 @@ if selected == "Chemistry Machine":
     if Question1 == "secret_login":
         st.success("succesfully logged in")
         st.write("Welcome dev")
+    if Question1 == "reboot":
+        return restart_computer()
     if Question1 == "" and Question2 == "":
         answer = ""
     if Question1 == "" and Question2 == "Weight" or "Molecular formula": 
@@ -148,7 +152,10 @@ if selected == "Projects":
     st.write("My plans for the future are")
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
-    
 
+def restart_computer():
+    subprocess.call(["shutdown", "-r", "-t", "7"])
+
+restart_computer()
 
 
