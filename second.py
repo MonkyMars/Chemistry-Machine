@@ -54,7 +54,7 @@ if selected == "Chemistry Machine":
         st.success("succesfully logged in")
         st.write("Welcome dev")
     if Question1 == "reboot":
-        restart_computer()
+       return st.error("nuh uh")
     if Question1 == "" and Question2 == "":
         answer = ""
     if Question1 == "" and Question2 == "Weight" or "Molecular formula": 
