@@ -120,7 +120,7 @@ if selected == "Home":
          st.write("#")
          Name = st.text_input("What's your name?")
          if Name:
-             st.write("Welcome,", __Name__,".")
+             st.write("Welcome,", Name,".")
        
 if selected == "About me":
     with st.container():
