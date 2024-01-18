@@ -139,9 +139,8 @@ if selected == "Chemistry Machine":
         st.success("Thank you for your feedback!")     
 
 if selected == "Home":
-    
-        with st.container():
-         def Name():
+    with st.container():
+        def Name():
            name = st.text_input("What's your name?")
            while len(name) == 0:
                name = " "
