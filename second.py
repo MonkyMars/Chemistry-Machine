@@ -87,7 +87,7 @@ if selected == "Chemistry Machine":
         answer = Zuurstof_moleculen
     if Question1 == "nitrogen" and Question2 == "Molecular formula":
         answer = Stikstof_moleculen
-    if Question1 == "sarbon" and Question2 == "Molecular formula":
+    if Question1 == "carbon" and Question2 == "Molecular formula":
         answer = Koolstof_moleculen
     if Question1 == "sulfur" and Question2 == "Molecular formula":
         answer = Zwavel_moleculen
