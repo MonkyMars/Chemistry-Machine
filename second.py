@@ -141,12 +141,13 @@ if selected == "Chemistry Machine":
 if selected == "Home":
     with st.container():
          def Name():
-           Name = st.text_input("What's your name?")
+           name = st.text_input("What's your name?")
          if len(Name) == 0:
-             Name = " "
+             name = " "
          else:
-             if Name:
-         st.title("Home", Name)
+             Name()
+        
+         st.title("Home", name)
          st.subheader("Welcome to my wonderful website, I hope you enjoy!")
          st.write("#")
          st.write("This is where I store all my projects, I make these project outside of school as a hobby. I'm excited to learn more as I go on with making stuff! Maybe even learn other programming languages.")
