@@ -142,10 +142,6 @@ if selected == "Home":
     with st.container():
          def Name():
            name = st.text_input("What's your name?", key="name_input")
-           while len(name) == 0:
-               name = " "
-           st.session_state['name_input'] = name
-   
     if 'name_input' not in st.session_state:
         name = "NAN"
     else:
