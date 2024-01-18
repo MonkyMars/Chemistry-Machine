@@ -17,7 +17,7 @@ if selected == "Chemistry Machine":
     Methaan_moleculen = "C", "H4"
     Zwavelzuur_moleculen = "H2", "S", "O4"
     Zwaveldioxide_moleculen = "S", "O2"
-    Zuurstof_moleculen = "O",
+    Zuurstof_moleculen = "O";
     #alleengewicht
     H_gewicht = 1.008
     O_gewicht = 16.00
