@@ -145,9 +145,9 @@ if selected == "Home":
     if 'name_input' not in st.session_state:
         name = ""
     else:
-        name = st.session_state['name_input']
+        name = " " + st.session_state['name_input']
     st.title("Home")
-    st.subheader(f"Welcome {name}, to my wonderful website!")
+    st.subheader(f"Welcome{name}, to my wonderful website, I hope you enjoy!")
     st.write("#")
     st.write("This is where I store all my projects, I make these project outside of school as a hobby. I'm excited to learn more as I go on with making stuff! Maybe even learn other programming languages.")
     st.write("All the projects I've made so far are made fully in python")
