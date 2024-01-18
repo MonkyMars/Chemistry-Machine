@@ -85,6 +85,23 @@ if selected == "Chemistry Machine":
         answer = Zwaveldioxide_moleculen
     if Question1 == "oxygen" and Question2 == "Molecular formula":
         answer = Zuurstof_moleculen
+    if Question1 == "nitrogen" and Question2 == "Molecular formula":
+        answer = Stikstof_moleculen
+    if Question1 == "sarbon" and Question2 == "Molecular formula":
+        answer = Koolstof_moleculen
+    if Question1 == "sulfur" and Question2 == "Molecular formula":
+        answer = Zwavel_moleculen
+    if Question1 == "boron" and Question2 == "Molecular formula":
+        answer = Boor_moleculen
+    if Question1 == "phosphorus" and Question2 == "Molecular formula":
+        answer = Fosfor_moleculen
+    if Question1 == "iodine" and Question2 == "Molecular formula":
+        answer = Jood_moleculen
+    if Question1 == "chlorine" and Question2 == "Molecular formula":
+        answer = Chloor_moleculen
+
+    
+
 
 #gewichten
 if selected == "Chemistry Machine":
