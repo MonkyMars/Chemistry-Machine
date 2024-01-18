@@ -144,7 +144,8 @@ if selected == "Home":
            name = st.text_input("What's your name?")
            while len(name) == 0:
                name = " "
-           return name 
+           return name
+    name = Name()
     st.title("Home")
     st.subheader("Welcome", name,","" to my wonderful website, I hope you enjoy!")
     st.write("#")
