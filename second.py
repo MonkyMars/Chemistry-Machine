@@ -79,9 +79,9 @@ if selected == "Chemistry Machine":
         answer = Alcohol_moleculen
     if Question1 == "methane" and Question2 == "Molecular formula":
         answer = Methaan_moleculen
-    if Question1 == "sulphuric acid" and Question2 == "Molecular formula":
+    if Question1 == "sulfuric acid" and Question2 == "Molecular formula":
         answer = Zwavelzuur_moleculen
-    if Question1 == "sulphuric dioxide" and Question2 == "Molecular formula":
+    if Question1 == "sulfuric dioxide" and Question2 == "Molecular formula":
         answer = Zwaveldioxide_moleculen
     if Question1 == "oxygen" and Question2 == "Molecular formula":
         answer = Zuurstof_moleculen
