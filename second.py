@@ -139,13 +139,18 @@ if selected == "Chemistry Machine":
         st.success("Thank you for your feedback!")     
 
 if selected == "Home":
-    with st.container():
+        with st.container():
          def Name():
            name = st.text_input("What's your name?")
            while len(name) == 0:
                name = " "
-           return name
-    name = Name()
+           st.session_state['name'] = name
+    
+    name = "NAN"
+    if 'name' not in st.session_state:
+        name = "NAN"
+    else:
+        name = st.session_state['name']
     st.title("Home")
     st.subheader("Welcome", name,","" to my wonderful website, I hope you enjoy!")
     st.write("#")
