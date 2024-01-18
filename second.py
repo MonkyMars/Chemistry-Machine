@@ -74,7 +74,7 @@ if selected == "Chemistry Machine":
         answer = Zwavelzuur_moleculen
     if Question1 == "sulphuric dioxide" and Question2 == "Molecular formula":
         answer = Zwaveldioxide_moleculen
-     if Question1 == "oxygen" and Question2 == "Molecular formula":
+    if Question1 == "oxygen" and Question2 == "Molecular formula":
         answer = zuurstof_moleculen
 
 #gewichten
