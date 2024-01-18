@@ -154,9 +154,5 @@ if selected == "Projects":
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
 
-def restart_computer():
-    subprocess.call(["shutdown", "-r", "-t", "7"])
-
-restart_computer()
 
 
