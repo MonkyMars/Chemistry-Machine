@@ -93,7 +93,7 @@ if selected == "Chemistry Machine":
         answer = Zwavelzuur_gewicht
     if Question1 == "sulphuric dioxide" and Question2 == "Weight":
         answer = Zwaveldioxide_gewicht
-     if Question1 == "oxygen" and Question2 == "Weight":
+    if Question1 == "oxygen" and Question2 == "Weight":
         answer = O_gewicht
 
 # website deel 2
