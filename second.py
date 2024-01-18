@@ -146,10 +146,10 @@ if selected == "Home":
                name = " "
            st.session_state['name'] = name
    
-    if 'name' not in st.session_state:
-        name = "NAN"
-    else:
-        name = st.session_state['name']
+        if 'name' not in st.session_state:
+            name = "NAN"
+        else:
+            name = st.session_state['name']
 
     st.title("Home")
     st.subheader("Welcome", name,","" to my wonderful website, I hope you enjoy!")
