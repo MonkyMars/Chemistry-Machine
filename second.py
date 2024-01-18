@@ -18,6 +18,10 @@ if selected == "Chemistry Machine":
     Zwavelzuur_moleculen = "H2", "S", "O4"
     Zwaveldioxide_moleculen = "S", "O2"
     Zuurstof_moleculen = "O",
+    Waterstof_moleculen = "H",
+    Stikstof_moleculen = "N",
+    Koolstof_moleculen = "C",
+    Zwavel_moleculen = "S",
     #alleengewicht
     H_gewicht = 1.008
     O_gewicht = 16.00
