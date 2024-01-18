@@ -121,6 +121,8 @@ if selected == "Chemistry Machine":
         answer = Zwaveldioxide_gewicht
     if Question1 == "oxygen" and Question2 == "Weight":
         answer = O_gewicht
+    if Question1 == "hydrogen" and Question2 == "Weight":
+        answer = H_gewicht
 
 # website deel 2
 
