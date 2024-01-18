@@ -22,6 +22,11 @@ if selected == "Chemistry Machine":
     Stikstof_moleculen = "N",
     Koolstof_moleculen = "C",
     Zwavel_moleculen = "S",
+    Boor_moleculen = "B",
+    Fluor_moleculen = "F",
+    Fosfor_moleculen = "P",
+    Jood_moleculen = "I",
+    Chloor_moleculen = "Cl",
     #alleengewicht
     H_gewicht = 1.008
     O_gewicht = 16.00
