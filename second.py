@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-import subprocess 
+
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
 with (st.sidebar):
@@ -8,8 +8,6 @@ with (st.sidebar):
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 #
-def restart_computer():
-    subprocess.call(["shutdown", "-r", "-t", "7"])
 #
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
@@ -19,6 +17,7 @@ if selected == "Chemistry Machine":
     Methaan_moleculen = "C", "H4"
     Zwavelzuur_moleculen = "H2", "S", "O4"
     Zwaveldioxide_moleculen = "S", "O2"
+    zuurstof_moleculen = "O"
     #alleengewicht
     H_gewicht = 1.008
     O_gewicht = 16.00
@@ -53,8 +52,6 @@ if selected == "Chemistry Machine":
     if Question1 == "secret_login":
         st.success("succesfully logged in")
         st.write("Welcome dev")
-    if Question1 == "reboot":
-        st.error("nuh uh")
     if Question1 == "" and Question2 == "":
         answer = ""
     if Question1 == "" and Question2 == "Weight" or "Molecular formula": 
@@ -77,6 +74,8 @@ if selected == "Chemistry Machine":
         answer = Zwavelzuur_moleculen
     if Question1 == "sulphuric dioxide" and Question2 == "Molecular formula":
         answer = Zwaveldioxide_moleculen
+     if Question1 == "oxygen" and Question2 == "Molecular formula":
+        answer = zuurstof_moleculen
 
 #gewichten
 if selected == "Chemistry Machine":
@@ -94,6 +93,8 @@ if selected == "Chemistry Machine":
         answer = Zwavelzuur_gewicht
     if Question1 == "sulphuric dioxide" and Question2 == "Weight":
         answer = Zwaveldioxide_gewicht
+     if Question1 == "oxygen" and Question2 == "Weight":
+        answer = O_gewicht
 
 # website deel 2
 
