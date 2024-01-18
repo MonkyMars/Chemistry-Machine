@@ -143,7 +143,7 @@ if selected == "Home":
          def Name():
            name = st.text_input("What's your name?", key="name_input")
     if 'name_input' not in st.session_state:
-        name = "NAN"
+        name = ""
     else:
         name = st.session_state['name_input']
     st.title("Home")
