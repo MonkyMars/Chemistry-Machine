@@ -140,18 +140,16 @@ if selected == "Chemistry Machine":
 
 if selected == "Home":
     with st.container():
-        def update_name(name):
-            st.session_state['name'] = name
-        def Name():
-            name = st.text_input("What's your name?", on_change=update_name) 
-            while len(name) == 0:
-                name = " "
-            st.session_state['name'] = name
+         def Name():
+           name = st.text_input("What's your name?", key="name_input")
+           while len(name) == 0:
+               name = " "
+           st.session_state['name_input'] = name
    
-    if 'name' not in st.session_state:
+    if 'name_input' not in st.session_state:
         name = "NAN"
     else:
-        name = st.session_state['name']
+        name = st.session_state['name_input']
     st.title("Home")
     st.subheader(f"Welcome {name}, to my wonderful website!")
     st.write("#")
