@@ -75,7 +75,7 @@ if selected == "Chemistry Machine":
         answer = Ammoniak_moleculen
     if Question1 == "carbon dioxide" and Question2 == "Molecular formula":
         answer = Koolstofdioxide_moleculen
-    if Question1 == "alcohol" and Question2 == "Molecular formula":
+    if Question1 == "ethanol" and Question2 == "Molecular formula":
         answer = Alcohol_moleculen
     if Question1 == "methane" and Question2 == "Molecular formula":
         answer = Methaan_moleculen
@@ -111,7 +111,7 @@ if selected == "Chemistry Machine":
         answer = Ammoniak_gewicht
     if Question1 == "carbon dioxide" and Question2 == "Weight":
         answer = Koolstofdioxide_gewicht
-    if Question1 == "alcohol" and Question2 == "Weight":
+    if Question1 == "ethanol" and Question2 == "Weight":
         answer = Alcohol_gewicht
     if Question1 == "methane" and Question2 == "Weight":
         answer = Methaan_gewicht
