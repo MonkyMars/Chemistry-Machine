@@ -217,8 +217,8 @@ if selected == "About me":
         contacting1 = ""
     sender0 = email
     sender1 = "chemistrymachine.sender@gmail.com"
-    receiver = "contact.chemistry.machine@gmail.com"
-    password = "Contactpy123"
+    receiver = "contact.chemistry.machine@gmail.com" #password = (Contactpy123)
+    password = "bqpi reoa cqxb emvi"
     if contacting == "Pc issues or questions":
         subject = "Pc issues or questions"
     else: 
