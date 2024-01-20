@@ -223,6 +223,8 @@ if selected == "About me":
     password = "Contactpy123"
     if contacting == "Pc issues or questions":
         subject = "Pc issues or questions"
+    else: 
+        subject = "EMAIL"
     if contacting == "Other":
         subject = "Other"
     body = contacting1, contacting2
