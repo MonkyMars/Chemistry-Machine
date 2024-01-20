@@ -233,7 +233,7 @@ if selected == "About me":
     subject: {subject}\n
     {body} 
     """
-    server = smtlib.SMTP("smtp.gmail.com", 587)
+    server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
     server.login(receiver,password)
     server.sendmail(sender,receiver,message)
