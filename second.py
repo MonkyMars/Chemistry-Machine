@@ -211,6 +211,11 @@ if selected == "About me":
     if contacting == "":
         contacting1 = ""
         contacting2 = ""
+    if contacting == "Pc issues":
+        contacting2 = ""
+    if contacting == "Other":
+        contacting1 = ""
     if email and contacting and contacting1 or contacting2:
         st.success("Thank you for contacting me, I will get back to you shortly!")
+    else: st.warning("Please fill out all fields")
 
