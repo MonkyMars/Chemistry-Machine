@@ -141,7 +141,7 @@ if selected == "Chemistry Machine":
 if selected == "Home":
     with st.container():
          def Name():
-           name = st.text_input("What's your name?", key="name_input")capitalize()
+           name = st.text_input("What's your name?", key="name_input").capitalize()
            name = " " + name
     if 'name_input' not in st.session_state:
         name = ""
