@@ -237,10 +237,3 @@ if selected == "About me":
         server.login(receiver,password)
         server.sendmail(sender,receiver,message)
         st.success("successfully notified")
-        
-
-
-
-
-
-
