@@ -173,6 +173,7 @@ if selected == "About me":
             st.write("My pc:")
             st.image("Pc_1.png")
             st.write("specs [here](https://nl.pcpartpicker.com/list/4RYJN6)")
+            st.write("I built this computer myself in august of 2023")
         
 if selected == "Projects":
     st.title("My projects")
