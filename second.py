@@ -199,8 +199,8 @@ if selected == "Projects":
 
 if selected == "About me":
     st.write("#")
-    st.write("---")
     st.write("#")
+    st.write("---")
     st.write("#")
     st.subheader("Contact")
     email = st.text_input("Enter your email here:")
