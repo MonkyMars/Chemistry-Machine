@@ -216,9 +216,9 @@ if selected == "About me":
     if contacting == "Other":
         contacting1 = ""
     sender0 = email
-    sender1 = "Levi.laptop@hotmail.com"
+    sender1 = "chemistrymachine.sender@gmail.com"
     receiver = "contact.chemistry.machine@gmail.com"
-    password = "HarryTheCat69!"
+    password = "Contactpy123"
     if contacting == "Pc issues or questions":
         subject = "Pc issues or questions"
     else: 
