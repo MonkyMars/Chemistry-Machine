@@ -215,12 +215,10 @@ if selected == "About me":
         contacting2 = ""
     if contacting == "Other":
         contacting1 = ""
-    if email and contacting and contacting1 or contacting2:
-        st.success("Thank you for contacting me, I will get back to you shortly!")
-    else: st.warning("Please fill out all fields")
-    sender = email
+    sender0 = email
+    sender1 = "Levi.laptop@hotmail.com"
     receiver = "contact.chemistry.machine@gmail.com"
-    password = "Contactpy123"
+    password = "HarryTheCat69!"
     if contacting == "Pc issues or questions":
         subject = "Pc issues or questions"
     else: 
@@ -228,13 +226,17 @@ if selected == "About me":
     if contacting == "Other":
         subject = "Other"
     body = contacting1, contacting2
-    message = f"""From: {sender}
+    message = f"""From: {sender0}
     To: {receiver}
     subject: {subject}\n
     {body} 
     """
-    server = smtplib.SMTP("smtp.gmail.com", 587)
-    server.starttls()
-    server.login(receiver,password)
-    server.sendmail(sender,receiver,message)
-    st.success("successfully notified")
+    if email and contacting and contacting1 or contacting2: 
+        server = smtplib.SMTP("smtp.gmail.com", 587)
+        server.starttls()
+        server.login(sender1,password)
+        server.sendmail(sender1,receiver,message)
+        st.success("Thank you for contacting me, I will get back to you shortly!")
+    else: st.warning("Please fill out all fields")
+        
+        
