@@ -141,7 +141,7 @@ if selected == "Chemistry Machine":
 if selected == "Home":
     with st.container():
          def Name():
-           name = st.text_input("What's your name?", key="name_input").capitalize()
+           name = st.text_input("What's your name?", key="name_input")
            name = " " + name
     if 'name_input' not in st.session_state:
         name = ""
@@ -152,7 +152,7 @@ if selected == "Home":
     else:
         space = ""
     st.title("Home")
-    st.subheader(f"Welcome{space}, to my wonderful website, I hope you enjoy!")
+    st.subheader(f"Welcome{space.capitalize()}, to my wonderful website, I hope you enjoy!")
     st.write("#")
     st.write("This is where I store all my projects, I make these project outside of school as a hobby. I'm excited to learn more as I go on with making stuff! Maybe even learn other programming languages.")
     st.write("All the projects I've made so far are made fully in python")
