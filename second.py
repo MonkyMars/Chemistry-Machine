@@ -148,11 +148,11 @@ if selected == "Home":
     else:
         name = "" + st.session_state['name_input']
     if name: 
-        space = " " + name
+        space = " " + name.capitalize()
     else:
         space = ""
     st.title("Home")
-    st.subheader(f"Welcome{space.upper(1)}, to my wonderful website, I hope you enjoy!")
+    st.subheader(f"Welcome{space}, to my wonderful website, I hope you enjoy!")
     st.write("#")
     st.write("This is where I store all my projects, I make these project outside of school as a hobby. I'm excited to learn more as I go on with making stuff! Maybe even learn other programming languages.")
     st.write("All the projects I've made so far are made fully in python")
