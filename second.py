@@ -205,7 +205,7 @@ if selected == "About me":
     email = st.text_input("Enter your email here:")
     contacting =st.selectbox('What are you contacting me for?', ('', 'Pc issues or questions', 'Other'))
     if contacting == "Pc issues or questions":
-        contacting1 = st.text_area("Describe your issues as clear as possible.")
+        contacting1 = st.text_area("Describe your issues or question as clear as possible.")
     if contacting == "Other":
         contacting2 = st.text_area("What can I help you with?")
     if contacting == "":
