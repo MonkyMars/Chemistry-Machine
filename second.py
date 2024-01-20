@@ -197,7 +197,7 @@ if selected == "Projects":
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
 
-if selected == "Chemistry Machine" or "Projects" or "About me":
+if selected == "About me":
     st.write("##")
     st.subheader("Contact")
     email = st.text_input("Enter your email here:")
