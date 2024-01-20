@@ -201,6 +201,7 @@ if selected == "About me":
     st.write("#")
     st.write("---")
     st.write("#")
+    st.write("#")
     st.subheader("Contact")
     email = st.text_input("Enter your email here:")
     contacting =st.selectbox('What are you contacting me for?', ('', 'Pc issues or questions', 'Other'))
