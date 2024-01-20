@@ -199,12 +199,15 @@ if selected == "Projects":
 
 if selected == "About me":
     st.write("#")
-    st.write("#")
     st.write("---")
     st.write("#")
     st.subheader("Contact")
     email = st.text_input("Enter your email here:")
     contacting =st.selectbox('What are you contacting me for?', ('', 'Pc issues or questions', 'Other'))
-    if email and contacting:
+    if contacting == "Pc issues":
+        contacting1 = st.text_area("Describe your issues as clear as possible.")
+    if contacting == "Other":
+        contacting2 = st.text_area("What can I help you with?")
+    if email and contacting and contacting1 or contacting2:
         st.success("Thank you for contacting me, I will get back to you shortly!")
 
