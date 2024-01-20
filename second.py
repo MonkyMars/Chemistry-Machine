@@ -218,4 +218,29 @@ if selected == "About me":
     if email and contacting and contacting1 or contacting2:
         st.success("Thank you for contacting me, I will get back to you shortly!")
     else: st.warning("Please fill out all fields")
+    sender = email
+    receiver = "contact.chemistry.machine@gmail.com"
+    password = "Contactpy123"
+    if contacting == "Pc issues or questions":
+        subject = "Pc issues or questions"
+    if contacting == "Other":
+        subject = "Other"
+    body = contacting1, contacting2
+    message = f"""From: {sender}
+    To: {receiver}
+    subject: {subject}\n
+    {body} 
+    """
+    server = smtlib.SMTP("smtp.gmail.com", 587)
+    server.starttls()
+    try:
+        server.login(receiver,password)
+        server.sendmail(sender,receiver,message)
+        st.success("successfully notified")
+        
+
+
+
+
+
 
