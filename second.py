@@ -208,6 +208,9 @@ if selected == "About me":
         contacting1 = st.text_area("Describe your issues as clear as possible.")
     if contacting == "Other":
         contacting2 = st.text_area("What can I help you with?")
+    if contacting == "":
+        contacting1 and contacting2 = ""
+    
     if email and contacting and contacting1 or contacting2:
         st.success("Thank you for contacting me, I will get back to you shortly!")
 
