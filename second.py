@@ -168,12 +168,14 @@ if selected == "About me":
             st.write("Hello, I am a 14 year old, python learning student."" "
              "This is the first python project I've ever made.")
             st.write("I'm a big fan of computers and their hardware, I am a proud owner of a beautiful system myself")
+             st.write("I built this computer myself in august of 2023, I would 100% do it again, either for myself or someone else.")
+            
         with right_column:
             st.write("#")
             st.write("My pc:")
             st.image("Pc_1.png")
             st.write("specs [here](https://nl.pcpartpicker.com/list/4RYJN6)")
-            st.write("I built this computer myself in august of 2023")
+           
         
 if selected == "Projects":
     st.title("My projects")
