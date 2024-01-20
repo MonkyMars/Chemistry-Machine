@@ -197,5 +197,10 @@ if selected == "Projects":
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
 
-
+if selected == "Chemistry Machine" or "Projects" or "About me":
+    st.subheader("Contact")
+    email = st.text_input("Enter your email here:")
+    contacting =st.selectbox('What are you contacting me for?', ('', 'Pc issues or questions', 'Other'))
+    if email and contacting:
+        st.success("Thank you for contacting me, I will get back to you shortly!")
 
