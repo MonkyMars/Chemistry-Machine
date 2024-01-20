@@ -147,7 +147,8 @@ if selected == "Home":
         name = ""
     else:
         name = "" + st.session_state['name_input']
-    space = " " + name
+    if name: 
+        space = " " + name
     st.title("Home")
     st.subheader(f"Welcome{space}, to my wonderful website, I hope you enjoy!")
     st.write("#")
