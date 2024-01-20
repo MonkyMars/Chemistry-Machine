@@ -233,7 +233,6 @@ if selected == "About me":
     """
     server = smtlib.SMTP("smtp.gmail.com", 587)
     server.starttls()
-    try:
-        server.login(receiver,password)
-        server.sendmail(sender,receiver,message)
-        st.success("successfully notified")
+    server.login(receiver,password)
+    server.sendmail(sender,receiver,message)
+    st.success("successfully notified")
