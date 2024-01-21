@@ -33,7 +33,7 @@ mdurl==0.1.2
 more-itertools==10.1.0
 numpy==1.26.2
 packaging==23.2
-pandas==2.1.4
+pandas
 Pillow==10.1.0
 pipreqs==0.4.13
 protobuf==4.25.1
