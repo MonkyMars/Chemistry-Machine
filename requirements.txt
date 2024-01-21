@@ -13,6 +13,7 @@ docopt==0.6.2
 entrypoints==0.4
 Faker==22.0.0
 favicon==0.7.0
+extra_streamlit_components
 fonttools==4.47.0
 gitdb==4.0.11
 GitPython==3.1.40
@@ -78,4 +79,3 @@ watchdog==3.0.0
 yarg==0.1.9
 zipp==3.17.0
 git+https://github.com/streamlit/gsheets-connection
-extra_streamlit_components
