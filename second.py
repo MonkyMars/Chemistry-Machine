@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
+import extra_streamlit_components as stx
 
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
