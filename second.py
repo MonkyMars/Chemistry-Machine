@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-import smtplib
+
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
 with (st.sidebar):
@@ -196,52 +196,3 @@ if selected == "Projects":
     st.write("My plans for the future are")
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
-
-if selected == "About me":
-    st.write("#")
-    st.write("---")
-    st.write("#")
-    st.subheader("Contact")
-    email = st.text_input("Enter your email here:")
-    contacting =st.selectbox('What are you contacting me for?', ('', 'Pc issues or questions', 'Other'))
-    if contacting == "Pc issues or questions":
-        contacting1 = st.text_area("Describe your issues or question as clear as possible.")
-    if contacting == "Other":
-        contacting2 = st.text_area("What can I help you with?")
-    if contacting == "":
-        contacting1 = ""
-        contacting2 = ""
-    if contacting == "Pc issues or questions":
-        contacting2 = ""
-    if contacting == "Other":
-        contacting1 = ""
-    sender0 = email
-    sender1 = "chemistrymachine.sender@gmail.com"
-    receiver = "contact.chemistry.machine@gmail.com" #password = (Contactpy123)
-    password = "bqpi reoa cqxb emvi"
-    if contacting == "Pc issues or questions":
-        subject = "Pc issues or questions"
-    else: 
-        subject = "EMAIL"
-    if contacting == "Other":
-        subject = "Other"
-    body = contacting1, contacting2
-    message = f"""From: {sender0}
-    To: {receiver}
-    subject: {subject}\n
-    {body} 
-    """
-    if not email and contacting and contacting1 or contacting2: 
-        st.warning("Please fill out all fields")
-    if email and contacting and contacting1 or contacting2: 
-        try:
-            server = smtplib.SMTP("smtp.gmail.com", 587)
-            server.starttls()
-            server.login(sender1,password)
-            server.sendmail(sender1,receiver,message)
-            st.success("Thank you for contacting me, I will get back to you shortly!")
-
-       
-    
-        
-        
