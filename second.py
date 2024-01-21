@@ -231,12 +231,17 @@ if selected == "About me":
     subject: {subject}\n
     {body} 
     """
+    if not email and contacting and contacting1 or contacting2: 
+        st.warning("Please fill out all fields")
     if email and contacting and contacting1 or contacting2: 
-        server = smtplib.SMTP("smtp.gmail.com", 587)
-        server.starttls()
-        server.login(sender1,password)
-        server.sendmail(sender1,receiver,message)
-        st.success("Thank you for contacting me, I will get back to you shortly!")
-    else: st.warning("Please fill out all fields")
+        try:
+            server = smtplib.SMTP("smtp.gmail.com", 587)
+            server.starttls()
+            server.login(sender1,password)
+            server.sendmail(sender1,receiver,message)
+            st.success("Thank you for contacting me, I will get back to you shortly!")
+        except: smtplib.SMTPAuthenticationError:
+            st.error("Unable to contact, try again later")
+    
         
         
