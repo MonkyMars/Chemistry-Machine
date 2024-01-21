@@ -242,8 +242,7 @@ if selected == "About me":
             st.success("Thank you for contacting me, I will get back to you shortly!")
         except:
             st.error("Unable to contact, try again later")
-        else:
-            st.success("Succesfully contacted")
+       
     
         
         
