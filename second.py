@@ -11,7 +11,7 @@ with (st.sidebar):
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 #
 conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-existing_data = conn.read(worksheet="Vendors", usecols=list(range(4)), ttl=5)
+existing_data = conn.read(worksheet="Data", usecols=list(range(4)), ttl=5)
 existing_data = existing_data.dropna(how="all")
 #
 if selected == "Chemistry Machine":
