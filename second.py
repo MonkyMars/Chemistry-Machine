@@ -240,7 +240,7 @@ if selected == "About me":
             server.login(sender1,password)
             server.sendmail(sender1,receiver,message)
             st.success("Thank you for contacting me, I will get back to you shortly!")
-        except: smtplib.SMTPAuthenticationError:
+        except:
             st.error("Unable to contact, try again later")
     
         
