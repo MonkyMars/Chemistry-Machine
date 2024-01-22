@@ -2,7 +2,6 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from streamlit_gsheets import GSheetsConnection
 import pandas as pd
-from time import gmtime
 
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
@@ -199,4 +198,4 @@ if selected == "Projects":
     st.write("My plans for the future are")
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
-    st.write(time.clock_gettime(gmtime(0)))
+    
