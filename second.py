@@ -158,10 +158,13 @@ if selected == "Home":
         with modal.container():
             st.write("#")
             Name = st.text_input("Enter your name")
+            if Name == "Francis": 
+                st.balloons()
             Feedback = st.text_area("Enter your feedback")
             Close = st.button("Submit")
             if Close:
                 modal.close()
+                
 
 
 
