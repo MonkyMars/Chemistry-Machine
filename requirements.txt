@@ -53,7 +53,7 @@ six==1.16.0
 smmap==5.0.1
 soupsieve==2.5
 st-annotated-text==4.0.1
-streamlit==1.2.0
+streamlit
 streamlit-camera-input-live==0.2.0
 streamlit-card==1.0.0
 streamlit-embedcode==0.1.2
@@ -78,4 +78,4 @@ watchdog==3.0.0
 yarg==0.1.9
 zipp==3.17.0
 git+https://github.com/streamlit/gsheets-connection
-streamlit-modal==0.1.0
+streamlit-modal
