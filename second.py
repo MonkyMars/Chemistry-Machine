@@ -138,8 +138,8 @@ if selected == "Chemistry Machine":
 if selected == "Home":
     with st.container():
          def Name():
-           name = st.text_input("What's your name?", key="name_input")
-           name = " " + name
+           name1 = st.text_input("What's your name?", key="name_input")
+           name = " " + name1
     if 'name_input' not in st.session_state:
         name = ""
     else:
@@ -162,6 +162,11 @@ if selected == "Home":
     st.subheader("Feedback")
     st.write("Please enter your name before submitting feedback!")
     Feedback = st.text_input("What's your feedback?")
+    if Feedback:
+        st.success("Thank you for your feedback")
+    if not name:
+        st.warning("Please enter a name")
+    
  
              
        
