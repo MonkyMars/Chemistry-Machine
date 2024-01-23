@@ -13,11 +13,10 @@ with (st.sidebar):
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 #######
-conn = st.connection("gsheets", type=GSheetsConnection) 
-existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
-existing_data = existing_data.dropna(how="all")
-if selected == "Home": 
-    st.dataframe(existing_data)
+if selected == "Home" or "Chemistry Machine":
+    conn = st.connection("gsheets", type=GSheetsConnection) 
+    existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
+    existing_data = existing_data.dropna(how="all")
 ######
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
