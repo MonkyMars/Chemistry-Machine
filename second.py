@@ -20,8 +20,8 @@ if selected == "Home" or "Chemistry Machine":
     data_Q = pd.DataFrame(
         [
             { 
-             "Q1": Question1
-             "Q2": Question2
+                 "Q1": Question1,
+                 "Q2": Question2
             }
         ]
     )
