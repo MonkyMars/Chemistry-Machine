@@ -11,13 +11,7 @@ with (st.sidebar):
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 #######
 if selected == "Home":
-    modal = Modal(key="Demo Key",title="test")
-    for col in st.columns(8):
-        with col:
-            open_modal = st.button(label='button')
-            if open_modal:
-                with modal.container():
-                    st.markdown('testtesttesttesttesttesttesttest'
+    st.write("")
 
 
 #######
