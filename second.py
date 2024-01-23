@@ -165,13 +165,13 @@ if selected == "Home":
     Feedback = st.button("Submit feedback")
     if Feedback: 
         modal = Modal(key="Demo Key",title="test")
+        modal.open()
 
     
         
     
  
-             
-       
+            
 if selected == "About me":
     with st.container():
         left_column, right_column = st.columns(2)
