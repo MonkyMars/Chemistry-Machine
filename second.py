@@ -11,7 +11,7 @@ with (st.sidebar):
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 #######
 if selected == "Home":
-    modal = Modal("Demo Modal", key = "")
+    modal = Modal(key="Demo Key",title="test")
     open_modal = st.button("Open")
     if open_modal:
         modal.open()
