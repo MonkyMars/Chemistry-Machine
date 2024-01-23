@@ -162,10 +162,7 @@ if selected == "Home":
     st.subheader("Feedback")
     st.write("Please enter your name before submitting feedback!")
     Feedback = st.text_input("What's your feedback?")
-    if space and Feedback: 
-        st.success("Thank you for your feedback!")
-    else: 
-        st.warning("please enter your name before submitting feedback!")
+ 
              
        
 if selected == "About me":
