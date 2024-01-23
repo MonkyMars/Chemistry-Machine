@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
 from streamlit_modal import Modal
+import time
 
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
@@ -174,7 +175,11 @@ if selected == "Home":
             Close = st.button("Submit")
             if Close:
                 modal.close()
-        
+    if Close:
+        time.sleep(1.5)
+        st.success("Thank you for your feedback!")
+
+
 if selected == "About me":
     with st.container():
         left_column, right_column = st.columns(2)
