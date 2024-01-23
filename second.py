@@ -168,8 +168,6 @@ if selected == "Home":
         modal.open()
     if modal.is_open():
         with modal.container():
-            Feedback = st.text_area("Enter your feedback")
-            Close = st.button("Submit")
         
 if selected == "About me":
     with st.container():
