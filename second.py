@@ -154,7 +154,7 @@ if selected == "Chemistry Machine":
     
 if selected == "Home":
     conn = st.connection("gsheets", type=GSheetsConnection) 
-    existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
+    existing_data = conn.read(worksheet="data", usecols=list(range(3,4)), ttl=5)
     existing_data = existing_data.dropna(how="all")
     st.title("Home")
     st.subheader("Welcome, to my wonderful website, I hope you enjoy!")
