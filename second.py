@@ -168,6 +168,7 @@ if selected == "Home":
         modal.open()
     if modal.is_open():
         with modal.container():
+            st.write("#")
         
 if selected == "About me":
     with st.container():
