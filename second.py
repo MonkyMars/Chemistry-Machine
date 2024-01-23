@@ -133,7 +133,7 @@ if selected == "Chemistry Machine":
         st.write("_Your answer is_", answer)
     st.write("---")
     st.write("##")
-    st.subheader("Feedback")
+    
      
 if selected == "Home":
     with st.container():
@@ -158,6 +158,7 @@ if selected == "Home":
     st.write("#")
     st.write("---")
     st.write("#")
+    st.subheader("Feedback")
     Feedback = st.text_input("What's your feedback?")
     if Feedback:
         st.success("Thank you for your feedback!")
