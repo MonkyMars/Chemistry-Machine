@@ -1,13 +1,15 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
+from streamlit_modal import Modal
+
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
 with (st.sidebar):
     selected = option_menu(
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
-#
+#######
 modal = Modal("Demo Modal")
 open_modal = st.button("Open")
 if open_modal:
@@ -29,7 +31,7 @@ if modal.is_open():
         st.write("Some fancy text")
         value = st.checkbox("Check me")
         st.write(f"Checkbox checked: {value}")
-#
+########
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
     Ammoniak_moleculen = "N", "H3"
