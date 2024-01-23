@@ -154,6 +154,9 @@ if selected == "Chemistry Machine":
     
      
 if selected == "Home":
+    conn = st.connection("gsheets", type=GSheetsConnection) 
+    existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
+    existing_data = existing_data.dropna(how="all")
     st.title("Home")
     st.subheader("Welcome, to my wonderful website, I hope you enjoy!")
     st.write("#")
@@ -165,7 +168,19 @@ if selected == "Home":
     st.write("#")
     st.write("#")
     st.subheader("Feedback")
-    st.write("Please enter your name before submitting feedback!")
+    Name = st.text_input("Enter your name")
+    Feedback = st.text_input("Enter your feedback")
+    data_F = pd.DataFrame(
+        [
+            { 
+                 "Name": Name,
+                 "Feedback": Feedback
+            }
+        ]
+    )
+    updated_df = pd.concat([existing_data, data_F)
+    conn.update(worksheet="data", data=updated_df)
+    
     
 
 
