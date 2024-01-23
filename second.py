@@ -178,7 +178,7 @@ if selected == "Home":
             }
         ]
     )
-    updated_df = pd.concat([existing_data, data_F)
+    updated_df = pd.concat([existing_data, data_F])
     conn.update(worksheet="data", data=updated_df)
     
     
