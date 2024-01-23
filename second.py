@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
-from streamlit_modal import Modal
+from streamlit_modal
 
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
