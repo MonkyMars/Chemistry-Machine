@@ -3,6 +3,8 @@ from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
 from streamlit_modal import Modal
 import time
+import pandas as pd 
+from streamlit_gsheets import GSheetsConnection
 
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
@@ -11,6 +13,9 @@ with (st.sidebar):
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 #######
+conn = st.experimental_connection("gsheets", type=GSheetsConnection) 
+existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
+existing_data = existing_data.dropna(how="all")
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
     Ammoniak_moleculen = "N", "H3"
