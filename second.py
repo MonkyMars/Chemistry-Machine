@@ -166,21 +166,9 @@ if selected == "Home":
     st.write("#")
     st.subheader("Feedback")
     st.write("Please enter your name before submitting feedback!")
-    Feedback_button = st.button("Submit feedback")
-    modal = Modal(key="Demo Key",title="Feedback")
-    if Feedback_button: 
-        modal.open()
-    if modal.is_open():
-        with modal.container():
-            st.write("#")
-            st.write("Please press enter to submit")
-            Name = st.text_input("Enter your name")
-            if Name == "Francis": 
-                st.balloons()
-            Feedback = st.text_input("Enter your feedback")
-            Close = st.button("Submit")
-            if Close:
-                modal.close()
+    
+
+
 
 
 
