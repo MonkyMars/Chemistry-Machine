@@ -152,7 +152,7 @@ if selected == "Chemistry Machine":
     if Question1 and Question2:
         conn.update(worksheet="data", data=updated_df)
     
-if selected == "Home":\
+if selected == "Home":
     conn = st.connection("gsheets", type=GSheetsConnection) 
     existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
     existing_data = existing_data.dropna(how="all")
