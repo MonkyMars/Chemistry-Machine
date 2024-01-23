@@ -175,9 +175,8 @@ if selected == "Home":
             Close = st.button("Submit")
             if Close:
                 modal.close()
-    if Close:
-        time.sleep(1.5)
-        st.success("Thank you for your feedback!")
+                time.sleep(1.5)
+                st.success("Thank you for your feedback!")
 
 
 if selected == "About me":
