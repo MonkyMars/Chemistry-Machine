@@ -10,28 +10,8 @@ with (st.sidebar):
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 #######
-modal = Modal("Demo Modal")
-open_modal = st.button("Open")
-if open_modal:
-    modal.open()
 
-if modal.is_open():
-    with modal.container():
-        st.write("Text goes here")
-
-        html_string = '''
-        <h1>HTML string in RED</h1>
-
-        <script language="javascript">
-          document.querySelector("h1").style.color = "red";
-        </script>
-        '''
-        components.html(html_string)
-
-        st.write("Some fancy text")
-        value = st.checkbox("Check me")
-        st.write(f"Checkbox checked: {value}")
-########
+#######
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
     Ammoniak_moleculen = "N", "H3"
