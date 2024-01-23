@@ -19,6 +19,9 @@ if selected == "Home":
     if modal.is_open():
         with modal.container():
             st.write("Text goes here")
+            close = st.button("Close")
+            if close: 
+                modal.close()
 
 #######
 if selected == "Chemistry Machine":
