@@ -159,8 +159,8 @@ if selected == "Home":
     st.write("---")
     st.write("#")
     Feedback = st.text_input("What's your feedback?")
-        if Feedback:
-            st.success("Thank you for your feedback!")
+    if Feedback:
+        st.success("Thank you for your feedback!")
              
        
 if selected == "About me":
