@@ -12,16 +12,12 @@ with (st.sidebar):
 #######
 if selected == "Home":
     modal = Modal(key="Demo Key",title="test")
-    open_modal = st.button("Open")
-    if open_modal:
-        modal.open()
-
-    if modal.is_open():
-        with modal.container():
-            st.write("Text goes here")
-            close = st.button("Close")
-            if close: 
-                modal.close()
+for col in st.columns(8):
+    with col:
+        open_modal = st.button(label='button')
+     if open_modal:
+            with modal.container():
+                st.markdown('testtesttesttesttesttesttesttest')
 
 #######
 if selected == "Chemistry Machine":
