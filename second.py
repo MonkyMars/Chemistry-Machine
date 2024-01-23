@@ -162,19 +162,14 @@ if selected == "Home":
     st.write("#")
     st.subheader("Feedback")
     st.write("Please enter your name before submitting feedback!")
-    Feedback = st.button("Submit feedback")
+    Feedback_button = st.button("Submit feedback")
     modal = Modal(key="Demo Key",title="test")
-    if Feedback: 
+    if Feedback_button: 
         modal.open()
     if modal.is_open():
-            st.write("Text goes here")
-
-
-    
+        Feedback = st.text_area("Enter your feedback")
+        Close = st.button("Submit")
         
-    
- 
-            
 if selected == "About me":
     with st.container():
         left_column, right_column = st.columns(2)
