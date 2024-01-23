@@ -165,7 +165,8 @@ if selected == "Home":
             Close = st.button("Submit")
             if Close:
                 modal.close()
-                
+    if st.text_input("Enter your name"):
+        st.write("hi")
 
 
 
