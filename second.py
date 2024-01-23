@@ -150,9 +150,9 @@ if selected == "Chemistry Machine":
         ]
     )
     updated_df = pd.concat([existing_data, data_Q])
-    conn.update(worksheet="data", data=updated_df)
+    if Question1 and Question2:
+        conn.update(worksheet="data", data=updated_df)
     
-     
 if selected == "Home":
     conn = st.connection("gsheets", type=GSheetsConnection) 
     existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
@@ -179,14 +179,9 @@ if selected == "Home":
         ]
     )
     updated_df = pd.concat([existing_data, data_F])
-    conn.update(worksheet="data", data=updated_df)
+    if Name and Feedback:
+        conn.update(worksheet="data", data=updated_df)
     
-    
-
-
-
-
-
 if selected == "About me":
     with st.container():
         left_column, right_column = st.columns(2)
