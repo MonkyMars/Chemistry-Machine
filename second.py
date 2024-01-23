@@ -10,11 +10,6 @@ with (st.sidebar):
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 #######
-if selected == "Home":
-    st.write("")
-
-
-#######
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
     Ammoniak_moleculen = "N", "H3"
@@ -167,11 +162,8 @@ if selected == "Home":
     st.write("#")
     st.subheader("Feedback")
     st.write("Please enter your name before submitting feedback!")
-    Feedback = st.text_input("What's your feedback?")
-    if Feedback and name:
-        st.success("Thank you for your feedback")
-    else:
-        st.warning("please enter your name before submitting feedback")
+    Feedback = st.button("Submit feedback", width = 200, height = 50)
+
     
         
     
