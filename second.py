@@ -164,7 +164,8 @@ if selected == "Home":
     Feedback = st.text_input("What's your feedback?")
     if st.text_input("What's your name?", key="name_input") and Feedback: 
         st.success("Thank you for your feedback!")
-    else: st.warning("please enter your name before submitting feedback!")
+    else: 
+        st.warning("please enter your name before submitting feedback!")
              
        
 if selected == "About me":
