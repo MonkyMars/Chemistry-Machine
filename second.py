@@ -158,6 +158,7 @@ if selected == "Home":
     st.write("#")
     st.write("---")
     st.write("#")
+    st.write("#")
     st.subheader("Feedback")
     Feedback = st.text_input("What's your feedback?")
     if Feedback:
