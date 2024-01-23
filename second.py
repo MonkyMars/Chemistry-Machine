@@ -150,6 +150,7 @@ if selected == "Chemistry Machine":
         ]
     )
     updated_df = pd.concat([existing_data, data_Q])
+    conn.update(worksheet="data", data=updated_df)
     
      
 if selected == "Home":
