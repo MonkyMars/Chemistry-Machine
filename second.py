@@ -171,6 +171,8 @@ if selected == "Home":
             st.write("#")
             Feedback = st.text_area("Enter your feedback")
             Close = st.button("Submit")
+            if Close:
+                modal.close()
         
 if selected == "About me":
     with st.container():
