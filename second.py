@@ -166,6 +166,10 @@ if selected == "Home":
     if Feedback: 
         modal = Modal(key="Demo Key",title="test")
         modal.open()
+    if modal.is_open():
+        with modal.container():
+            st.write("Text goes here")
+
 
     
         
