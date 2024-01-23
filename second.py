@@ -165,7 +165,7 @@ if selected == "Home":
     if Feedback and name:
         st.success("Thank you for your feedback")
     else:
-        st.warning("please enter your name before submitting feedback
+        st.warning("please enter your name before submitting feedback")
     
         
     
