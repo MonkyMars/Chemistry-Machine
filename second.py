@@ -11,15 +11,14 @@ with (st.sidebar):
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 #######
 if selected == "Home":
-    confirmationEdit = Modal("Atención", key= "popUp_edit"
-    submitted = st.button("Enviar")
-        if submitted:
-                confirmationEdit.open()
-        if confirmationEdit.is_open():
-            with confirmationEdit.container():
-                st.markdown(""" ### ¿Deseas guardar los cambios? """)
-                yes = st.button("Sí")
-                no  = st.button("No")
+    modal = Modal(key="Demo Key",title="test")
+    for col in st.columns(8):
+        with col:
+            open_modal = st.button(label='button')
+            if open_modal:
+                with modal.container():
+                    st.markdown('testtesttesttesttesttesttesttest'
+
 
 #######
 if selected == "Chemistry Machine":
