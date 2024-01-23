@@ -130,10 +130,10 @@ if selected == "Chemistry Machine":
         answer = H_gewicht
 
 # website deel 2
+if selected == "Chemistry Machine":
     conn = st.connection("gsheets", type=GSheetsConnection) 
     existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
     existing_data = existing_data.dropna(how="all")
-if selected == "Chemistry Machine":
     st.write("** Required field")
     st.write("#")
     if Question2 == "Weight" or "Molecular formula":
@@ -152,7 +152,10 @@ if selected == "Chemistry Machine":
     if Question1 and Question2:
         conn.update(worksheet="data", data=updated_df)
     
-if selected == "Home":
+if selected == "Home":\
+    conn = st.connection("gsheets", type=GSheetsConnection) 
+    existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
+    existing_data = existing_data.dropna(how="all")
     st.title("Home")
     st.subheader("Welcome, to my wonderful website, I hope you enjoy!")
     st.write("#")
