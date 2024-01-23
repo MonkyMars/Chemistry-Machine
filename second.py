@@ -163,7 +163,7 @@ if selected == "Home":
     st.subheader("Feedback")
     st.write("Please enter your name before submitting feedback!")
     Feedback_button = st.button("Submit feedback")
-    modal = Modal(key="Demo Key",title="test")
+    modal = Modal(key="Demo Key",title="Feedback")
     if Feedback_button: 
         modal.open()
     if modal.is_open():
