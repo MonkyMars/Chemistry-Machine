@@ -167,8 +167,9 @@ if selected == "Home":
     if Feedback_button: 
         modal.open()
     if modal.is_open():
-        Feedback = st.text_area("Enter your feedback")
-        Close = st.button("Submit")
+        with modal.container():
+            Feedback = st.text_area("Enter your feedback")
+            Close = st.button("Submit")
         
 if selected == "About me":
     with st.container():
