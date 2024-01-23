@@ -162,7 +162,7 @@ if selected == "Home":
     st.write("#")
     st.subheader("Feedback")
     st.write("Please enter your name before submitting feedback!")
-    Feedback = st.button("Submit feedback", width = 200, height = 50)
+    Feedback = st.button("Submit feedback")
 
     
         
