@@ -12,20 +12,7 @@ with (st.sidebar):
     selected = option_menu(
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
-#######
-if selected == "Home" or "Chemistry Machine":
-    conn = st.connection("gsheets", type=GSheetsConnection) 
-    existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
-    existing_data = existing_data.dropna(how="all")
-    data_Q = pd.DataFrame(
-        [
-            { 
-                 "Q1": Question1,
-                 "Q2": Question2
-            }
-        ]
-    )
-    updated_df = pd.concat([existing_data, data_Q])
+######
 ######
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
@@ -151,6 +138,18 @@ if selected == "Chemistry Machine":
         st.write("_Your answer is_", answer)
     st.write("---")
     st.write("##")
+    conn = st.connection("gsheets", type=GSheetsConnection) 
+    existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
+    existing_data = existing_data.dropna(how="all")
+    data_Q = pd.DataFrame(
+        [
+            { 
+                 "Q1": Question1,
+                 "Q2": Question2
+            }
+        ]
+    )
+    updated_df = pd.concat([existing_data, data_Q])
     
      
 if selected == "Home":
