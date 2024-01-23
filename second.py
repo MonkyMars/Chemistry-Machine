@@ -134,10 +134,7 @@ if selected == "Chemistry Machine":
     st.write("---")
     st.write("##")
     st.subheader("Feedback")
-    Feedback = st.text_input("What's your feedback?")
-    if Feedback:
-        st.success("Thank you for your feedback!")     
-
+     
 if selected == "Home":
     with st.container():
          def Name():
@@ -158,6 +155,12 @@ if selected == "Home":
     st.write("All the projects I've made so far are made fully in python")
     st.write("#")
     Name()
+    st.write("#")
+    st.write("---")
+    st.write("#")
+    Feedback = st.text_input("What's your feedback?")
+        if Feedback:
+            st.success("Thank you for your feedback!")
              
        
 if selected == "About me":
