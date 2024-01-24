@@ -185,7 +185,7 @@ if selected == "Home":
         if Name and Feedback:
             conn.update(worksheet="data", data=updated_df)
     if Submit0:
-        Feedback
+        Feedback()
     
 if selected == "About me":
     with st.container():
