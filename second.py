@@ -183,8 +183,11 @@ if selected == "Home":
     Submit0 = st.button("Submit feedback") 
     if Submit0: 
          if Name and Feedback:
-             conn.update(worksheet="data", data=updated_df)
-             st.success("Feedback submitted succesfully!")
+             try:
+                 conn.update(worksheet="data", data=updated_df)
+                 st.success("Feedback submitted succesfully!")
+             except: 
+                st.error("Something went wrong, please try again later")
          else: 
              st.warning("Please fill out both fields")
         
