@@ -184,6 +184,7 @@ if selected == "Home":
     if Submit0: 
          if Name and Feedback:
              conn.update(worksheet="data", data=updated_df)
+             st.success("Feedback submitted succesfully!")
          else: 
              st.warning("Please fill out both fields")
         
