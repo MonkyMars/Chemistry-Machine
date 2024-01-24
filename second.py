@@ -136,8 +136,15 @@ if selected == "Chemistry Machine":
     existing_data = existing_data.dropna(how="all")
     st.write("** Required field")
     st.write("#")
-    if Question2 == "Weight" or "Molecular formula":
-        st.write("_Your answer is_", answer)
+    Submit1 = st.button("submit")
+    if Submit1:
+        if Question1 and Question2:
+            try:
+                st.write("_Your answer is_", answer)
+            except: 
+                st.error("This element hasn't been added yet or you made a typo")
+        else: 
+            st.warning("Please fill out both fields")
     st.write("---")
     st.write("##")
     data_Q = pd.DataFrame(
