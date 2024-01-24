@@ -124,8 +124,6 @@ if selected == "Chemistry Machine":
     st.write("** Required field")
     st.write("#")
     Submit1 = st.button("submit")
-    st.write("---")
-    st.write("##")
     data_Q = pd.DataFrame(
         [
             { 
