@@ -5,15 +5,14 @@ from streamlit_modal import Modal
 import time
 import pandas as pd 
 from streamlit_gsheets import GSheetsConnection
-
+#
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
 with (st.sidebar):
     selected = option_menu(
         menu_title=None,
         options=["Home", "Chemistry Machine", "Projects", "About me"])
-######
-######
+#
 if selected == "Chemistry Machine":
     Water_moleculen = "H2", "0"
     Ammoniak_moleculen = "N", "H3"
