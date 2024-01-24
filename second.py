@@ -22,16 +22,16 @@ if selected == "Chemistry Machine":
     Methaan_moleculen = "C", "H4"
     Zwavelzuur_moleculen = "H2", "S", "O4"
     Zwaveldioxide_moleculen = "S", "O2"
-    Zuurstof_moleculen = "O",
-    Waterstof_moleculen = "H",
-    Stikstof_moleculen = "N",
-    Koolstof_moleculen = "C",
-    Zwavel_moleculen = "S",
-    Boor_moleculen = "B",
-    Fluor_moleculen = "F",
-    Fosfor_moleculen = "P",
-    Jood_moleculen = "I",
-    Chloor_moleculen = "Cl",
+    Zuurstof_moleculen = "O"
+    Waterstof_moleculen = "H"
+    Stikstof_moleculen = "N"
+    Koolstof_moleculen = "C"
+    Zwavel_moleculen = "S"
+    Boor_moleculen = "B"
+    Fluor_moleculen = "F"
+    Fosfor_moleculen = "P"
+    Jood_moleculen = "I"
+    Chloor_moleculen = "Cl"
     #alleengewicht
     H_gewicht = 1.008
     O_gewicht = 16.00
