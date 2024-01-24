@@ -182,6 +182,9 @@ if selected == "Home":
     updated_df = pd.concat([existing_data, data_F])
     if Name and Feedback:
         conn.update(worksheet="data", data=updated_df)
+    if Name and Feedback:
+        time.sleep(1)
+        Name = st.text_input("Enter your name", disabled=True)
     
 if selected == "About me":
     with st.container():
