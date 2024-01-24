@@ -124,14 +124,6 @@ if selected == "Chemistry Machine":
     st.write("** Required field")
     st.write("#")
     Submit1 = st.button("submit")
-    if Submit1:
-        if Question1 and Question2:
-            try:
-                st.write(f"_Your answer is {answer}_")
-            except: 
-                st.error("This element hasn't been added yet or you made a typo")
-        else: 
-            st.warning("Please fill out both fields")
     st.write("---")
     st.write("##")
     data_Q = pd.DataFrame(
@@ -143,8 +135,18 @@ if selected == "Chemistry Machine":
         ]
     )
     updated_df = pd.concat([existing_data, data_Q])
-    if Question1 and Question2:
-        conn.update(worksheet="data", data=updated_df)
+    if Submit1:
+        if Question1 and Question2:
+            try:
+                st.write(f"_Your answer is_ {answer}")
+            except: 
+                st.error("This element hasn't been added yet or you made a typo")
+            try:
+                conn.update(worksheet="data", data=updated_df)
+            except: 
+                st.error("unexpected error happened")
+        else: 
+            st.warning("Please fill out both fields")
     
 if selected == "Home":
     conn = st.connection("gsheets", type=GSheetsConnection) 
