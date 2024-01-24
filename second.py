@@ -180,8 +180,8 @@ if selected == "Home":
               }
           ]
       )
-     updated_df = pd.concat([existing_data, data_F])
-     if Name and Feedback:
+    updated_df = pd.concat([existing_data, data_F])
+    if Name and Feedback:
         conn.update(worksheet="data", data=updated_df)
         
     
