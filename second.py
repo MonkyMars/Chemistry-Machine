@@ -95,9 +95,6 @@ if selected == "Chemistry Machine":
     if Question1 == "chlorine" and Question2 == "Molecular formula":
         answer = Chloor_moleculen
 
-    
-
-
 #gewichten
 if selected == "Chemistry Machine":
     if Question1 == "water" and Question2 == "Weight":
@@ -130,7 +127,7 @@ if selected == "Chemistry Machine":
     if Submit1:
         if Question1 and Question2:
             try:
-                st.write("_Your answer is_", answer)
+                st.write(f"_Your answer is {answer}_")
             except: 
                 st.error("This element hasn't been added yet or you made a typo")
         else: 
