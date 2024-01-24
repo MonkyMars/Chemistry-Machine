@@ -197,7 +197,7 @@ if selected == "About me":
             st.write("Hello, I am a 14 year old, python learning student."" "
              "This is the first python project I've ever made.")
             st.write("I'm a big fan of computers and their hardware, I am a proud owner of a beautiful system myself.")
-            st.write("I built this computer myself in august of 2023, I would 100% do it again, either for myself or someone else. If it wasn't for this pc I wouldn't have had the chance to learn python. Personally I would fully recommend building your own pc instead of buying a prebuild or a console. If you need help with creating a parts list, you can leave your contact information down below!")
+            st.write("I built this computer myself in august of 2023, I would 100% do it again, either for myself or someone else. If it wasn't for this pc I wouldn't have had the chance to learn python. Personally I would fully recommend building your own pc instead of buying a prebuild or a console.")
             
         with right_column:
             st.write("#")
@@ -210,7 +210,7 @@ if selected == "Projects":
     st.title("My projects")
     st.write("Welcome to my Projects!"" "
               "I've only made two projects as of January first 2024."" "
-              "But I have a lot more planned for in the future")
+              "But I have a lot more planned for in the future.")
     st.write("---")
     st.write("#")
     st.subheader("Chemistry Machine")
