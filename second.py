@@ -167,7 +167,6 @@ if selected == "Home":
     st.write("#")
     st.write("#")
     st.subheader("Feedback")
-    Submit0 = st.button("Submit feedback") 
     Name = st.text_input("Enter your name").capitalize()
     if Name == "Francis":
         st.balloons()
@@ -181,8 +180,12 @@ if selected == "Home":
           ]
       )
     updated_df = pd.concat([existing_data, data_F])
-    if Name and Feedback:
-        conn.update(worksheet="data", data=updated_df)
+    Submit0 = st.button("Submit feedback") 
+    if Submit0: 
+         if Name and Feedback:
+             conn.update(worksheet="data", data=updated_df)
+         else: 
+             st.warning("Please fill out both fields")
         
     
 if selected == "About me":
