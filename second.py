@@ -170,7 +170,7 @@ if selected == "Home":
     Name = st.text_input("Enter your name").capitalize()
     if Name == "Francis":
         st.balloons()
-    Feedback = st.text_input("Enter your feedback", clear_on_submit=True)
+    Feedback = st.text_input("Enter your feedback")
     data_F = pd.DataFrame(
         [
             { 
