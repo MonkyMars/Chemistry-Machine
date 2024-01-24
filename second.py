@@ -189,7 +189,7 @@ if selected == "Home":
              except: 
                 st.error("Something went wrong, please try again later")
          else: 
-             st.toast("Please fill out both fields")
+             st.warning("Please fill out both fields")
         
     
 if selected == "About me":
