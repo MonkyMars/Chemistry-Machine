@@ -167,21 +167,25 @@ if selected == "Home":
     st.write("#")
     st.write("#")
     st.subheader("Feedback")
-    Name = st.text_input("Enter your name").capitalize()
-    if Name == "Francis":
-        st.balloons()
-    Feedback = st.text_input("Enter your feedback")
-    data_F = pd.DataFrame(
-        [
-            { 
-                 "Name": Name,
-                 "Feedback": Feedback
-            }
-        ]
-    )
-    updated_df = pd.concat([existing_data, data_F])
-    if Name and Feedback:
-        conn.update(worksheet="data", data=updated_df)
+    Submit0 = st.button("Submit feedback")
+    def Feedback(): 
+        Name = st.text_input("Enter your name").capitalize()
+        if Name == "Francis":
+            st.balloons()
+        Feedback = st.text_input("Enter your feedback")
+        data_F = pd.DataFrame(
+            [
+                { 
+                     "Name": Name,
+                     "Feedback": Feedback
+                }
+            ]
+        )
+        updated_df = pd.concat([existing_data, data_F])
+        if Name and Feedback:
+            conn.update(worksheet="data", data=updated_df)
+    if Submit0:
+        Feedback
     
 if selected == "About me":
     with st.container():
