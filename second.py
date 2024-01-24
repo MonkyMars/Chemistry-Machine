@@ -122,7 +122,6 @@ if selected == "Chemistry Machine":
     existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
     existing_data = existing_data.dropna(how="all")
     st.write("** Required field")
-    st.write("#")
     Submit1 = st.button("submit")
     data_Q = pd.DataFrame(
         [
