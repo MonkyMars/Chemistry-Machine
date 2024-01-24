@@ -153,9 +153,6 @@ if selected == "Chemistry Machine":
         conn.update(worksheet="data", data=updated_df)
     
 if selected == "Home":
-    conn = st.connection("gsheets", type=GSheetsConnection) 
-    existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
-    existing_data = existing_data.dropna(how="all")
     st.title("Home")
     st.subheader("Welcome, to my wonderful website, I hope you enjoy!")
     st.write("#")
@@ -169,6 +166,9 @@ if selected == "Home":
     st.subheader("Feedback")
     Submit0 = st.button("Submit feedback")
     def Feedback(): 
+        conn = st.connection("gsheets", type=GSheetsConnection) 
+        existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
+        existing_data = existing_data.dropna(how="all")
         Name = st.text_input("Enter your name").capitalize()
         if Name == "Francis":
             st.balloons()
