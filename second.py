@@ -154,7 +154,7 @@ if selected == "Chemistry Machine":
         if Question1 and Question2:
             if Question2 == "Weight" and Question1:
                 try:
-                    st.write(f"_Your answer is_ {answer}u")
+                    st.write(f"_Your answer is_ {answer} u")
                 except: 
                     st.error("This element hasn't been added yet or you made a typo")
             else: 
