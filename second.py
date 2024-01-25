@@ -157,8 +157,8 @@ if selected == "Chemistry Machine":
                 else: 
                     try:
                         st.write(f"_Your answer is_ *{answer}*")
-        else: 
-            st.warning("Please fill out both fields")
+            else: 
+                st.warning("Please fill out both fields")
     
 if selected == "Home":
     conn = st.connection("gsheets", type=GSheetsConnection) 
