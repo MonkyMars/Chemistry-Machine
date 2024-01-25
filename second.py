@@ -150,9 +150,9 @@ if selected == "Chemistry Machine":
                     st.write(f"_Your answer is_ *{answer}u*")
                 except: 
                     st.error("This element hasn't been added yet or you made a typo")
-            else: 
-                try:
-                    st.write(f"_Your answer is_ *{answer}*")
+                else: 
+                    try:
+                        st.write(f"_Your answer is_ *{answer}*")
             try:
                 conn.update(worksheet="data", data=updated_df)
             except: 
