@@ -146,7 +146,7 @@ if selected == "Chemistry Machine":
     if Submit1:
         if Question1 and Question2:
             try:
-                st.write(f"_Your answer is_ {answer}")
+                st.write(f"_Your answer is_ *{answer}*")
             except: 
                 st.error("This element hasn't been added yet or you made a typo")
             try:
