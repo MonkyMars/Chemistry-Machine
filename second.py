@@ -59,7 +59,7 @@ if selected == "Chemistry Machine":
     st.write("#")
     Question1 = st.text_input("Which molecule do you want to know? **").lower()
     Question2 = st.selectbox('What do you want to know about this molecule or atom? **',
-                             ('Weight', 'Molecular formula'))
+                             ('Weight', 'Molecular formula')index=None)
         
 # moleculen
 if selected == "Chemistry Machine":
