@@ -151,6 +151,7 @@ if selected == "Chemistry Machine":
                 st.error("unexpected error happened")
         else: 
             st.warning("Please fill out both fields")
+        if Quetion1 and Question2:
             if Question2 == "Weight" and Question1:
                 try:
                     st.write(f"_Your answer is_ {answer}u")
