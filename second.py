@@ -157,7 +157,6 @@ if selected == "Chemistry Machine":
                 except: 
                     st.error("This element hasn't been added yet or you made a typo")
                 else: 
-                try:
                     st.write(f"_Your answer is_ *{answer}*");
 if selected == "Home":
     conn = st.connection("gsheets", type=GSheetsConnection) 
