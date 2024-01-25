@@ -186,7 +186,7 @@ if selected == "Home":
           ]
       )
     updated_df = pd.concat([existing_data, data_F])
-    Submit0 = st.button("Submit feedback", on_click = disabled=True) 
+    Submit0 = st.button("Submit feedback") 
     if Submit0: 
          if Name and Feedback:
              try:
