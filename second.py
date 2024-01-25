@@ -114,15 +114,15 @@ if selected == "Chemistry Machine":
         answer = O_gewicht
     if Question1 == "hydrogen" and Question2 == "Weight":
         answer = H_gewicht
-    if Question1 == "sulfur" and Question == "Weight":
+    if Question1 == "sulfur" and Question2 == "Weight":
         answer = S_gewicht
-    if Question1 == "nitrogen" and Question == "Weight":
+    if Question1 == "nitrogen" and Question2 == "Weight":
         answer = N_gewicht
-    if Question1 == "carbon" and Question == "Weight":
+    if Question1 == "carbon" and Question2 == "Weight":
         answer = C_gewicht
-    if Question1 == "boron" and Question == "Weight":
+    if Question1 == "boron" and Question2 == "Weight":
         answer = B_gewicht
-    if Question1 == "phosphorus" and Question == "Weight":
+    if Question1 == "phosphorus" and Question2 == "Weight":
         answer = P_gewicht
     #if Question1 == "" and Question == "Weight":
      #   answer =
