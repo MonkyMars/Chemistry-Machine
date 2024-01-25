@@ -145,6 +145,10 @@ if selected == "Chemistry Machine":
     updated_df = pd.concat([existing_data, data_Q])
     if Submit1:
         if Question1 and Question2:
+            try:
+                conn.update(worksheet="data", data=updated_df)
+            except: 
+                st.error("unexpected error happened")
             if Question2 == "Weight":
                 try:
                     st.write(f"_Your answer is_ *{answer}u*")
@@ -153,10 +157,6 @@ if selected == "Chemistry Machine":
                 else: 
                     try:
                         st.write(f"_Your answer is_ *{answer}*")
-            try:
-                conn.update(worksheet="data", data=updated_df)
-            except: 
-                st.error("unexpected error happened")
         else: 
             st.warning("Please fill out both fields")
     
