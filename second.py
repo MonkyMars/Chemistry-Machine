@@ -114,6 +114,18 @@ if selected == "Chemistry Machine":
         answer = O_gewicht
     if Question1 == "hydrogen" and Question2 == "Weight":
         answer = H_gewicht
+    if Question1 == "sulfur" and Question == "Weight":
+        answer = S_gewicht
+    if Question1 == "nitrogen" and Question == "Weight":
+        answer = N_gewicht
+    if Question1 == "carbon" and Question == "Weight":
+        answer = C_gewicht
+    if Question1 == "boron" and Question == "Weight":
+        answer = B_gewicht
+    if Question1 == "phosphorus" and Question == "Weight":
+        answer = P_gewicht
+    #if Question1 == "" and Question == "Weight":
+     #   answer =
 
 # website deel 2
 if selected == "Chemistry Machine":
