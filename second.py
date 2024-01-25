@@ -151,13 +151,13 @@ if selected == "Chemistry Machine":
                 st.error("unexpected error happened")
         else: 
             st.warning("Please fill out both fields")
-            if Question2 == "Weight":
+            if Question2 == "Weight" and Question1:
                 try:
-                    st.write(f"_Your answer is_ *{answer}u*")
+                    st.write(f"_Your answer is_ {answer}u")
                 except: 
                     st.error("This element hasn't been added yet or you made a typo")
-                else: 
-                    st.write(f"_Your answer is_ *{answer}*");
+            else: 
+                st.write(f"_Your answer is_ *{answer}*");
 if selected == "Home":
     conn = st.connection("gsheets", type=GSheetsConnection) 
     existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
