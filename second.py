@@ -245,11 +245,11 @@ if selected == "Testing":
     open_modal = st.button("Submit feedback")
     if open_modal:
         with modal.container():
-            Name = st.text_input("Enter your name", key= "Jan")
+            st.session_state['Name'] = st.text_input("Enter your name", key= "Jan")
             Feedback = st.text_input("Enter your feedback", key= "Bob")
             if Name and Feedback:
                 try: 
-                    pass
+                    st.write(f"{st.session_state['Name']}")
                 except:
                     pass
             Submit_feedback = st.button("Submit")
