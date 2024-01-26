@@ -174,10 +174,10 @@ if selected == "Home":
     st.write("#")
     st.write("#")
     st.subheader("Feedback")
-    Name = st.text_input("Enter your name").capitalize()
+    st.session_state['Name'] = st.text_input("Enter your name").capitalize()
     if Name == "Francis":
         st.balloons()
-    Feedback = st.text_input("Enter your feedback")
+    st.session_state['Feedback'] = st.text_input("Enter your feedback")
     data_F = pd.DataFrame(
         [
              { 
