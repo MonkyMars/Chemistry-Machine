@@ -238,7 +238,7 @@ if selected == "Projects":
     st.write("* create more projects which can either help people or to learn to understand python better")
 
 if selected == "Testing":
-    modal = Modal(key="Demo Key",title="d"
+    modal = Modal(key="Demo Key",title="d")
     open_modal = st.button("Feedback")
     if open_modal:
         with modal.container():
