@@ -238,8 +238,11 @@ if selected == "Projects":
     st.write("* create more projects which can either help people or to learn to understand python better")
 
 if selected == "Testing":
-    dg = st.dialog(
-        "Help", title= "Feedback", on_close_button_clicked=dialog_close_button_clicked, can_be_closed=True)
-    with dg:
-        st.write("test")
+    modal = Modal(key="Demo Key",title="test")
+    for col in st.columns(8):
+        with col:
+             open_modal = st.button(label='button')
+            if open_modal:
+                with modal.container():
+                    st.markdown('testtesttesttesttesttesttesttest')
     
