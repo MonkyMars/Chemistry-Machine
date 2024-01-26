@@ -243,8 +243,8 @@ if selected == "Testing":
     if open_modal:
         with modal.container():
             st.markdown('Enter your feedback')
-            Name = st.text_input("Enter your name")
-            Feedback = st.text_input("Enter your name")
+            Name = st.text_input("Enter your name", key= "Jan")
+            Feedback = st.text_input("Enter your feedback", key= "Bob")
             if Name and Feedback:
                 try: 
                     pass
