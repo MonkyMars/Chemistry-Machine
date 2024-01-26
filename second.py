@@ -5,8 +5,6 @@ from streamlit_modal import Modal
 import time
 import pandas as pd 
 from streamlit_gsheets import GSheetsConnection
-import tkinter as tk
-from tkinter import ttk
 #
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 
