@@ -244,9 +244,9 @@ if selected == "Testing":
     if submit_login:
         if login1 and login2:
             if login1 == "Levin" and login2 == "test123":
-                modal = Modal(key="Demo Key",title="test")
-                open_modal = st.button("Feedback")
-                if open_modal:
-                    with modal.container():
-                        st.markdown('Enter your feedback')
+                    modal = Modal(key="Demo Key",title="test")
+                    open_modal = st.button("Feedback")
+                    if open_modal:
+                        with modal.container():
+                            st.markdown('Enter your feedback')
     
