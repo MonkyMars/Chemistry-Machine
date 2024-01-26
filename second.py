@@ -63,7 +63,6 @@ if selected == "Chemistry Machine":
         
 # moleculen
 if selected == "Chemistry Machine":
-    @st.cache(allow_output_manipulation=True)
     if Question1 == "water" and Question2 == "Molecular formula":
         answer = Water_moleculen
     if Question1 == "ammonia" and Question2 == "Molecular formula":
@@ -97,7 +96,6 @@ if selected == "Chemistry Machine":
 
 #gewichten
 if selected == "Chemistry Machine":
-    @st.cache(allow_output_manipulation=True)
     if Question1 == "water" and Question2 == "Weight":
         answer = Water_gewicht
     if Question1 == "ammonia" and Question2 == "Weight":
