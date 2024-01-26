@@ -215,6 +215,7 @@ if selected == "About me":
             @st.cache(allow_output_mutation=True)
             def load_model(model_name):
                 model = st.image("Pc_1.png")
+                time.sleep(10)
                 return (model)
             model = st.image("Pc_1.png")
             st.write("specs [here](https://nl.pcpartpicker.com/list/4RYJN6)")
