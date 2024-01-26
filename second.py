@@ -209,11 +209,9 @@ if selected == "About me":
              "This is the first python project I've ever made.")
             st.write("I'm a big fan of computers and their hardware, I am a proud owner of a beautiful system myself.")
             st.write("I built this computer myself in august of 2023, I would 100% do it again, either for myself or someone else. If it wasn't for this pc I wouldn't have had the chance to learn python. Personally I would fully recommend building your own pc instead of buying a prebuild or a console.")
-            
         with right_column:
             st.write("#")
             st.write("My pc:")
-            @st.cache(allow_output_mutation=True)
             def load_model(model_name):
                 model = st.image("Pc_1.png")
                 return (model)
