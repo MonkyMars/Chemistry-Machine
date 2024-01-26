@@ -7,7 +7,7 @@ import pandas as pd
 from streamlit_gsheets import GSheetsConnection
 #
 st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
-
+@st.cache(allow_output_manipulation=True)
 with (st.sidebar):
     selected = option_menu(
         menu_title=None,
