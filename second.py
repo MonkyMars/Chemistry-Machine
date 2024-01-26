@@ -239,10 +239,8 @@ if selected == "Projects":
 
 if selected == "Testing":
     modal = Modal(key="Demo Key",title="test")
-    for col in st.columns(8):
-        with col:
-            open_modal = st.button(label='testtttt', key="testlfl")
-        if open_modal:
-            with modal.container():
-                st.markdown('testtesttesttesttesttesttesttest')
+    open_modal = st.button("Test")
+    if open_modal:
+        with modal.container():
+            st.markdown('testtesttesttesttesttesttesttest')
     
