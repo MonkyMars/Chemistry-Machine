@@ -14,7 +14,6 @@ with (st.sidebar):
         options=["Home", "Chemistry Machine", "Projects", "About me", "Testing"])
 #
 if selected == "Chemistry Machine":
-    @st.cache(allow_output_manipulation=True)
     Water_moleculen = "H2", "0"
     Ammoniak_moleculen = "N", "H3"
     Koolstofdioxide_moleculen = "C", "O2"
