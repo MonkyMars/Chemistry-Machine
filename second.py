@@ -213,8 +213,8 @@ if selected == "About me":
             st.write("#")
             st.write("My pc:")
             @st.cache(allow_output_manipulation=True)
-            def load_model(Pc_1.png):
-                model = st.image("Pc_1.png")
+            def load_model(model_name):
+                model = st.image(model_name)
                 return (model)
             model = load_model("Pc_1.png")
             st.write("specs [here](https://nl.pcpartpicker.com/list/4RYJN6)")
