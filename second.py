@@ -213,7 +213,7 @@ if selected == "About me":
             st.write("#")
             st.write("My pc:")
             @st.cache(allow_output_mutation=True)
-            def load_model(model_name):
+            def load_model():
                 model = st.image("Pc_1.png")
                 time.sleep(5)
                 return model
