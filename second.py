@@ -174,7 +174,7 @@ if selected == "Home":
     st.write("#")
     st.write("#")
     st.subheader("Feedback")
-    st.session_state['Name'] = st.text_input("Enter your name").capitalize()
+    st.session_state.Name = st.text_input("Enter your name").capitalize()
     if Name == "Francis":
         st.balloons()
     st.session_state['Feedback'] = st.text_input("Enter your feedback")
