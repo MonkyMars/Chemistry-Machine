@@ -217,7 +217,6 @@ if selected == "About me":
                 model = st.image("Pc_1.png")
                 time.sleep(10)
                 return model
-            model = st.image("Pc_1.png")
             st.write("specs [here](https://nl.pcpartpicker.com/list/4RYJN6)")
            
         
