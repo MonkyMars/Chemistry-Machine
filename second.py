@@ -238,15 +238,9 @@ if selected == "Projects":
     st.write("* create more projects which can either help people or to learn to understand python better")
 
 if selected == "Testing":
-    login1 = st.text_input("Username")
-    login2 = st.text_input("Password")
-    submit_login = st.button("Submit")
-    if submit_login:
-        if login1 and login2:
-            if login1 == "Levin" and login2 == "test123":
-                    modal = Modal(key="Demo Key",title="test")
-                    open_modal = st.button("Feedback")
-                    if open_modal:
-                        with modal.container():
-                            st.markdown('Enter your feedback')
+    modal = Modal(key="Demo Key",title="d"
+    open_modal = st.button("Feedback")
+    if open_modal:
+        with modal.container():
+            st.markdown('Enter your feedback')
     
