@@ -148,6 +148,7 @@ if selected == "Chemistry Machine":
     if Submit1:
         if Question1 and Question2:
             try:
+                time.sleep(2)
                 conn.update(worksheet="data", data=updated_df)
             except: 
                 st.error("unexpected error happened")
@@ -192,6 +193,7 @@ if selected == "Home":
     if Submit0: 
          if Name and Feedback:
              try:
+                 time.sleep(2)
                  conn.update(worksheet="data", data=updated_df)
                  st.success("Feedback submitted succesfully!")
              except: 
