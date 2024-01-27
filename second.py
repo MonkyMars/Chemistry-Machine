@@ -212,7 +212,7 @@ if selected == "About me":
         with right_column:
             st.write("#")
             st.write("My pc:")
-            @st.cache()
+            @st.cache(suppress_st_warning=True)
             def load_model(model_name):
                 model = st.image(model_name)
                 return (model)
