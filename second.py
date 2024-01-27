@@ -57,74 +57,74 @@ if selected == "Chemistry Machine":
     st.markdown('# My super cool chemistry machine!')
     st.write("This is a project I made myself using python and streamlit")
     st.write("#")
-    Question1 = st.text_input("Which molecule do you want to know? **").lower()
-    Question2 = st.selectbox('What do you want to know about this molecule or atom? **',
+    Q1 = st.text_input("Which molecule do you want to know? **").lower()
+    Q2 = st.selectbox('What do you want to know about this molecule or atom? **',
                              ('', 'Weight', 'Molecular formula'))
         
 # moleculen
 if selected == "Chemistry Machine":
-    if Question1 == "water" and Question2 == "Molecular formula":
+    if Q1 == "water" and Q2 == "Molecular formula":
         answer = Water_moleculen
-    if Question1 == "ammonia" and Question2 == "Molecular formula":
+    if Q1 == "ammonia" and Q2 == "Molecular formula":
         answer = Ammoniak_moleculen
-    if Question1 == "carbon dioxide" and Question2 == "Molecular formula":
+    if Q1 == "carbon dioxide" and Q2 == "Molecular formula":
         answer = Koolstofdioxide_moleculen
-    if Question1 == "ethanol" and Question2 == "Molecular formula":
+    if Q1 == "ethanol" and Q2 == "Molecular formula":
         answer = Alcohol_moleculen
-    if Question1 == "methane" and Question2 == "Molecular formula":
+    if Q1 == "methane" and Q2 == "Molecular formula":
         answer = Methaan_moleculen
-    if Question1 == "sulfuric acid" and Question2 == "Molecular formula":
+    if Q1 == "sulfuric acid" and Q2 == "Molecular formula":
         answer = Zwavelzuur_moleculen
-    if Question1 == "sulfuric dioxide" and Question2 == "Molecular formula":
+    if Q1 == "sulfuric dioxide" and Q2 == "Molecular formula":
         answer = Zwaveldioxide_moleculen
-    if Question1 == "oxygen" and Question2 == "Molecular formula":
+    if Q1 == "oxygen" and Q2 == "Molecular formula":
         answer = Zuurstof_moleculen
-    if Question1 == "nitrogen" and Question2 == "Molecular formula":
+    if Q1 == "nitrogen" and Q2 == "Molecular formula":
         answer = Stikstof_moleculen
-    if Question1 == "carbon" and Question2 == "Molecular formula":
+    if Q1 == "carbon" and Q2 == "Molecular formula":
         answer = Koolstof_moleculen
-    if Question1 == "sulfur" and Question2 == "Molecular formula":
+    if Q1 == "sulfur" and Q2 == "Molecular formula":
         answer = Zwavel_moleculen
-    if Question1 == "boron" and Question2 == "Molecular formula":
+    if Q1 == "boron" and Q2 == "Molecular formula":
         answer = Boor_moleculen
-    if Question1 == "phosphorus" and Question2 == "Molecular formula":
+    if Q1 == "phosphorus" and Q2 == "Molecular formula":
         answer = Fosfor_moleculen
-    if Question1 == "iodine" and Question2 == "Molecular formula":
+    if Q1 == "iodine" and Q2 == "Molecular formula":
         answer = Jood_moleculen
-    if Question1 == "chlorine" and Question2 == "Molecular formula":
+    if Q1 == "chlorine" and Q2 == "Molecular formula":
         answer = Chloor_moleculen
 
 #gewichten
 if selected == "Chemistry Machine":
-    if Question1 == "water" and Question2 == "Weight":
+    if Q1 == "water" and Q2 == "Weight":
         answer = Water_gewicht
-    if Question1 == "ammonia" and Question2 == "Weight":
+    if Q1 == "ammonia" and Q2 == "Weight":
         answer = Ammoniak_gewicht
-    if Question1 == "carbon dioxide" and Question2 == "Weight":
+    if Q1 == "carbon dioxide" and Q2 == "Weight":
         answer = Koolstofdioxide_gewicht
-    if Question1 == "ethanol" and Question2 == "Weight":
+    if Q1 == "ethanol" and Q2 == "Weight":
         answer = Alcohol_gewicht
-    if Question1 == "methane" and Question2 == "Weight":
+    if Q1 == "methane" and Q2 == "Weight":
         answer = Methaan_gewicht
-    if Question1 == "sulphuric acid" and Question2 == "Weight":
+    if Q1 == "sulphuric acid" and Q2 == "Weight":
         answer = Zwavelzuur_gewicht
-    if Question1 == "sulphuric dioxide" and Question2 == "Weight":
+    if Q1 == "sulphuric dioxide" and Q2 == "Weight":
         answer = Zwaveldioxide_gewicht
-    if Question1 == "oxygen" and Question2 == "Weight":
+    if Q1 == "oxygen" and Q2 == "Weight":
         answer = O_gewicht
-    if Question1 == "hydrogen" and Question2 == "Weight":
+    if Q1 == "hydrogen" and Q2 == "Weight":
         answer = H_gewicht
-    if Question1 == "sulfur" and Question2 == "Weight":
+    if Q1 == "sulfur" and Q2 == "Weight":
         answer = S_gewicht
-    if Question1 == "nitrogen" and Question2 == "Weight":
+    if Q1 == "nitrogen" and Q2 == "Weight":
         answer = N_gewicht
-    if Question1 == "carbon" and Question2 == "Weight":
+    if Q1 == "carbon" and Q2 == "Weight":
         answer = C_gewicht
-    if Question1 == "boron" and Question2 == "Weight":
+    if Q1 == "boron" and Q2 == "Weight":
         answer = B_gewicht
-    if Question1 == "phosphorus" and Question2 == "Weight":
+    if Q1 == "phosphorus" and Q2 == "Weight":
         answer = P_gewicht
-    #if Question1 == "" and Question == "Weight":
+    #if Q1 == "" and Question == "Weight":
      #   answer =
 
 # website deel 2
@@ -137,14 +137,14 @@ if selected == "Chemistry Machine":
     data_Q = pd.DataFrame(
         [
             { 
-                 "Q1": Question1,
-                 "Q2": Question2
+                 "Q1": Q1,
+                 "Q2": Q2
             }
         ]
     )
     updated_df = pd.concat([existing_data, data_Q])
     if Submit1:
-        if Question1 and Question2:
+        if Q1 and Q2:
             try:
                 time.sleep(2)
                 conn.update(worksheet="data", data=updated_df)
@@ -152,8 +152,8 @@ if selected == "Chemistry Machine":
                 st.error("unexpected error happened")
         else: 
             st.warning("Please fill out both fields")
-        if Question1 and Question2:
-            if Question2 == "Weight" and Question1:
+        if Q1 and Q2:
+            if Q2 == "Weight" and Q1:
                 try:
                     st.write(f"_Your answer is_ {answer} u")
                 except: 
