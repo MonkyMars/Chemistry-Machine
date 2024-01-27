@@ -241,11 +241,5 @@ if selected == "Projects":
     st.write("* create more projects which can either help people or to learn to understand python better")
 
 if selected == "Testing":
-            st.session_state['Name'] = st.text_input("Enter your name", key= "Jan")
-            Feedback = st.text_input("Enter your feedback", key= "Bob")
-            if st.session_state['Name'] and Feedback:
-                try: 
-                    st.write(f"{st.session_state['Name']}")
-                except:
-                    pass
+
     
