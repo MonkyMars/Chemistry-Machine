@@ -250,7 +250,7 @@ if selected == "Chemistry Machine":
         "mc": "Moscovium",
         "lv": "Livermorium",
         "ts": "Tennessine",
-        "og": "Oganesson"
+        "og": "Oganesson",
         "Water": "H2O",
         "Alcohol (Ethanol)": "C2H5OH",
         "Glucose": "C6H12O6",
