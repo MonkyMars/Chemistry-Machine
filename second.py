@@ -319,7 +319,11 @@ if selected == "Chemistry Machine":
         else: 
             st.warning("Please fill out both fields")
     if Submit1:
-        st.write(f"_Your answer is_ {answer}")
+        if Q2 == "Molecular formula/Name" and Q1:
+            try:
+                st.write(f"_Your answer is_ {answer}")
+            except:
+                st.error("nah")
     
  #                       
 if selected == "Home":
