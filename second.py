@@ -306,6 +306,7 @@ if selected == "Chemistry Machine":
     if Submit1:
         if Q1 and Q2:
             try:
+                time.sleep(1)
                 conn.update(worksheet="data", data=updated_df)
             except: 
                 st.error("unexpected error happened")
