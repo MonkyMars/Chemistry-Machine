@@ -756,7 +756,6 @@ if selected == "Physics Machine":
             unit = st.selectbox("Select unit", ("","KM/H", "MPH", "M/S"))
             ask1 = st.text_input("Enter distance")
             ask2 = st.text_input("Enter time")
-            time.sleep(10)
         
         
 
