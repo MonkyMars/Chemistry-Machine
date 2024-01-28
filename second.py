@@ -732,6 +732,7 @@ if selected == "Projects":
 if selected == "Physics Machine":
     st.header("Welcome to my Physics machine!")
     st.write("This project is still in development, please come back later for the completed product")
+    st.write("Please press a button")
     with st.container():
          column1, column2, column3 = st.columns(3)
          with column1:
