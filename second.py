@@ -327,6 +327,12 @@ if selected == "Chemistry Machine":
     updated_df = pd.concat([existing_data, data_Q])
     if Submit1:
         if Q1 and Q2:
+            if Q2 == "Molecular formula/Name" and Q1:
+                try:
+                    answer = elements.get(Q1)
+                    answer = elements2.get(Q1)
+                except:
+                    st.error("This element hasn't been added yet or you made a typo")
             try:
                 time.sleep(2)
                 conn.update(worksheet="data", data=updated_df)
@@ -345,12 +351,7 @@ if selected == "Chemistry Machine":
                     st.write(f"_Your answer is_ *{answer}*");
                 except:
                     pass
-            if Q2 == "Molecular formula/Name" and Q1:
-                try:
-                    answer = elements.get(Q1)
-                    answer = elements2.get(Q1)
-                except:
-                    st.error("This element hasn't been added yet or you made a typo")
+            
                     
 if selected == "Home":
     conn = st.connection("gsheets", type=GSheetsConnection) 
