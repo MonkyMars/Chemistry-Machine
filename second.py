@@ -350,7 +350,7 @@ if selected == "Chemistry Machine":
                 try:
                     st.write(f"_Your answer is_ *{answer}*");
                 except:
-                    pass
+                    st.write(f"_Your answer is_ {answer}")
                     
                 
                
