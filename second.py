@@ -752,9 +752,7 @@ if selected == "Physics Machine":
              f = st.button("placeholder", key = "1c")
     if c:
         modal.open()
-    else:
-        modal.close()
-    if modal.is_open:
+    if modal.is_open and c:
         with modal.container():
             unit = st.selectbox("Select unit", ("","KM/H", "MPH", "M/S"))
             ask1 = st.text_input("Enter distance")
