@@ -273,7 +273,7 @@ if selected == "Chemistry Machine":
         "caffeine": "C8H10N4O2",
         "methionine": "C5H11NO2S",
     } 
-    element_weight = {
+    elements_weight = {
         ("H", "hydrogen"): 1.008,
         ("He", "helium"): 4.0026,
         ("Li", "lithium"): 6.94,
@@ -473,7 +473,7 @@ if selected == "Chemistry Machine":
             #Weight
             if Q2 == "Weight":
                 try: 
-                    answer = element_weight.get(Q1)
+                    answer = elements_weight.get(Q1)
                 except: 
                     pass
             
