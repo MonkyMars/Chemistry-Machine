@@ -730,6 +730,7 @@ if selected == "Projects":
     st.write("* create more projects which can either help people or to learn to understand python better")
 #
 if selected == "Physics Machine":
+    modal = Modal(key="Key123", title="Calculating Speed")
     st.header("Welcome to my Physics machine!")
     st.write("This project is still in development, please come back later for the completed product")
     st.write("Please press a button")
