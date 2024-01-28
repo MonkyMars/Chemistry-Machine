@@ -251,6 +251,27 @@ if selected == "Chemistry Machine":
         "lv": "Livermorium",
         "ts": "Tennessine",
         "og": "Oganesson"
+        "Water": "H2O",
+        "Alcohol (Ethanol)": "C2H5OH",
+        "Glucose": "C6H12O6",
+        "Methane": "CH4",
+        "Carbon Dioxide": "CO2",
+        "Oxygen": "O2",
+        "Nitrogen": "N2",
+        "Ammonia": "NH3",
+        "Hydrogen Peroxide": "H2O2",
+        "Acetic Acid": "CH3COOH",
+        "Methanol": "CH3OH",
+        "Propane": "C3H8",
+        "Butane": "C4H10",
+        "Sulfuric Acid": "H2SO4",
+        "Sodium Chloride": "NaCl",
+        "DNA (Adenine-Thymine Guanine-Cytosine)": "C10H13N5O4",
+        "Chloroform": "CHCl3",
+        "Benzene": "C6H6",
+        "Aspirin": "C9H8O4",
+        "Caffeine": "C8H10N4O2",
+        "Methionine": "C5H11NO2S",
     }  
     #samengewicht
     H_gewicht = 1.008
