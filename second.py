@@ -395,6 +395,7 @@ if selected == "Chemistry Machine":
         "oganesson": 294.0,
         "water": 18.01528,
         "alcohol": 46.06844,
+        "ethanol": 46.06844,
         "glucose": 180.1559,
         "methane": 16.04,
         "carbon dioxide": 44.0095,
