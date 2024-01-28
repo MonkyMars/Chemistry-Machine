@@ -743,11 +743,11 @@ if selected == "Physics Machine":
     with st.container():
          column4, column5, column6 = st.columns(3)
          with column4:
-             st.button("placeholder")
+             st.button("placeholder", key = "1a")
          with column5:
-             st.button("placeholder")
+             st.button("placeholder", key = "1b")
          with column6:
-             st.button("placeholder")
+             st.button("placeholder", key = "1c")
         
 
              
