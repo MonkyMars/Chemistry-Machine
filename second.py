@@ -342,16 +342,8 @@ if selected == "Chemistry Machine":
         else: 
             st.warning("Please fill out both fields")
             if Q1 and Q2:
-              if Q2 == "Weight" and Q1:
-                  try:
-                    st.write(f"_Your answer is_ {answer} u")
-                  except: 
-                    st.error("This element hasn't been added yet or you made a typo")
-            if Q1 and Q2:
-                try:
-                    st.write(f"_Your answer is_ *{answer}*");
-                except:
-                    st.write(f"_Your answer is_ {answer}")
+                st.write(f"_Your answer is_ {answer} u")
+            
                     
                 
                
