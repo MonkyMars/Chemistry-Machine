@@ -341,7 +341,10 @@ if selected == "Chemistry Machine":
                 except: 
                     st.error("This element hasn't been added yet or you made a typo")
             else: 
-                st.write(f"_Your answer is_ *{answer}*");
+                try:
+                    st.write(f"_Your answer is_ *{answer}*");
+                except:
+                    pass
             if Q2 == "Molecular formula/Name" and Q1:
                 try:
                     answer = elements.get(Q1)
