@@ -318,6 +318,9 @@ if selected == "Chemistry Machine":
                 st.error("unexpected error happened")
         else: 
             st.warning("Please fill out both fields")
+    if Submit1:
+        st.write(f"_Your answer is_ {answer}")
+    
  #                       
 if selected == "Home":
     conn = st.connection("gsheets", type=GSheetsConnection) 
