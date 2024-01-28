@@ -751,6 +751,7 @@ if selected == "Physics Machine":
              f = st.button("placeholder", key = "1c")
     if c:
         modal = Modal(key="Key123",title="Calculating Speed")
+        modal.open()
         with modal.container():
             st.text_input("Enter distance")
             st.text_input("Enter time") 
