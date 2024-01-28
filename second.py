@@ -733,11 +733,24 @@ if selected == "Physics Machine":
     st.header("Welcome to my Physics machine!")
     st.write("This project is still in development, please come back later for the completed product")
     with st.container():
-         column1, column2, column3, column4, column5 = st.columns(5)
+         column1, column2, column3 = st.columns(3)
          with column1:
              st.button("Questions")
          with column2:
-             st.button("Evenwicht")
+             st.button("Balace")
+         with column3:
+             st.button("Speed")
+    with st.container():
+         column4, column5, column6 = st.columns(3)
+         with column4:
+             st.button("placeholder")
+         with column5:
+             st.button("placeholder")
+         with column6:
+             st.button("placeholder")
+        
+
+             
         
 
     
