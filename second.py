@@ -295,27 +295,30 @@ if selected == "Chemistry Machine":
     updated_df = pd.concat([existing_data, data_Q])
     if Submit1:
         if Q1 and Q2:
+            #Molecular formula/Name
             if Q2 == "Molecular formula/Name" and Q1:
                 try:
-                    answer = elements.get(Q1)
+                    answer = elements.get(Q1) 
+                except:
+                    st.error("")
+                try: 
                     answer = elements2.get(Q1)
                 except:
                     st.error("")
-                try:
-                    time.sleep(2)
-                    conn.update(worksheet="data", data=updated_df)
-                except: 
-                    st.error("unexpected error happened")
-           
+            #weight
             if Q1 and Q2 == "Weight":
                 st.write(f"_Your answer is_ {answer} u")
         else: 
             st.warning("Please fill out both fields")
-        
-            
-                    
-                
-               
+    #data for gsheet
+    if Submit1:
+        if Q1 and Q2:
+            try:
+                time.sleep(2)
+                conn.update(worksheet="data", data=updated_df)
+            except: 
+                st.error("unexpected error happened")
+ #                       
 if selected == "Home":
     conn = st.connection("gsheets", type=GSheetsConnection) 
     existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
