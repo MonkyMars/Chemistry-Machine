@@ -306,11 +306,12 @@ if selected == "Chemistry Machine":
                     conn.update(worksheet="data", data=updated_df)
                 except: 
                     st.error("unexpected error happened")
-                    st.stop()
-        else: 
-            st.warning("Please fill out both fields")
+           
             if Q1 and Q2 == "Weight":
                 st.write(f"_Your answer is_ {answer} u")
+        else: 
+            st.warning("Please fill out both fields")
+        
             
                     
                 
