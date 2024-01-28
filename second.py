@@ -624,7 +624,8 @@ if selected == "Chemistry Machine":
                     answer = elements_weight.get(Q1)
                 except: 
                     pass
-            
+        if answer == "None":
+            st.error("Either you made a typo or we haven't added this")
     #data for gsheet
     if Submit1:
         if Q1 and Q2:
