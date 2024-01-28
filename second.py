@@ -334,11 +334,11 @@ if selected == "Chemistry Machine":
                         answer = elements2.get(Q1)
                    except:
                        pass
-                 try:
-                    time.sleep(2)
-                    conn.update(worksheet="data", data=updated_df)
-                  except: 
-                     st.error("unexpected error happened")
+                   try:
+                       time.sleep(2)
+                       conn.update(worksheet="data", data=updated_df)
+                   except: 
+                       st.error("unexpected error happened")
               else: 
                 st.warning("Please fill out both fields")
                if Q1 and Q2:
