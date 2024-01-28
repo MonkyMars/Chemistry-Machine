@@ -337,6 +337,16 @@ if selected == "Chemistry Machine":
                     st.error("This element hasn't been added yet or you made a typo")
             else: 
                 st.write(f"_Your answer is_ *{answer}*");
+            if Q2 == "Molecular formula/Name" and Q1:
+                try:
+                    answer = elements.get[Q1]
+                except:
+                    st.error("This element hasn't been added yet or you made a typo")
+                try:
+                    answer = elements2.get[Q1]
+                except: 
+                    st.error("This element hasn't been added yet or you made a typo")
+                    
 if selected == "Home":
     conn = st.connection("gsheets", type=GSheetsConnection) 
     existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
