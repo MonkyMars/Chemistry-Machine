@@ -279,19 +279,19 @@ if selected == "Chemistry Machine":
 # moleculen
 if selected == "Chemistry Machine":
     if Q1 == "water" and Q2 == "Molecular formula/Name":
-        answer = Water_moleculen
+        answer = "H2O"
     if Q1 == "ammonia" and Q2 == "Molecular formula/Name":
-        answer = Ammoniak_moleculen
+        answer = "NH3"
     if Q1 == "carbon dioxide" and Q2 == "Molecular formula/Name":
-        answer = Koolstofdioxide_moleculen
+        answer = "CO2"
     if Q1 == "ethanol" and Q2 == "Molecular formula/Name":
-        answer = Alcohol_moleculen
+        answer = "C₂H₆O"
     if Q1 == "methane" and Q2 == "Molecular formula/Name":
-        answer = Methaan_moleculen
+        answer = "CH4"
     if Q1 == "sulfuric acid" and Q2 == "Molecular formula/Name":
-        answer = Zwavelzuur_moleculen
+        answer = "H₂SO₄"
     if Q1 == "sulfuric dioxide" and Q2 == "Molecular formula/Name":
-        answer = Zwaveldioxide_moleculen
+        answer = "SO₂"
 #gewichten
 if selected == "Chemistry Machine":
     if Q1 == "water" and Q2 == "Weight":
@@ -345,13 +345,8 @@ if selected == "Chemistry Machine":
             if Q2 == "Molecular formula/Name" and Q1:
                 try:
                     answer = elements.get(Q1)
-                except:
-                    st.error("This element hasn't been added yet or you made a typo")
-           
-            if Q2 == "Molecular formula/Name" and Q1:
-                try:
                     answer = elements2.get(Q1)
-                except: 
+                except:
                     st.error("This element hasn't been added yet or you made a typo")
                     
 if selected == "Home":
