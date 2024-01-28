@@ -730,6 +730,14 @@ if selected == "Projects":
     st.write("* create more projects which can either help people or to learn to understand python better")
 #
 if selected == "Physics Machine":
-    st.header("Still in development!")
+    st.header("Welcome to my Physics machine!")
+    st.write("This project is still in development, please come back later for the completed product")
+    with st.container():
+         column1, column2, column3, column4, column5 = st.columns(1)
+        with column1:
+            st.button("Questions")
+        with column2:
+            st.button("Evenwicht")
+        
 
     
