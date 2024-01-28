@@ -11,7 +11,7 @@ st.set_page_config(page_title="Chemistry Machine", page_icon=":test_tube:")
 with (st.sidebar):
     selected = option_menu(
         menu_title=None,
-        options=["Home", "Chemistry Machine", "Projects", "About me"])
+        options=["Home", "Chemistry Machine", "Physics Machine", "Projects", "About me"])
 #
 if selected == "Chemistry Machine":
     elements = {
@@ -728,5 +728,8 @@ if selected == "Projects":
     st.write("My plans for the future are")
     st.write("* make a Dutch version of this site and my projects")
     st.write("* create more projects which can either help people or to learn to understand python better")
+#
+if selected == "Physics Machine":
+    st.header("Still in development!")
 
     
