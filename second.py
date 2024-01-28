@@ -752,8 +752,9 @@ if selected == "Physics Machine":
     if c:
         modal = Modal(key="Key123",title="Calculating Speed")
         with modal.container():
-            st.text_input("Enter distance")
-            st.text_input("Enter time") 
+            Q0 = st.selectbox("Select unit", ("", "KM/H", "MPH", "M/S"))
+            Q1 = st.text_input("Enter distance")
+            Q2 = st.text_input("Enter time") 
         
         
 
