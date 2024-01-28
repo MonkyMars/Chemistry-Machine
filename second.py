@@ -751,8 +751,9 @@ if selected == "Physics Machine":
          with column6:
              f = st.button("placeholder", key = "1c")
 
-    if modal.is_open and c:
+    if c:
         with modal.container():
+            unit = st.selectbox("Select unit", ("","KM/H", "MPH", "M/S"))
             ask1 = st.text_input("Enter distance")
             ask2 = st.text_input("Enter time") 
         
