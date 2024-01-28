@@ -736,20 +736,20 @@ if selected == "Physics Machine":
     with st.container():
          column1, column2, column3 = st.columns(3)
          with column1:
-             "a" = st.button("Questions")
+             a = st.button("Questions")
          with column2:
-             "b" = st.button("Balace")
+             b = st.button("Balace")
          with column3:
-             "c" = st.button("Speed")
+             c = st.button("Speed")
     with st.container():
          column4, column5, column6 = st.columns(3)
          with column4:
-             "d" = st.button("placeholder", key = "1a")
+             d = st.button("placeholder", key = "1a")
          with column5:
-             "e" = st.button("placeholder", key = "1b")
+             e = st.button("placeholder", key = "1b")
          with column6:
-             "f" = st.button("placeholder", key = "1c")
-    if "c":
+             f = st.button("placeholder", key = "1c")
+    if c:
         modal = Modal(key="Key123",title="Calculating Speed")
         with modal.container():
             st.text_input("Enter distance")
