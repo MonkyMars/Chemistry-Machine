@@ -276,38 +276,6 @@ if selected == "Chemistry Machine":
     Q1 = st.text_input("Which molecule do you want to know? **").lower()
     Q2 = st.selectbox('What do you want to know about this molecule or atom? **',
                              ('', 'Weight', 'Molecular formula/Name'))    
-# moleculen
-if selected == "Chemistry Machine":
-    if Q1 == "water" and Q2 == "Molecular formula/Name":
-        answer = "H2O"
-    if Q1 == "ammonia" and Q2 == "Molecular formula/Name":
-        answer = "NH3"
-    if Q1 == "carbon dioxide" and Q2 == "Molecular formula/Name":
-        answer = "CO2"
-    if Q1 == "ethanol" and Q2 == "Molecular formula/Name":
-        answer = "C₂H₆O"
-    if Q1 == "methane" and Q2 == "Molecular formula/Name":
-        answer = "CH4"
-    if Q1 == "sulfuric acid" and Q2 == "Molecular formula/Name":
-        answer = "H₂SO₄"
-    if Q1 == "sulfuric dioxide" and Q2 == "Molecular formula/Name":
-        answer = "SO₂"
-#gewichten
-if selected == "Chemistry Machine":
-    if Q1 == "water" and Q2 == "Weight":
-        answer = Water_gewicht
-    if Q1 == "ammonia" and Q2 == "Weight":
-        answer = Ammoniak_gewicht
-    if Q1 == "carbon dioxide" and Q2 == "Weight":
-        answer = Koolstofdioxide_gewicht
-    if Q1 == "ethanol" and Q2 == "Weight":
-        answer = Alcohol_gewicht
-    if Q1 == "methane" and Q2 == "Weight":
-        answer = Methaan_gewicht
-    if Q1 == "sulphuric acid" and Q2 == "Weight":
-        answer = Zwavelzuur_gewicht
-    if Q1 == "sulphuric dioxide" and Q2 == "Weight":
-        answer = Zwaveldioxide_gewicht
 
 # website deel 2
 if selected == "Chemistry Machine":
