@@ -336,7 +336,7 @@ if selected == "Chemistry Machine":
                 try:
                      time.sleep(2)
                      conn.update(worksheet="data", data=updated_df)
-                 except: 
+                except: 
                    st.error("unexpected error happened")
           else: 
               st.warning("Please fill out both fields")
