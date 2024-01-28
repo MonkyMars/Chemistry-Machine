@@ -14,34 +14,247 @@ with (st.sidebar):
         options=["Home", "Chemistry Machine", "Projects", "About me"])
 #
 if selected == "Chemistry Machine":
-    Water_moleculen = "H2", "0"
-    Ammoniak_moleculen = "N", "H3"
-    Koolstofdioxide_moleculen = "C", "O2"
-    Alcohol_moleculen = "C2", "H6", "O"
-    Methaan_moleculen = "C", "H4"
-    Zwavelzuur_moleculen = "H2", "S", "O4"
-    Zwaveldioxide_moleculen = "S", "O2"
-    Zuurstof_moleculen = "O"
-    Waterstof_moleculen = "H"
-    Stikstof_moleculen = "N"
-    Koolstof_moleculen = "C"
-    Zwavel_moleculen = "S"
-    Boor_moleculen = "B"
-    Fluor_moleculen = "F"
-    Fosfor_moleculen = "P"
-    Jood_moleculen = "I"
-    Chloor_moleculen = "Cl"
-    #alleengewicht
-    H_gewicht = 1.008
-    O_gewicht = 16.00
-    N_gewicht = 14.01
-    C_gewicht = 12.01
-    S_gewicht = 32.06
-    B_gewicht = 10.81
-    F_gewicht = 19.00
-    P_gewicht = 30.97
-    I_gewicht = 126.9
-    Cl_gewicht = 35.45
+    elements = {
+        "hydrogen": "H",
+        "helium": "He",
+        "lithium": "Li",
+        "beryllium": "Be",
+        "boron": "B",
+        "carbon": "C",
+        "nitrogen": "N",
+        "oxygen": "O",
+        "fluorine": "F",
+        "neon": "Ne",
+        "sodium": "Na",
+        "magnesium": "Mg",
+        "aluminum": "Al",
+        "silicon": "Si",
+        "phosphorus": "P",
+        "sulfur": "S",
+        "chlorine": "Cl",
+        "argon": "Ar",
+        "potassium": "K",
+        "calcium": "Ca",
+        "scandium": "Sc",
+        "titanium": "Ti",
+        "vanadium": "V",
+        "chromium": "Cr",
+        "manganese": "Mn",
+        "iron": "Fe",
+        "cobalt": "Co",
+        "nickel": "Ni",
+        "copper": "Cu",
+        "zinc": "Zn",
+        "gallium": "Ga",
+        "germanium": "Ge",
+        "arsenic": "As",
+        "selenium": "Se",
+        "bromine": "Br",
+        "krypton": "Kr",
+        "rubidium": "Rb",
+        "strontium": "Sr",
+        "yttrium": "Y",
+        "zirconium": "Zr",
+        "niobium": "Nb",
+        "molybdenum": "Mo",
+        "technetium": "Tc",
+        "ruthenium": "Ru",
+        "rhodium": "Rh",
+        "palladium": "Pd",
+        "silver": "Ag",
+        "cadmium": "Cd",
+        "indium": "In",
+        "tin": "Sn",
+        "antimony": "Sb",
+        "tellurium": "Te",
+        "iodine": "I",
+        "xenon": "Xe",
+        "cesium": "Cs",
+        "barium": "Ba",
+        "lanthanum": "La",
+        "cerium": "Ce",
+        "praseodymium": "Pr",
+        "neodymium": "Nd",
+        "promethium": "Pm",
+        "samarium": "Sm",
+        "europium": "Eu",
+        "gadolinium": "Gd",
+        "terbium": "Tb",
+        "dysprosium": "Dy",
+        "holmium": "Ho",
+        "erbium": "Er",
+        "thulium": "Tm",
+        "ytterbium": "Yb",
+        "lutetium": "Lu",
+        "hafnium": "Hf",
+        "tantalum": "Ta",
+        "tungsten": "W",
+        "rhenium": "Re",
+        "osmium": "Os",
+        "iridium": "Ir",
+        "platinum": "Pt",
+        "gold": "Au",
+        "mercury": "Hg",
+        "thallium": "Tl",
+        "lead": "Pb",
+        "bismuth": "Bi",
+        "polonium": "Po",
+        "astatine": "At",
+        "radon": "Rn",
+        "francium": "Fr",
+        "radium": "Ra",
+        "actinium": "Ac",
+        "thorium": "Th",
+        "protactinium": "Pa",
+        "uranium": "U",
+        "neptunium": "Np",
+        "plutonium": "Pu",
+        "americium": "Am",
+        "curium": "Cm",
+        "berkelium": "Bk",
+        "californium": "Cf",
+        "einsteinium": "Es",
+        "fermium": "Fm",
+        "mendelevium": "Md",
+        "nobelium": "No",
+        "lawrencium": "Lr",
+        "rutherfordium": "Rf",
+        "dubnium": "Db",
+        "seaborgium": "Sg",
+        "bohrium": "Bh",
+        "hassium": "Hs",
+        "meitnerium": "Mt",
+        "darmstadtium": "Ds",
+        "roentgenium": "Rg",
+        "copernicium": "Cn",
+        "nihonium": "Nh",
+        "flerovium": "Fl", 
+        "moscovium": "Mc",   
+        "livermorium": "Lv", 
+        "tennessine": "Ts",  
+        "oganesson": "Og"   
+
+if selected == "Chemistry Machine":
+    elements2 = {
+        "h": "Hydrogen",
+        "he": "Helium",
+        "li": "Lithium",
+        "be": "Beryllium",
+        "b": "Boron",
+        "c": "Carbon",
+        "n": "Nitrogen",
+        "o": "Oxygen",
+        "f": "Fluorine",
+        "ne": "Neon",
+        "na": "Sodium",
+        "mg": "Magnesium",
+        "al": "Aluminum",
+        "si": "Silicon",
+        "p": "Phosphorus",
+        "s": "Sulfur",
+        "cl": "Chlorine",
+        "ar": "Argon",
+        "k": "Potassium",
+        "ca": "Calcium",
+        "sc": "Scandium",
+        "ti": "Titanium",
+        "v": "Vanadium",
+        "cr": "Chromium",
+        "mn": "Manganese",
+        "fe": "Iron",
+        "co": "Cobalt",
+        "ni": "Nickel",
+        "cu": "Copper",
+        "zn": "Zinc",
+        "ga": "Gallium",
+        "ge": "Germanium",
+        "as": "Arsenic",
+        "se": "Selenium",
+        "br": "Bromine",
+        "kr": "Krypton",
+        "rb": "Rubidium",
+        "sr": "Strontium",
+        "y": "Yttrium",
+        "zr": "Zirconium",
+        "nb": "Niobium",
+        "mo": "Molybdenum",
+        "tc": "Technetium",
+        "ru": "Ruthenium",
+        "rh": "Rhodium",
+        "pd": "Palladium",
+        "ag": "Silver",
+        "cd": "Cadmium",
+        "in": "Indium",
+        "sn": "Tin",
+        "sb": "Antimony",
+        "te": "Tellurium",
+        "i": "Iodine",
+        "xe": "Xenon",
+        "cs": "Cesium",
+        "ba": "Barium",
+        "la": "Lanthanum",
+        "ce": "Cerium",
+        "pr": "Praseodymium",
+        "nd": "Neodymium",
+        "pm": "Promethium",
+        "sm": "Samarium",
+        "eu": "Europium",
+        "gd": "Gadolinium",
+        "tb": "Terbium",
+        "dy": "Dysprosium",
+        "ho": "Holmium",
+        "er": "Erbium",
+        "tm": "Thulium",
+        "yb": "Ytterbium",
+        "lu": "Lutetium",
+        "hf": "Hafnium",
+        "ta": "Tantalum",
+        "w": "Tungsten",
+        "re": "Rhenium",
+        "os": "Osmium",
+        "ir": "Iridium",
+        "pt": "Platinum",
+        "au": "Gold",
+        "hg": "Mercury",
+        "tl": "Thallium",
+        "pb": "Lead",
+        "bi": "Bismuth",
+        "po": "Polonium",
+        "at": "Astatine",
+        "rn": "Radon",
+        "fr": "Francium",
+        "ra": "Radium",
+        "ac": "Actinium",
+        "th": "Thorium",
+        "pa": "Protactinium",
+        "u": "Uranium",
+        "np": "Neptunium",
+        "pu": "Plutonium",
+        "am": "Americium",
+        "cm": "Curium",
+        "bk": "Berkelium",
+        "cf": "Californium",
+        "es": "Einsteinium",
+        "fm": "Fermium",
+        "md": "Mendelevium",
+        "no": "Nobelium",
+        "lr": "Lawrencium",
+        "rf": "Rutherfordium",
+        "db": "Dubnium",
+        "sg": "Seaborgium",
+        "bh": "Bohrium",
+        "hs": "Hassium",
+        "mt": "Meitnerium",
+        "ds": "Darmstadtium",
+        "rg": "Roentgenium",
+        "cn": "Copernicium",
+        "nh": "Nihonium",
+        "fl": "Flerovium",
+        "mc": "Moscovium",
+        "lv": "Livermorium",
+        "ts": "Tennessine",
+        "og": "Oganesson",
+}  
     #samengewicht
     Water_gewicht = H_gewicht * 2 + O_gewicht
     Ammoniak_gewicht = N_gewicht + H_gewicht * 3
@@ -52,48 +265,29 @@ if selected == "Chemistry Machine":
     Zwaveldioxide_gewicht = S_gewicht + O_gewicht * 2
 
 # website deel 1
-
 if selected == "Chemistry Machine":
     st.markdown('# My super cool chemistry machine!')
     st.write("This is a project I made myself using python and streamlit")
     st.write("#")
     Q1 = st.text_input("Which molecule do you want to know? **").lower()
     Q2 = st.selectbox('What do you want to know about this molecule or atom? **',
-                             ('', 'Weight', 'Molecular formula'))
-        
+                             ('', 'Weight', 'Molecular formula/Name/Name'))    
 # moleculen
 if selected == "Chemistry Machine":
-    if Q1 == "water" and Q2 == "Molecular formula":
+    if Q1 == "water" and Q2 == "Molecular formula/Name":
         answer = Water_moleculen
-    if Q1 == "ammonia" and Q2 == "Molecular formula":
+    if Q1 == "ammonia" and Q2 == "Molecular formula/Name":
         answer = Ammoniak_moleculen
-    if Q1 == "carbon dioxide" and Q2 == "Molecular formula":
+    if Q1 == "carbon dioxide" and Q2 == "Molecular formula/Name":
         answer = Koolstofdioxide_moleculen
-    if Q1 == "ethanol" and Q2 == "Molecular formula":
+    if Q1 == "ethanol" and Q2 == "Molecular formula/Name":
         answer = Alcohol_moleculen
-    if Q1 == "methane" and Q2 == "Molecular formula":
+    if Q1 == "methane" and Q2 == "Molecular formula/Name":
         answer = Methaan_moleculen
-    if Q1 == "sulfuric acid" and Q2 == "Molecular formula":
+    if Q1 == "sulfuric acid" and Q2 == "Molecular formula/Name":
         answer = Zwavelzuur_moleculen
-    if Q1 == "sulfuric dioxide" and Q2 == "Molecular formula":
+    if Q1 == "sulfuric dioxide" and Q2 == "Molecular formula/Name":
         answer = Zwaveldioxide_moleculen
-    if Q1 == "oxygen" and Q2 == "Molecular formula":
-        answer = Zuurstof_moleculen
-    if Q1 == "nitrogen" and Q2 == "Molecular formula":
-        answer = Stikstof_moleculen
-    if Q1 == "carbon" and Q2 == "Molecular formula":
-        answer = Koolstof_moleculen
-    if Q1 == "sulfur" and Q2 == "Molecular formula":
-        answer = Zwavel_moleculen
-    if Q1 == "boron" and Q2 == "Molecular formula":
-        answer = Boor_moleculen
-    if Q1 == "phosphorus" and Q2 == "Molecular formula":
-        answer = Fosfor_moleculen
-    if Q1 == "iodine" and Q2 == "Molecular formula":
-        answer = Jood_moleculen
-    if Q1 == "chlorine" and Q2 == "Molecular formula":
-        answer = Chloor_moleculen
-
 #gewichten
 if selected == "Chemistry Machine":
     if Q1 == "water" and Q2 == "Weight":
@@ -110,22 +304,6 @@ if selected == "Chemistry Machine":
         answer = Zwavelzuur_gewicht
     if Q1 == "sulphuric dioxide" and Q2 == "Weight":
         answer = Zwaveldioxide_gewicht
-    if Q1 == "oxygen" and Q2 == "Weight":
-        answer = O_gewicht
-    if Q1 == "hydrogen" and Q2 == "Weight":
-        answer = H_gewicht
-    if Q1 == "sulfur" and Q2 == "Weight":
-        answer = S_gewicht
-    if Q1 == "nitrogen" and Q2 == "Weight":
-        answer = N_gewicht
-    if Q1 == "carbon" and Q2 == "Weight":
-        answer = C_gewicht
-    if Q1 == "boron" and Q2 == "Weight":
-        answer = B_gewicht
-    if Q1 == "phosphorus" and Q2 == "Weight":
-        answer = P_gewicht
-    #if Q1 == "" and Question == "Weight":
-     #   answer =
 
 # website deel 2
 if selected == "Chemistry Machine":
