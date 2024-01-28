@@ -133,8 +133,6 @@ if selected == "Chemistry Machine":
         "livermorium": "Lv", 
         "tennessine": "Ts",  
         "oganesson": "Og"   
-
-if selected == "Chemistry Machine":
     elements2 =  {
         "h": "Hydrogen",
         "he": "Helium",
