@@ -469,14 +469,13 @@ if selected == "Chemistry Machine":
                 try:
                     answer = elements.get(Q1) 
                 except:
-                    st.error("1")
-            #weight
+                    pass
+            #Weight
             if Q2 == "Weight":
                 try: 
                     answer = element_weight.get(Q1)
-                    st.write(f"_Your answer is_ {answer} u")
                 except: 
-                    st.error("2")
+                    pass
             
     #data for gsheet
     if Submit1:
@@ -488,12 +487,18 @@ if selected == "Chemistry Machine":
                 st.error("unexpected error happened")
         else: 
             st.warning("Please fill out both fields")
+    #display answer
     if Submit1:
         if Q2 == "Molecular formula/Name" and Q1:
             try:
                 st.write(f"_Your answer is_ {answer}")
             except:
-                st.error("nah")
+                pass
+        if Q2 == "Weight" and Q1: 
+            try:
+                st.write(f"_Your answer is_ {answer}")
+            except:
+                pass
     
  #                       
 if selected == "Home":
