@@ -346,11 +346,11 @@ if selected == "Chemistry Machine":
                     st.write(f"_Your answer is_ {answer} u")
                   except: 
                     st.error("This element hasn't been added yet or you made a typo")
-                else: 
-                    try:
-                        st.write(f"_Your answer is_ *{answer}*");
-                    except:
-                        pass
+            else: 
+                try:
+                    st.write(f"_Your answer is_ *{answer}*");
+                except:
+                    pass
                     
                 
                
