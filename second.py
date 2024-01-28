@@ -296,7 +296,7 @@ if selected == "Chemistry Machine":
     if Submit1:
         if Q1 and Q2:
             #Molecular formula/Name
-            if Q2 == "Molecular formula/Name" and Q1:
+            if Q2 == "Molecular formula/Name":
                 try:
                     answer = elements.get(Q1) 
                 except:
@@ -308,8 +308,6 @@ if selected == "Chemistry Machine":
             #weight
             if Q1 and Q2 == "Weight":
                 st.write(f"_Your answer is_ {answer} u")
-        else: 
-            st.warning("Please fill out both fields")
     #data for gsheet
     if Submit1:
         if Q1 and Q2:
@@ -318,6 +316,8 @@ if selected == "Chemistry Machine":
                 conn.update(worksheet="data", data=updated_df)
             except: 
                 st.error("unexpected error happened")
+        else: 
+            st.warning("Please fill out both fields")
  #                       
 if selected == "Home":
     conn = st.connection("gsheets", type=GSheetsConnection) 
