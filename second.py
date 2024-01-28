@@ -329,29 +329,29 @@ if selected == "Chemistry Machine":
         if Q1 and Q2:
             if Q2 == "Molecular formula/Name" and Q1:
                try: 
-                        try:
-                            answer = elements.get(Q1)
-                            answer = elements2.get(Q1)
-                        except:
-                            pass
-                    try:
-                        time.sleep(2)
-                        conn.update(worksheet="data", data=updated_df)
-                    except: 
-                        st.error("unexpected error happened")
-                else: 
-                    st.warning("Please fill out both fields")
-                if Q1 and Q2:
-                    if Q2 == "Weight" and Q1:
-                        try:
-                            st.write(f"_Your answer is_ {answer} u")
-                        except: 
-                            st.error("This element hasn't been added yet or you made a typo")
-                    else: 
-                        try:
-                            st.write(f"_Your answer is_ *{answer}*");
-                        except:
-                            pass
+                   try:
+                        answer = elements.get(Q1)
+                        answer = elements2.get(Q1)
+                     except:
+                         pass
+                 try:
+                    time.sleep(2)
+                    conn.update(worksheet="data", data=updated_df)
+                  except: 
+                     st.error("unexpected error happened")
+              else: 
+                st.warning("Please fill out both fields")
+               if Q1 and Q2:
+                 if Q2 == "Weight" and Q1:
+                     try:
+                         st.write(f"_Your answer is_ {answer} u")
+                     except: 
+                        st.error("This element hasn't been added yet or you made a typo")
+                  else: 
+                      try:
+                          st.write(f"_Your answer is_ *{answer}*");
+                       except:
+                           pass
                 except:
                     st.error("ERROR")
                     
