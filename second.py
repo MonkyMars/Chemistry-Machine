@@ -332,8 +332,8 @@ if selected == "Chemistry Machine":
                    try:
                         answer = elements.get(Q1)
                         answer = elements2.get(Q1)
-                     except:
-                         pass
+                   except:
+                       pass
                  try:
                     time.sleep(2)
                     conn.update(worksheet="data", data=updated_df)
