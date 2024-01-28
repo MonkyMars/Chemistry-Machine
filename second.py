@@ -750,6 +750,7 @@ if selected == "Physics Machine":
              e = st.button("placeholder", key = "1b")
          with column6:
              f = st.button("placeholder", key = "1c")
+    #doest work yet, immiediately closes after givig input
     if c:
         with modal.container():
             unit = st.selectbox("Select unit", ("","KM/H", "MPH", "M/S"))
