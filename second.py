@@ -133,8 +133,6 @@ if selected == "Chemistry Machine":
         "livermorium": "Lv", 
         "tennessine": "Ts",  
         "oganesson": "Og"   
-    }
-    elements2 = {
         "h": "Hydrogen",
         "he": "Helium",
         "li": "Lithium",
@@ -300,11 +298,7 @@ if selected == "Chemistry Machine":
                 try:
                     answer = elements.get(Q1) 
                 except:
-                    st.error("")
-                try: 
-                    answer = elements2.get(Q1)
-                except:
-                    st.error("")
+                    st.error("1")
             #weight
             if Q1 and Q2 == "Weight":
                 st.write(f"_Your answer is_ {answer} u")
