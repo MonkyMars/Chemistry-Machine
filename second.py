@@ -734,10 +734,10 @@ if selected == "Physics Machine":
     st.write("This project is still in development, please come back later for the completed product")
     with st.container():
          column1, column2, column3, column4, column5 = st.columns(1)
-        with column1:
-            st.button("Questions")
-        with column2:
-            st.button("Evenwicht")
+         with column1:
+             st.button("Questions")
+         with column2:
+             st.button("Evenwicht")
         
 
     
