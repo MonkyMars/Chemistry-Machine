@@ -253,6 +253,7 @@ if selected == "Chemistry Machine":
         "og": "Oganesson",
         "water": "H2O",
         "alcohol": "C2H6O",
+        "ethanol": "C2H6O",
         "glucose": "C6H12O6",
         "methane": "CH4",
         "carbon Dioxide": "CO2",
