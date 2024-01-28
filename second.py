@@ -255,6 +255,11 @@ if selected == "Chemistry Machine":
         "og": "Oganesson"
     }  
     #samengewicht
+    H_gewicht = 1.008
+    O_gewicht = 16.00
+    N_gewicht = 14.01 
+    C_gewicht = 12.01
+    S_gewicht = 32.06
     Water_gewicht = H_gewicht * 2 + O_gewicht
     Ammoniak_gewicht = N_gewicht + H_gewicht * 3
     Koolstofdioxide_gewicht = C_gewicht + O_gewicht * 2
