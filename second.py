@@ -132,7 +132,7 @@ if selected == "Chemistry Machine":
         "moscovium": "Mc",   
         "livermorium": "Lv", 
         "tennessine": "Ts",  
-        "oganesson": "Og"   
+        "oganesson": "Og",   
         "h": "Hydrogen",
         "he": "Helium",
         "li": "Lithium",
