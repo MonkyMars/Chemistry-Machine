@@ -473,10 +473,11 @@ if selected == "Chemistry Machine":
             #weight
             if Q2 == "Weight":
                 try: 
-                    answer = elements_weight.get(Q1)
+                    answer = element_weight.get(Q1)
+                    st.write(f"_Your answer is_ {answer} u")
                 except: 
                     st.error("2")
-                st.write(f"_Your answer is_ {answer} u")
+            
     #data for gsheet
     if Submit1:
         if Q1 and Q2:
