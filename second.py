@@ -300,7 +300,7 @@ if selected == "Chemistry Machine":
                     answer = elements.get(Q1)
                     answer = elements2.get(Q1)
                 except:
-                   st.error("")
+                    st.error("")
                 try:
                     time.sleep(2)
                     conn.update(worksheet="data", data=updated_df)
@@ -309,7 +309,7 @@ if selected == "Chemistry Machine":
                     st.stop()
         else: 
             st.warning("Please fill out both fields")
-            if Q1 and Q2:
+            if Q1 and Q2 == "Weight"":
                 st.write(f"_Your answer is_ {answer} u")
             
                     
