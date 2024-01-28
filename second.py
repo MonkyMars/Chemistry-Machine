@@ -253,7 +253,7 @@ if selected == "Chemistry Machine":
         "mc": "Moscovium",
         "lv": "Livermorium",
         "ts": "Tennessine",
-        "og": "Oganesson",
+        "og": "Oganesson"
 }  
     #samengewicht
     Water_gewicht = H_gewicht * 2 + O_gewicht
