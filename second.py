@@ -748,18 +748,16 @@ if selected == "Physics Machine":
     with column2:
         b = st.button("Balace")
     with column3:
-        c = st.button("Speed")
-    with st.container():
-         column4, column5, column6 = st.columns(3)
-         with column4:
-             d = st.button("placeholder", key = "1a")
-         with column5:
-             e = st.button("placeholder", key = "1b")
-         with column6:
-             f = st.button("placeholder", key = "1c")
-    #doesnt work yet, immiediately closes after givig input
-    if c:
-        modal3.open()
+        c = st.button("Speed")  
+        if c:
+            modal3.open()
+    column4, column5, column6 = st.columns(3)
+    with column4:
+        d = st.button("placeholder", key = "1a")
+    with column5:
+        e = st.button("placeholder", key = "1b")
+    with column6:
+        f = st.button("placeholder", key = "1c")
     
 
 
