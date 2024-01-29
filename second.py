@@ -755,6 +755,16 @@ if selected == "Physics Machine":
     if Q == "Calculating Speed":
         st.subheader("Calculating Speed")
         Q4 = st.selectbox("Select unit", ("", "KM/H", "MP/H", "M/S"))
+        if Q4 == "KM/H":
+            Q5 = st.text_input("Enter distance in kilometers")
+            Q6 = st.text_input("Enter time in seconds")
+        if Q4 == "MP/H":
+            Q5 = st.text_input("Enter distance in miles")
+            Q6 = st.text_input("Enter time in seconds")
+        if Q4 == "M/S":
+            Q5 = st.text_input("Enter distancen in meters")
+            Q6 = st.text_input("Enter time in seconds")
+            
         
                 
     
