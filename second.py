@@ -736,8 +736,8 @@ if selected == "Physics Machine":
          modal3 = Modal(key="Key356756", title="Calculating Speed") 
          with modal3.container():
              unit = st.selectbox("Select unit", ("","KM/H", "MP/H", "M/S"), key="68476")
-             ask1 = st.text_input("Enter distance", key="key5875664")
-             ask2 = st.text_input("Enter time", key="key5747466")
+             ask1 = st.text_input("Enter distance in the selected unit", key="key5875664")
+             ask2 = st.text_input("Enter time in the selected unit", key="key5747466")
              close3 = st.button("Close", key="key5747")  
     modal1 = Modal(key="Key1554577", title="Questions")
     modal2 = Modal(key="Key2564657", title="Calculating Balance")
