@@ -759,8 +759,7 @@ if selected == "Physics Machine":
                 ask1 = st.text_input("Enter distance")
                 ask2 = st.text_input("Enter time")
                 Close3 = st.button("Close")
-                if Close3:
-                    modal.close()
+
         
         
 
