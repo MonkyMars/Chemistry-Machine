@@ -764,7 +764,9 @@ if selected == "Physics Machine":
             Q3 = int(st.text_input("insert mass in KG"))
         except:
             st.warning("Only type in the numbers of the mass")
-        if Q3:
+        if not Q3:
+            pass
+        else:
             M = Q3
             G = 9.81
             answer = M * G
