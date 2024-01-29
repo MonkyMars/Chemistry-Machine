@@ -745,8 +745,8 @@ if selected == "Physics Machine":
     st.write("This project is still in development, please come back later for the completed product")
     Q = st.selectbox("Please select an option", ("", "Calculating Gravity", "Calculating Speed", "Calculating Balance")
     if Q == "Calculating Gravity":
-        st.subheader("Calculating gravity")
-        Q3 = int(st.text_input("insert mass in KG"))
+        st.subheader("Calculating Gravity")
+        Q3 = st.text_input("insert mass in KG")
         M = Q3
         G = 9.81
         answer = M * G
