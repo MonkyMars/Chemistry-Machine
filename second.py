@@ -746,7 +746,7 @@ if selected == "Physics Machine":
     st.write("Please press a button")
     column1, column2, column3 = st.columns(3)
     with column1:
-        a = st.button(" ", key="crazyuy")
+        a = st.button("Gravity", key="crazyyy")
     with column2:
         b = st.button("Balace", key="ejrfhhe")
     with column3:
@@ -759,7 +759,8 @@ if selected == "Physics Machine":
     with column6:
         f = st.button("placeholder", key = "1c")
     if a:
-        Q3 = st.text_input("")
+        st.subheader("Calculating gravity")
+        Q3 = st.text_input("insert mass")
 
         
         
