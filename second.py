@@ -743,31 +743,14 @@ if selected == "Physics Machine":
     #modal2 = Modal(key="Key2564657", title="Calculating Balance")
     st.header("Welcome to my Physics machine!")
     st.write("This project is still in development, please come back later for the completed product")
-    st.write("Please press a button")
-    column1, column2, column3 = st.columns(3)
-    with column1:
-        a = st.button("Gravity", key="crazyyy")
-    with column2:
-        b = st.button("Balace", key="ejrfhhe")
-    with column3:
-        buttonc = st.button("Speed", key="588475675")  
-    column4, column5, column6 = st.columns(3)
-    with column4:
-        d = st.button("placeholder", key = "1a")
-    with column5:
-        e = st.button("placeholder", key = "1b")
-    with column6:
-        f = st.button("placeholder", key = "1c")
-    if a:
+    Q = st.selectbox("Please select an option", ("", "Calculating Gravity", "Calculating Speed", "Calculating Balance")
+    if Q == "Calculating Gravity":
         st.subheader("Calculating gravity")
-        Q3 = st.text_input("insert mass in KG")
-        if not Q3:
-            pass
-        else:
-            M = Q3
-            G = 9.81
-            answer = M * G
-            st.write(answer)
+        Q3 = int(st.text_input("insert mass in KG"))
+        M = Q3
+        G = 9.81
+        answer = M * G
+        st.write(answer)
             
         
 
