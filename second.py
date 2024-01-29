@@ -739,7 +739,7 @@ if selected == "Physics Machine":
              ask1 = st.text_input("Enter distance in the selected unit", key="key5875664")
              ask2 = st.text_input("Enter time in the selected unit", key="key5747466")
              close3 = st.button("Close", key="key5747")  
-        time.sleep(5)
+         time.sleep(5)
     modal1 = Modal(key="Key1554577", title="Questions")
     modal2 = Modal(key="Key2564657", title="Calculating Balance")
     st.header("Welcome to my Physics machine!")
