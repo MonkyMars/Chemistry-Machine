@@ -760,7 +760,7 @@ if selected == "Physics Machine":
         f = st.button("placeholder", key = "1c")
     if a:
         st.subheader("Calculating gravity")
-        Q3 = int(st.text_input("insert mass in KG"))
+        Q3 = st.text_input("insert mass in KG")
         if not Q3:
             pass
         else:
