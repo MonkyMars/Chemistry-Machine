@@ -782,11 +782,24 @@ if selected == "Physics Machine":
     if Q == "Calculating Electricity":
         q = st.selectbox("Select unit", ("", "Volts", "Watt", "Joule"))
         if q == "Volts":
-            Q5 = st.text_input("Enter current in ampere")
+            Q5 = st.text_input("Enter current in Ampere")
             Q6 = st.text_input("Enter resistance in Ohm")
             if Q5 and Q6:
                 answer = float(Q5) * float(Q6)
                 st.write(f"Your answer is {answer}V")
+        if q == "Watt":
+            Q5 = st.text_input("Enter Voltage")
+            Q6 = st.text_input("Enter current in Ampere")
+            if Q5 and Q6:
+                answer = float(Q5) * float(Q6)
+                st.write(f"Your answer is {answer} W")
+        if q == "Joule":
+            Q5 = st.text_input("Enter wattage")
+            if Q5:
+                answer = float(Q5) / 1000
+                answer1 = answer * 3600000
+                st.write(f"Your answer is {answer1} J")
+    ##------------------------------------------------------------------------##
             
             
             
