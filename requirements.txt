@@ -78,5 +78,5 @@ validators==0.22.0
 watchdog==3.0.0
 yarg==0.1.9
 zipp==3.17.0
-git+https://github.com/streamlit/gsheets-connection==0.0.3
+git+https://github.com/streamlit/gsheets-connection
 
