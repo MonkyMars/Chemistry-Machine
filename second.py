@@ -732,19 +732,19 @@ if selected == "Projects":
     st.write("* create more projects which can either help people or to learn to understand python better")
 #
 if selected == "Physics Machine":
-    modal1 = Modal(key="Key15", title="Questions")
-    modal2 = Modal(key="Key25", title="Calculating Balance")
-    modal3 = Modal(key="Key35", title="Calculating Speed")
+    modal1 = Modal(key="Key1554577", title="Questions")
+    modal2 = Modal(key="Key2564657", title="Calculating Balance")
+    modal3 = Modal(key="Key356756", title="Calculating Speed")
     st.header("Welcome to my Physics machine!")
     st.write("This project is still in development, please come back later for the completed product")
     st.write("Please press a button")
     column1, column2, column3 = st.columns(3)
     with column1:
-        a = st.button("Questions")
+        a = st.button("Questions", key="crazyuy")
     with column2:
-        b = st.button("Balace")
+        b = st.button("Balace", key="ejrfhhe")
     with column3:
-        buttonc = st.button("Speed")  
+        buttonc = st.button("Speed", key="588475675")  
     column4, column5, column6 = st.columns(3)
     with column4:
         d = st.button("placeholder", key = "1a")
@@ -756,10 +756,10 @@ if selected == "Physics Machine":
         run3 = True
         while run3 == True:
             with modal3.container():
-                unit = st.selectbox("Select unit", ("","KM/H", "MPH", "M/S"))
-                ask1 = st.text_input("Enter distance")
-                ask2 = st.text_input("Enter time")
-                close3 = st.button("Close", key = "key5747")
+                unit = st.selectbox("Select unit", ("","KM/H", "MPH", "M/S"), key="68476")
+                ask1 = st.text_input("Enter distance", key="key5875664")
+                ask2 = st.text_input("Enter time", key="key5747466")
+                close3 = st.button("Close", key="key5747")
         if unit and ask1 and ask2 and close3:
             run3 = False
             
