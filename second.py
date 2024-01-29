@@ -754,11 +754,14 @@ if selected == "Physics Machine":
     if c:
         run3 = True
         While run3 == True:
+            modal.open()
             with modal.container():
                 unit = st.selectbox("Select unit", ("","KM/H", "MPH", "M/S"))
                 ask1 = st.text_input("Enter distance")
                 ask2 = st.text_input("Enter time")
                 Close3 = st.button("Close")
+                if Close3:
+                    run3 = False
 
         
         
