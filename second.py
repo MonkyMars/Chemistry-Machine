@@ -762,6 +762,8 @@ if selected == "Physics Machine":
         run3 = True
         if run3 == True:
             modal3.open()
+    if Close3:
+        run3 = False
     
 
 
