@@ -752,6 +752,10 @@ if selected == "Physics Machine":
             G = 9.81
             answer = M * G
             st.write(f"Your answer is {answer} Newton")
+    if Q == "Calculating Speed":
+        st.subheader("Calculating Speed")
+        Q4 = st.selectbox("Select unit", ("", "KM/H", "MP/H", "M/S"))
+        
                 
     
         
