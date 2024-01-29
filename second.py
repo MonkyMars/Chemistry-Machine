@@ -760,7 +760,7 @@ if selected == "Physics Machine":
     #doesnt work yet, immiediately closes after givig input
     if c:
         run3 = True
-        if run3 = True:
+        if run3 == True:
             modal3.open()
     
 
