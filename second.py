@@ -762,7 +762,7 @@ if selected == "Physics Machine":
                 updated_Q6 = float(Q6) / 3600
                 answer = float(Q5) / updated_Q6
                 st.write(f"Your answer is {answer}KM/H")
-        if Q4 == "MP/H":
+        if Q4 == "MPH":
             Q5 = st.text_input("Enter distance in miles")
             Q6 = st.text_input("Enter time in seconds")
             if Q5 and Q6:
