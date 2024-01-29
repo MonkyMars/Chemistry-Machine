@@ -750,12 +750,17 @@ if selected == "Physics Machine":
              e = st.button("placeholder", key = "1b")
          with column6:
              f = st.button("placeholder", key = "1c")
-    #doest work yet, immiediately closes after givig input
+    #doesnt work yet, immiediately closes after givig input
     if c:
-        with modal.container():
-            unit = st.selectbox("Select unit", ("","KM/H", "MPH", "M/S"))
-            ask1 = st.text_input("Enter distance")
-            ask2 = st.text_input("Enter time")
+        run3 = True
+        While run3 == True:
+            with modal.container():
+                unit = st.selectbox("Select unit", ("","KM/H", "MPH", "M/S"))
+                ask1 = st.text_input("Enter distance")
+                ask2 = st.text_input("Enter time")
+                Close3 = st.button("Close")
+                if Close3:
+                    modal.close()
         
         
 
