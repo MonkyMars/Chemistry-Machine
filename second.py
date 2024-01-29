@@ -599,7 +599,7 @@ if selected == "Chemistry Machine":
 # website deel 2
 if selected == "Chemistry Machine":
     conn = st.connection("gsheets", type=GSheetsConnection) 
-    existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
+    existing_data = conn.read(spreadsheet="data", usecols=list(range(4)), ttl=5)
     existing_data = existing_data.dropna(how="all")
     st.write("** Required field")
     Submit1 = st.button("submit")
@@ -631,7 +631,7 @@ if selected == "Chemistry Machine":
         if Q1 and Q2:
             try:
                 time.sleep(1)
-                conn.update(worksheet="data", data=updated_df)
+                conn.update(spreadsheet="data", data=updated_df)
             except: 
                 st.error("unexpected error happened")
         else: 
