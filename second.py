@@ -746,7 +746,7 @@ if selected == "Physics Machine":
     st.write("Please press a button")
     column1, column2, column3 = st.columns(3)
     with column1:
-        a = st.button("Questions", key="crazyuy")
+        a = st.button(" ", key="crazyuy")
     with column2:
         b = st.button("Balace", key="ejrfhhe")
     with column3:
@@ -758,6 +758,8 @@ if selected == "Physics Machine":
         e = st.button("placeholder", key = "1b")
     with column6:
         f = st.button("placeholder", key = "1c")
+    if a:
+        Q3 = st.text_input("")
 
         
         
