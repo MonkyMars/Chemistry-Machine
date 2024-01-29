@@ -14,6 +14,7 @@ with (st.sidebar):
         options=["Home", "Chemistry Machine", "Physics Machine", "Projects", "About me"])
 #
 if selected == "Chemistry Machine":
+    url = "https://docs.google.com/spreadsheets/d/1c2tXGy22BSCBFvgDzbHbqljazDxjwFGGcQLbL_dIp5w"
     elements = {
         "hydrogen": "H",
         "helium": "He",
@@ -599,7 +600,7 @@ if selected == "Chemistry Machine":
 # website deel 2
 if selected == "Chemistry Machine":
     conn = st.connection("gsheets", type=GSheetsConnection) 
-    existing_data = conn.read(spreadsheet="data", usecols=list(range(4)), ttl=5)
+    existing_data = conn.read(spreadsheet=url, usecols=list(range(4)), ttl=5)
     existing_data = existing_data.dropna(how="all")
     st.write("** Required field")
     Submit1 = st.button("submit")
@@ -631,7 +632,7 @@ if selected == "Chemistry Machine":
         if Q1 and Q2:
             try:
                 time.sleep(1)
-                conn.update(spreadsheet="data", data=updated_df)
+                conn.update(spreadsheet=url, data=updated_df)
             except: 
                 st.error("unexpected error happened")
         else: 
@@ -651,8 +652,9 @@ if selected == "Chemistry Machine":
     
  #                       
 if selected == "Home":
+    url = "https://docs.google.com/spreadsheets/d/1c2tXGy22BSCBFvgDzbHbqljazDxjwFGGcQLbL_dIp5w"
     conn = st.connection("gsheets", type=GSheetsConnection) 
-    existing_data = conn.read(worksheet="data", usecols=list(range(4)), ttl=5)
+    existing_data = conn.read(spreadsheet=url, usecols=list(range(4)), ttl=5)
     existing_data = existing_data.dropna(how="all")
     st.title("Home")
     st.subheader("Welcome, to my wonderful website, I hope you enjoy!")
@@ -682,7 +684,7 @@ if selected == "Home":
          if Name and Feedback:
              try:
                  time.sleep(2)
-                 conn.update(worksheet="data", data=updated_df)
+                 conn.update(spreadsheet=url, data=updated_df)
                  st.success("Feedback submitted succesfully!")
              except: 
                 st.error("Something went wrong, please try again later")
