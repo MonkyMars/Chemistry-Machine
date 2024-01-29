@@ -760,11 +760,7 @@ if selected == "Physics Machine":
              f = st.button("placeholder", key = "1c")
     #doesnt work yet, immiediately closes after givig input
     if c:
-        run3 = True
-        if run3 == True:
-            modal3.open()
-    if Close3:
-        run3 = False
+        modal3.open()
     
 
 
