@@ -732,9 +732,15 @@ if selected == "Projects":
     st.write("* create more projects which can either help people or to learn to understand python better")
 #
 if selected == "Physics Machine":
+    def modal31_open():
+         modal3 = Modal(key="Key356756", title="Calculating Speed") 
+         with modal3.container():
+             unit = st.selectbox("Select unit", ("","KM/H", "MP/H", "M/S"), key="68476")
+             ask1 = st.text_input("Enter distance", key="key5875664")
+             ask2 = st.text_input("Enter time", key="key5747466")
+             close3 = st.button("Close", key="key5747")  
     modal1 = Modal(key="Key1554577", title="Questions")
     modal2 = Modal(key="Key2564657", title="Calculating Balance")
-    modal3 = Modal(key="Key356756", title="Calculating Speed")
     st.header("Welcome to my Physics machine!")
     st.write("This project is still in development, please come back later for the completed product")
     st.write("Please press a button")
@@ -753,18 +759,8 @@ if selected == "Physics Machine":
     with column6:
         f = st.button("placeholder", key = "1c")
     if buttonc:
-        run3 = True
-        while run3 == True:
-            with modal3():
-                unit = st.selectbox("Select unit", ("","KM/H", "MP/H", "M/S"), key="68476")
-                ask1 = st.text_input("Enter distance", key="key5875664")
-                ask2 = st.text_input("Enter time", key="key5747466")
-                close3 = st.button("Close", key="key5747")
-        if unit and ask1 and ask2:
-            run3 = False
-        while run3 == False:
-            modal.close()
-            
+        modal31_open()
+        
             
     
 
