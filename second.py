@@ -762,7 +762,7 @@ if selected == "Physics Machine":
             Q5 = st.text_input("Enter distance in miles")
             Q6 = st.text_input("Enter time in seconds")
         if Q4 == "M/S":
-            Q5 = st.text_input("Enter distancen in meters")
+            Q5 = st.text_input("Enter distance in meters")
             Q6 = st.text_input("Enter time in seconds")
             
         
