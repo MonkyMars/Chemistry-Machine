@@ -746,17 +746,3 @@ if selected == "Physics Machine":
     Q = st.selectbox("Please select an option", ("", "Calculating Gravity", "Calculating Speed", "Calculating Balance")
     
         
-
-        
-        
-            
-    
-
-
-        
-        
-
-             
-        
-
-    
