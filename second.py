@@ -745,8 +745,6 @@ if selected == "Physics Machine":
         b = st.button("Balace")
     with column3:
         buttonc = st.button("Speed")  
-    if buttonc:
-        modal3.open()
     column4, column5, column6 = st.columns(3)
     with column4:
         d = st.button("placeholder", key = "1a")
