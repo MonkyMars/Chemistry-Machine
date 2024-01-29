@@ -751,7 +751,7 @@ if selected == "Physics Machine":
             M = int(Q3)
             G = 9.81
             answer = M * G
-            st.write(answer)
+            st.write(f"Your answer is{answer} Newton)
                 
     
         
