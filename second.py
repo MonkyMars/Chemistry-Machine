@@ -795,9 +795,9 @@ if selected == "Physics Machine":
                 st.write(f"Your answer is {answer} W")
         if q == "Joule":
             Q5 = st.text_input("Enter wattage")
-            if Q5:
-                answer = float(Q5) / 1000
-                answer1 = answer * 3600000
+            Q6 = st.text_input("Enter time in seconds")
+            if Q5 and Q6:
+                answer = float(Q5) * float(Q6)
                 st.write(f"Your answer is {answer1} J")
     ##------------------------------------------------------------------------##
             
