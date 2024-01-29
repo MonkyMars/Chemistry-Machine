@@ -735,12 +735,6 @@ if selected == "Physics Machine":
     modal1 = Modal(key="Key1", title="Questions")
     modal2 = Modal(key="Key2", title="Calculating Balance")
     modal3 = Modal(key="Key3", title="Calculating Speed")
-    if buttonc:
-        with modal3.container():
-            unit = st.selectbox("Select unit", ("","KM/H", "MPH", "M/S"))
-            ask1 = st.text_input("Enter distance")
-            ask2 = st.text_input("Enter time")
-            Close3 = st.button("Close")
     st.header("Welcome to my Physics machine!")
     st.write("This project is still in development, please come back later for the completed product")
     st.write("Please press a button")
@@ -760,6 +754,12 @@ if selected == "Physics Machine":
         e = st.button("placeholder", key = "1b")
     with column6:
         f = st.button("placeholder", key = "1c")
+    if buttonc:
+        with modal3.container():
+            unit = st.selectbox("Select unit", ("","KM/H", "MPH", "M/S"))
+            ask1 = st.text_input("Enter distance")
+            ask2 = st.text_input("Enter time")
+            Close3 = st.button("Close")
     
 
 
