@@ -747,11 +747,11 @@ if selected == "Physics Machine":
     if Q == "Calculating Gravity":
         st.subheader("Calculating Gravity")
         Q3 = st.text_input("insert mass in KG")
-    if Q3:
-        M = Q3
-        G = 9.81
-        answer = M * G
-        st.write(answer)
-            
+        if Q3:
+            M = Q3
+            G = 9.81
+            answer = M * G
+            st.write(answer)
+                
     
         
