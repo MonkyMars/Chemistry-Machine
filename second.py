@@ -754,7 +754,7 @@ if selected == "Physics Machine":
             st.write(f"Your answer is {answer} Newton")
     if Q == "Calculating Speed":
         st.subheader("Calculating Speed")
-        Q4 = st.selectbox("Select unit", ("", "KM/H", "MP/H", "M/S"))
+        Q4 = st.selectbox("Select unit", ("", "KM/H", "MPH", "M/S"))
         if Q4 == "KM/H":
             Q5 = st.text_input("Enter distance in kilometers")
             Q6 = st.text_input("Enter time in seconds")
@@ -768,7 +768,7 @@ if selected == "Physics Machine":
             if Q5 and Q6:
                 updated_Q6 = float(Q6) / 3600
                 answer = float(Q5) / updated_Q6
-                st.write(f"Your answer is {answer}MP/H")
+                st.write(f"Your answer is {answer}MPH")
         if Q4 == "M/S":
             Q5 = st.text_input("Enter distance in meters")
             Q6 = st.text_input("Enter time in seconds")
