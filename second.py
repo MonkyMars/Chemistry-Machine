@@ -743,7 +743,8 @@ if selected == "Physics Machine":
     #modal2 = Modal(key="Key2564657", title="Calculating Balance")
     st.header("Welcome to my Physics machine!")
     st.write("This project is still in development, please come back later for the completed product")
-    Q = st.selectbox("Please select an option", ("", "Calculating Gravity", "Calculating Speed", "Calculating Balance"))
+    Q = st.selectbox("Please select an option", ("", "Calculating Gravity", "Calculating Speed", "Calculating Electricity"))
+    ##-------------------------------------------------------------##
     if Q == "Calculating Gravity":
         st.subheader("Calculating Gravity")
         Q3 = st.text_input("insert mass in KG")
@@ -752,6 +753,7 @@ if selected == "Physics Machine":
             G = 9.81
             answer = M * G
             st.write(f"Your answer is {answer} Newton")
+    ##---------------------------------------------------------------##
     if Q == "Calculating Speed":
         st.subheader("Calculating Speed")
         Q4 = st.selectbox("Select unit", ("", "KM/H", "MPH", "M/S"))
@@ -776,6 +778,18 @@ if selected == "Physics Machine":
                 updated_Q6 = float(Q6)
                 answer = float(Q5) / updated_Q6
                 st.write(f"Your answer is {answer}M/S")
+    ##--------------------------------------------------------------------##
+    if Q == "Calculating Electricity":
+        q = st.selectbox("Select unit", ("", "Volts", "Watt", "Joule"))
+        if q == "Volts":
+            Q5 = st.text_input("Enter current in ampere")
+            Q6 = st.text_input("Enter resistance in Ohm")
+            if Q5 and Q6:
+                answer = float(Q5) * float(Q6)
+                st.write(f"Your answer is {answer}V")
+            
+            
+            
             
         
                 
