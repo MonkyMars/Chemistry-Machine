@@ -798,7 +798,7 @@ if selected == "Physics Machine":
             Q6 = st.text_input("Enter time in seconds")
             if Q5 and Q6:
                 answer = float(Q5) * float(Q6)
-                st.write(f"Your answer is {answer1} J")
+                st.write(f"Your answer is {answer} J")
     ##------------------------------------------------------------------------##
             
             
