@@ -14,7 +14,7 @@ with (st.sidebar):
         options=["Home", "Chemistry Machine", "Physics Machine", "Projects", "About me"])
 #
 if selected == "Chemistry Machine":
-    url = "https://docs.google.com/spreadsheets/d/1c2tXGy22BSCBFvgDzbHbqljazDxjwFGGcQLbL_dIp5w"
+    url = ""
     elements = {
         "hydrogen": "H",
         "helium": "He",
@@ -652,7 +652,7 @@ if selected == "Chemistry Machine":
     
  #                       
 if selected == "Home":
-    url = "https://docs.google.com/spreadsheets/d/1c2tXGy22BSCBFvgDzbHbqljazDxjwFGGcQLbL_dIp5w"
+    url = ""
     conn = st.connection("gsheets", type=GSheetsConnection) 
     existing_data = conn.read(spreadsheet=url, usecols=list(range(4)), ttl=5)
     existing_data = existing_data.dropna(how="all")
