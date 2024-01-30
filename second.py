@@ -755,8 +755,8 @@ if selected == "Physics Machine":
                 G = 9.81
                 answer = M * G
                 st.write(f"Your answer is {answer} Newton")
-        else: 
-            st.warning("Please fill out both fields")
+            else: 
+                st.warning("Please fill out both fields")
     ##---------------------------------------------------------------##
     if Q == "Calculating Speed":
         st.subheader("Calculating Speed")
@@ -770,8 +770,8 @@ if selected == "Physics Machine":
                     updated_Q6 = float(Q6) / 3600
                     answer = float(Q5) / updated_Q6
                     st.write(f"Your answer is {answer}KM/H")
-            else: 
-                st.warning("Please fill out both fields")
+                else: 
+                    st.warning("Please fill out both fields")
         if Q4 == "MPH":
             Q5 = st.text_input("Enter distance in miles")
             Q6 = st.text_input("Enter time in seconds")
@@ -781,8 +781,8 @@ if selected == "Physics Machine":
                     updated_Q6 = float(Q6) / 3600
                     answer = float(Q5) / updated_Q6
                     st.write(f"Your answer is {answer}MPH")
-            else: 
-                st.warning("Please fill out both fields")
+                else: 
+                    st.warning("Please fill out both fields")
         if Q4 == "M/S":
             Q5 = st.text_input("Enter distance in meters")
             Q6 = st.text_input("Enter time in seconds")
@@ -792,8 +792,8 @@ if selected == "Physics Machine":
                     updated_Q6 = float(Q6)
                     answer = float(Q5) / updated_Q6
                     st.write(f"Your answer is {answer}M/S")
-            else:
-                st.warning("Please fill out both fields")
+                else:
+                    st.warning("Please fill out both fields")
     ##--------------------------------------------------------------------##
     if Q == "Calculating Electricity":
         q = st.selectbox("Select unit", ("", "Volts", "Watt", "Joule"))
@@ -805,8 +805,8 @@ if selected == "Physics Machine":
                 if Q5 and Q6:
                     answer = float(Q5) * float(Q6)
                     st.write(f"Your answer is {answer}V")
-            else:
-                st.warning("Please fill out both fields")
+                else:
+                    st.warning("Please fill out both fields")
         if q == "Watt":
             Q5 = st.text_input("Enter Voltage")
             Q6 = st.text_input("Enter current in Ampere")
@@ -815,8 +815,8 @@ if selected == "Physics Machine":
                 if Q5 and Q6:
                     answer = float(Q5) * float(Q6)
                     st.write(f"Your answer is {answer} W")
-            else: 
-                st.warning("Please fill out both fields")
+                else: 
+                    st.warning("Please fill out both fields")
         if q == "Joule":
             Q5 = st.text_input("Enter wattage")
             Q6 = st.text_input("Enter time in seconds")
@@ -825,8 +825,8 @@ if selected == "Physics Machine":
                 if Q5 and Q6:
                     answer = float(Q5) * float(Q6)
                     st.write(f"Your answer is {answer} J")
-            else:
-                st.warning("Please fill out both fields")
+                else:
+                    st.warning("Please fill out both fields")
     ##------------------------------------------------------------------------##
             
             
