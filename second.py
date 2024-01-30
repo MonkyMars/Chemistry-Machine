@@ -796,9 +796,13 @@ if selected == "Physics Machine":
         if q == "Joule":
             Q5 = st.text_input("Enter wattage")
             Q6 = st.text_input("Enter time in seconds")
+            Submit3 = st.button("Submit")
             if Q5 and Q6:
-                answer = float(Q5) * float(Q6)
-                st.write(f"Your answer is {answer} J")
+                if Submit3:
+                    answer = float(Q5) * float(Q6)
+                    st.write(f"Your answer is {answer} J")
+            else:
+                st.warning("Please fill out both fields")
     ##------------------------------------------------------------------------##
             
             
