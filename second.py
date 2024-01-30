@@ -763,22 +763,22 @@ if selected == "Physics Machine":
         Q4 = st.selectbox("Select unit", ("", "KM/H", "MPH", "M/S"))
         if Q4 == "KM/H":
             Q5 = st.text_input("Enter distance in kilometers")
-            Q6 = st.text_input("Enter time in seconds")
+            Q6 = st.text_input("Enter time in minutes")
             Submit3 = st.button("Submit")
             if Submit3:
                 if Q5 and Q6:
-                    updated_Q6 = float(Q6) / 3600
+                    updated_Q6 = float(Q6) / 60
                     answer = float(Q5) / updated_Q6
                     st.write(f"Your answer is {answer}KM/H")
                 else: 
                     st.warning("Please fill out both fields")
         if Q4 == "MPH":
             Q5 = st.text_input("Enter distance in miles")
-            Q6 = st.text_input("Enter time in seconds")
+            Q6 = st.text_input("Enter time in minutes")
             Submit3 = st.button("Submit")
             if Submit3:
                 if Q5 and Q6:
-                    updated_Q6 = float(Q6) / 3600
+                    updated_Q6 = float(Q6) / 60
                     answer = float(Q5) / updated_Q6
                     st.write(f"Your answer is {answer}MPH")
                 else: 
