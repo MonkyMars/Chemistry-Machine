@@ -722,6 +722,9 @@ if selected == "Projects":
     st.write("This is a project I made to discover and learn Python, Thus the entire project is written in python.")
     st.write("Check my Chemistry Machine [here](https://chemistry-machine.streamlit.app/#my-super-cool-chemistry-machine)")
     st.write("#")
+    st.subheader("Physics Machine")
+    st.write("This is an expirement to learn how to calculate things using python")
+    st.write("#")
     st.subheader("This website")
     st.write("I made this website originally to make my Chemistry Machine more portable and accessible,"
              " but after a while it seemed like Im gonna use it for all my projects")
