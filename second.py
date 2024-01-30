@@ -756,10 +756,13 @@ if selected == "Physics Machine":
         Submit3= st.button("Submit")
         if Submit3:
             if Q3:
-                M = float(Q3)
-                G = 9.81
-                answer = M * G
-                st.write(f"Your answer is {answer} Newton")
+                try:
+                    M = float(Q3)
+                    G = 9.81
+                    answer = M * G
+                    st.write(f"Your answer is {answer} Newton")
+                except:
+                    st.warning("Something went wrong")
             else: 
                 st.warning("Please fill out both fields")
     ##---------------------------------------------------------------##
@@ -772,9 +775,12 @@ if selected == "Physics Machine":
             Submit3 = st.button("Submit")
             if Submit3:
                 if Q5 and Q6:
-                    updated_Q6 = float(Q6) / 60
-                    answer = float(Q5) / updated_Q6
-                    st.write(f"Your answer is {answer}KM/H")
+                    try:
+                        updated_Q6 = float(Q6) / 60
+                        answer = float(Q5) / updated_Q6
+                        st.write(f"Your answer is {answer}KM/H")
+                    except:
+                        st.warning("Something went wrong")
                 else: 
                     st.warning("Please fill out both fields")
         if Q4 == "MPH":
@@ -783,9 +789,12 @@ if selected == "Physics Machine":
             Submit3 = st.button("Submit")
             if Submit3:
                 if Q5 and Q6:
-                    updated_Q6 = float(Q6) / 60
-                    answer = float(Q5) / updated_Q6
-                    st.write(f"Your answer is {answer}MPH")
+                    try:
+                        updated_Q6 = float(Q6) / 60
+                        answer = float(Q5) / updated_Q6
+                        st.write(f"Your answer is {answer}MPH")
+                    except:
+                        st.warning("Something went wrong")
                 else: 
                     st.warning("Please fill out both fields")
         if Q4 == "M/S":
@@ -794,9 +803,12 @@ if selected == "Physics Machine":
             Submit3 = st.button("Submit")
             if Submit3:
                 if Q5 and Q6:
-                    updated_Q6 = float(Q6)
-                    answer = float(Q5) / updated_Q6
-                    st.write(f"Your answer is {answer}M/S")
+                    try:
+                        updated_Q6 = float(Q6)
+                        answer = float(Q5) / updated_Q6
+                        st.write(f"Your answer is {answer}M/S")
+                    except:
+                        st.warning("Something went wrong")
                 else:
                     st.warning("Please fill out both fields")
     ##--------------------------------------------------------------------##
@@ -808,8 +820,11 @@ if selected == "Physics Machine":
             Submit3 = st.button("Please fill out both fields")
             if Submit3:
                 if Q5 and Q6:
-                    answer = float(Q5) * float(Q6)
-                    st.write(f"Your answer is {answer}V")
+                    try:
+                        answer = float(Q5) * float(Q6)
+                        st.write(f"Your answer is {answer}V")
+                    except:
+                        st.warning("Something went wrong")
                 else:
                     st.warning("Please fill out both fields")
         if q == "Watt":
@@ -818,8 +833,11 @@ if selected == "Physics Machine":
             Submit3 = st.button("Submit")
             if Submit3:
                 if Q5 and Q6:
-                    answer = float(Q5) * float(Q6)
-                    st.write(f"Your answer is {answer} W")
+                    try:
+                        answer = float(Q5) * float(Q6)
+                        st.write(f"Your answer is {answer} W")
+                    except:
+                        st.warning("Something went wrong")
                 else: 
                     st.warning("Please fill out both fields")
         if q == "Joule":
