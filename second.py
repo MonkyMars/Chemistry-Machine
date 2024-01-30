@@ -747,6 +747,8 @@ if selected == "Physics Machine":
     st.header("Welcome to my Physics machine!")
     st.write("This project is still in development, please come back later for the completed product")
     Q = st.selectbox("Please select an option", ("", "Calculating Gravity", "Calculating Speed", "Calculating Electricity"))
+    dot = "."
+    st.write(f"Please use a "{dot}" for decimals")
     ##-------------------------------------------------------------##
     if Q == "Calculating Gravity":
         st.subheader("Calculating Gravity")
