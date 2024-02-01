@@ -776,8 +776,7 @@ if selected == "Physics Machine":
             if Submit3:
                 if Q5 and Q6:
                     try:
-                        updated_Q6 = float(Q6) / 60
-                        answer = float(Q5) / updated_Q6
+                        answer = float(Q5) / (float(Q6) / 60)
                         st.write(f"Your answer is {answer}KM/H")
                     except:
                         st.warning("Something went wrong")
